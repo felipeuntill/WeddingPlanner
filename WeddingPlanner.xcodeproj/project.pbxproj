@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7CC8CB9C1CC6F9B100D1699D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC8CB9B1CC6F9B100D1699D /* AppDelegate.swift */; };
+		7CC8CB9E1CC6F9B100D1699D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC8CB9D1CC6F9B100D1699D /* ViewController.swift */; };
+		7CC8CBA11CC6F9B100D1699D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CC8CB9F1CC6F9B100D1699D /* Main.storyboard */; };
+		7CC8CBA41CC6F9B100D1699D /* WeddingPlanner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7CC8CBA21CC6F9B100D1699D /* WeddingPlanner.xcdatamodeld */; };
+		7CC8CBA61CC6F9B100D1699D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CC8CBA51CC6F9B100D1699D /* Assets.xcassets */; };
+		7CC8CBA91CC6F9B100D1699D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CC8CBA71CC6F9B100D1699D /* LaunchScreen.storyboard */; };
+		7CC8CBB41CC6F9B200D1699D /* WeddingPlannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC8CBB31CC6F9B200D1699D /* WeddingPlannerTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7CC8CBB01CC6F9B200D1699D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7CC8CB901CC6F9B100D1699D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7CC8CB971CC6F9B100D1699D;
+			remoteInfo = WeddingPlanner;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7CC8CB981CC6F9B100D1699D /* WeddingPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeddingPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CC8CB9B1CC6F9B100D1699D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7CC8CB9D1CC6F9B100D1699D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7CC8CBA01CC6F9B100D1699D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7CC8CBA31CC6F9B100D1699D /* WeddingPlanner.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WeddingPlanner.xcdatamodel; sourceTree = "<group>"; };
+		7CC8CBA51CC6F9B100D1699D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7CC8CBA81CC6F9B100D1699D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7CC8CBAA1CC6F9B100D1699D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CC8CBAF1CC6F9B200D1699D /* WeddingPlannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeddingPlannerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7CC8CBB31CC6F9B200D1699D /* WeddingPlannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeddingPlannerTests.swift; sourceTree = "<group>"; };
+		7CC8CBB51CC6F9B200D1699D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7CC8CB951CC6F9B100D1699D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CC8CBAC1CC6F9B200D1699D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7CC8CB8F1CC6F9B100D1699D = {
+			isa = PBXGroup;
+			children = (
+				7CC8CB9A1CC6F9B100D1699D /* WeddingPlanner */,
+				7CC8CBB21CC6F9B200D1699D /* WeddingPlannerTests */,
+				7CC8CB991CC6F9B100D1699D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7CC8CB991CC6F9B100D1699D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7CC8CB981CC6F9B100D1699D /* WeddingPlanner.app */,
+				7CC8CBAF1CC6F9B200D1699D /* WeddingPlannerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7CC8CB9A1CC6F9B100D1699D /* WeddingPlanner */ = {
+			isa = PBXGroup;
+			children = (
+				7CC8CB9B1CC6F9B100D1699D /* AppDelegate.swift */,
+				7CC8CB9D1CC6F9B100D1699D /* ViewController.swift */,
+				7CC8CB9F1CC6F9B100D1699D /* Main.storyboard */,
+				7CC8CBA51CC6F9B100D1699D /* Assets.xcassets */,
+				7CC8CBA71CC6F9B100D1699D /* LaunchScreen.storyboard */,
+				7CC8CBAA1CC6F9B100D1699D /* Info.plist */,
+				7CC8CBA21CC6F9B100D1699D /* WeddingPlanner.xcdatamodeld */,
+			);
+			path = WeddingPlanner;
+			sourceTree = "<group>";
+		};
+		7CC8CBB21CC6F9B200D1699D /* WeddingPlannerTests */ = {
+			isa = PBXGroup;
+			children = (
+				7CC8CBB31CC6F9B200D1699D /* WeddingPlannerTests.swift */,
+				7CC8CBB51CC6F9B200D1699D /* Info.plist */,
+			);
+			path = WeddingPlannerTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7CC8CB971CC6F9B100D1699D /* WeddingPlanner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CC8CBB81CC6F9B200D1699D /* Build configuration list for PBXNativeTarget "WeddingPlanner" */;
+			buildPhases = (
+				7CC8CB941CC6F9B100D1699D /* Sources */,
+				7CC8CB951CC6F9B100D1699D /* Frameworks */,
+				7CC8CB961CC6F9B100D1699D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WeddingPlanner;
+			productName = WeddingPlanner;
+			productReference = 7CC8CB981CC6F9B100D1699D /* WeddingPlanner.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7CC8CBAE1CC6F9B200D1699D /* WeddingPlannerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7CC8CBBB1CC6F9B200D1699D /* Build configuration list for PBXNativeTarget "WeddingPlannerTests" */;
+			buildPhases = (
+				7CC8CBAB1CC6F9B200D1699D /* Sources */,
+				7CC8CBAC1CC6F9B200D1699D /* Frameworks */,
+				7CC8CBAD1CC6F9B200D1699D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7CC8CBB11CC6F9B200D1699D /* PBXTargetDependency */,
+			);
+			name = WeddingPlannerTests;
+			productName = WeddingPlannerTests;
+			productReference = 7CC8CBAF1CC6F9B200D1699D /* WeddingPlannerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7CC8CB901CC6F9B100D1699D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Felipe Assunção";
+				TargetAttributes = {
+					7CC8CB971CC6F9B100D1699D = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 9KT7E833CG;
+					};
+					7CC8CBAE1CC6F9B200D1699D = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 9KT7E833CG;
+						TestTargetID = 7CC8CB971CC6F9B100D1699D;
+					};
+				};
+			};
+			buildConfigurationList = 7CC8CB931CC6F9B100D1699D /* Build configuration list for PBXProject "WeddingPlanner" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7CC8CB8F1CC6F9B100D1699D;
+			productRefGroup = 7CC8CB991CC6F9B100D1699D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7CC8CB971CC6F9B100D1699D /* WeddingPlanner */,
+				7CC8CBAE1CC6F9B200D1699D /* WeddingPlannerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7CC8CB961CC6F9B100D1699D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CC8CBA91CC6F9B100D1699D /* LaunchScreen.storyboard in Resources */,
+				7CC8CBA61CC6F9B100D1699D /* Assets.xcassets in Resources */,
+				7CC8CBA11CC6F9B100D1699D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CC8CBAD1CC6F9B200D1699D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7CC8CB941CC6F9B100D1699D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CC8CB9E1CC6F9B100D1699D /* ViewController.swift in Sources */,
+				7CC8CB9C1CC6F9B100D1699D /* AppDelegate.swift in Sources */,
+				7CC8CBA41CC6F9B100D1699D /* WeddingPlanner.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7CC8CBAB1CC6F9B200D1699D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CC8CBB41CC6F9B200D1699D /* WeddingPlannerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7CC8CBB11CC6F9B200D1699D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7CC8CB971CC6F9B100D1699D /* WeddingPlanner */;
+			targetProxy = 7CC8CBB01CC6F9B200D1699D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7CC8CB9F1CC6F9B100D1699D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7CC8CBA01CC6F9B100D1699D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7CC8CBA71CC6F9B100D1699D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7CC8CBA81CC6F9B100D1699D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7CC8CBB61CC6F9B200D1699D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7CC8CBB71CC6F9B200D1699D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7CC8CBB91CC6F9B200D1699D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WeddingPlanner/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.acquire.WeddingPlanner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		7CC8CBBA1CC6F9B200D1699D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = WeddingPlanner/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.acquire.WeddingPlanner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		7CC8CBBC1CC6F9B200D1699D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WeddingPlannerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.acquire.WeddingPlannerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WeddingPlanner.app/WeddingPlanner";
+			};
+			name = Debug;
+		};
+		7CC8CBBD1CC6F9B200D1699D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = WeddingPlannerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.acquire.WeddingPlannerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WeddingPlanner.app/WeddingPlanner";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7CC8CB931CC6F9B100D1699D /* Build configuration list for PBXProject "WeddingPlanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CC8CBB61CC6F9B200D1699D /* Debug */,
+				7CC8CBB71CC6F9B200D1699D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7CC8CBB81CC6F9B200D1699D /* Build configuration list for PBXNativeTarget "WeddingPlanner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CC8CBB91CC6F9B200D1699D /* Debug */,
+				7CC8CBBA1CC6F9B200D1699D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7CC8CBBB1CC6F9B200D1699D /* Build configuration list for PBXNativeTarget "WeddingPlannerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7CC8CBBC1CC6F9B200D1699D /* Debug */,
+				7CC8CBBD1CC6F9B200D1699D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		7CC8CBA21CC6F9B100D1699D /* WeddingPlanner.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				7CC8CBA31CC6F9B100D1699D /* WeddingPlanner.xcdatamodel */,
+			);
+			currentVersion = 7CC8CBA31CC6F9B100D1699D /* WeddingPlanner.xcdatamodel */;
+			path = WeddingPlanner.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 7CC8CB901CC6F9B100D1699D /* Project object */;
+}
