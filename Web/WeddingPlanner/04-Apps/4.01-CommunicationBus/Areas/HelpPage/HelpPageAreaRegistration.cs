@@ -1,7 +1,8 @@
 using System.Web.Http;
 using System.Web.Mvc;
+using WeddingPlanner.CommunicationBus.Areas.HelpPage.App_Start;
 
-namespace _4._01_CommunicationBus.Areas.HelpPage
+namespace WeddingPlanner.CommunicationBus.Areas.HelpPage
 {
     public class HelpPageAreaRegistration : AreaRegistration
     {

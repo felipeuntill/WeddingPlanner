@@ -1,4 +1,4 @@
-namespace _4._01_CommunicationBus.Areas.HelpPage
+namespace WeddingPlanner.CommunicationBus.Areas.HelpPage.SampleGeneration
 {
     /// <summary>
     /// Indicates whether the sample is used for request or response

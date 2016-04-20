@@ -1,10 +1,10 @@
 using System;
 using System.Web.Http;
 using System.Web.Mvc;
-using _4._01_CommunicationBus.Areas.HelpPage.ModelDescriptions;
-using _4._01_CommunicationBus.Areas.HelpPage.Models;
+using WeddingPlanner.CommunicationBus.Areas.HelpPage.ModelDescriptions;
+using WeddingPlanner.CommunicationBus.Areas.HelpPage.Models;
 
-namespace _4._01_CommunicationBus.Areas.HelpPage.Controllers
+namespace WeddingPlanner.CommunicationBus.Areas.HelpPage.Controllers
 {
     /// <summary>
     /// The controller that will handle requests for the help page.

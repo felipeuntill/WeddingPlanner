@@ -1,7 +1,6 @@
-﻿using System.Web;
-using System.Web.Optimization;
+﻿using System.Web.Optimization;
 
-namespace _4._01_CommunicationBus
+namespace WeddingPlanner.CommunicationBus
 {
     public class BundleConfig
     {

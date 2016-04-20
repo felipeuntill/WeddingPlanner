@@ -2,9 +2,9 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Net.Http.Headers;
 using System.Web.Http.Description;
-using _4._01_CommunicationBus.Areas.HelpPage.ModelDescriptions;
+using WeddingPlanner.CommunicationBus.Areas.HelpPage.ModelDescriptions;
 
-namespace _4._01_CommunicationBus.Areas.HelpPage.Models
+namespace WeddingPlanner.CommunicationBus.Areas.HelpPage.Models
 {
     /// <summary>
     /// The model that represents an API displayed on the help page.

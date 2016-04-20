@@ -1,7 +1,6 @@
-﻿using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 
-namespace _4._01_CommunicationBus
+namespace WeddingPlanner.CommunicationBus
 {
     public class FilterConfig
     {

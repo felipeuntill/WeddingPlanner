@@ -1,17 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using Microsoft.AspNet.Identity;
-using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.Owin;
 using Microsoft.Owin.Security.Cookies;
-using Microsoft.Owin.Security.Google;
 using Microsoft.Owin.Security.OAuth;
 using Owin;
+using WeddingPlanner.CommunicationBus.Provider;
 using WeddingPlanner.Domain.Model;
-using WeddingPlanner.Web.Mvc.Provider;
 
-namespace _4._01_CommunicationBus
+namespace WeddingPlanner.CommunicationBus
 {
     public partial class Startup
     {

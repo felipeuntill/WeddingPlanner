@@ -5,9 +5,9 @@ using System.Reflection;
 using System.Web.Http.Controllers;
 using System.Web.Http.Description;
 using System.Xml.XPath;
-using _4._01_CommunicationBus.Areas.HelpPage.ModelDescriptions;
+using WeddingPlanner.CommunicationBus.Areas.HelpPage.ModelDescriptions;
 
-namespace _4._01_CommunicationBus.Areas.HelpPage
+namespace WeddingPlanner.CommunicationBus.Areas.HelpPage
 {
     /// <summary>
     /// A custom <see cref="IDocumentationProvider"/> that reads the API documentation from an XML documentation file.

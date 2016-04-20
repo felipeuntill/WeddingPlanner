@@ -1,13 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
+﻿using System.Collections.Generic;
 using System.Web.Http;
 
-namespace _4._01_CommunicationBus.Controllers
+namespace WeddingPlanner.CommunicationBus.Controllers
 {
-    [Authorize]
     public class ValuesController : ApiController
     {
         // GET api/values
@@ -36,5 +31,8 @@ namespace _4._01_CommunicationBus.Controllers
         public void Delete(int id)
         {
         }
+    }
+}
+    }
     }
 }

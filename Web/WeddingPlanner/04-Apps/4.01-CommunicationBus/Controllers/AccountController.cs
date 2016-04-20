@@ -12,10 +12,9 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.OAuth;
+using WeddingPlanner.CommunicationBus.Provider;
+using WeddingPlanner.CommunicationBus.Results;
 using WeddingPlanner.Domain.Model;
-using WeddingPlanner.Web.Mvc.Provider;
-using _4._01_CommunicationBus;
-using _4._01_CommunicationBus.Results;
 
 namespace WeddingPlanner.CommunicationBus.Controllers
 {

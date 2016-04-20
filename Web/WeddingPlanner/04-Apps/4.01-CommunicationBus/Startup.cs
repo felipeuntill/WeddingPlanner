@@ -1,12 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using Microsoft.Owin;
+﻿using Microsoft.Owin;
 using Owin;
+using WeddingPlanner.CommunicationBus;
 
-[assembly: OwinStartup(typeof(_4._01_CommunicationBus.Startup))]
+[assembly: OwinStartup(typeof(Startup))]
 
-namespace _4._01_CommunicationBus
+namespace WeddingPlanner.CommunicationBus
 {
     public partial class Startup
     {

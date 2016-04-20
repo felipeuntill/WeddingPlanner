@@ -3,7 +3,7 @@ using System.Text;
 using System.Web;
 using System.Web.Http.Description;
 
-namespace _4._01_CommunicationBus.Areas.HelpPage
+namespace WeddingPlanner.CommunicationBus.Areas.HelpPage
 {
     public static class ApiDescriptionExtensions
     {

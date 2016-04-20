@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace _4._01_CommunicationBus
+namespace WeddingPlanner.CommunicationBus
 {
     public class RouteConfig
     {

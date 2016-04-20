@@ -7,9 +7,8 @@ using Microsoft.Owin.Security;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.OAuth;
 using WeddingPlanner.Domain.Model;
-using _4._01_CommunicationBus;
 
-namespace WeddingPlanner.Web.Mvc.Provider
+namespace WeddingPlanner.CommunicationBus.Provider
 {
     public class ApplicationOAuthProvider : OAuthAuthorizationServerProvider
     {

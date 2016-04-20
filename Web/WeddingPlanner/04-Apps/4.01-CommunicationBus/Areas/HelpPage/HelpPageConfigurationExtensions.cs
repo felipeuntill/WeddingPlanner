@@ -11,10 +11,11 @@ using System.Net.Http.Headers;
 using System.Web.Http;
 using System.Web.Http.Controllers;
 using System.Web.Http.Description;
-using _4._01_CommunicationBus.Areas.HelpPage.ModelDescriptions;
-using _4._01_CommunicationBus.Areas.HelpPage.Models;
+using WeddingPlanner.CommunicationBus.Areas.HelpPage.ModelDescriptions;
+using WeddingPlanner.CommunicationBus.Areas.HelpPage.Models;
+using WeddingPlanner.CommunicationBus.Areas.HelpPage.SampleGeneration;
 
-namespace _4._01_CommunicationBus.Areas.HelpPage
+namespace WeddingPlanner.CommunicationBus.Areas.HelpPage
 {
     public static class HelpPageConfigurationExtensions
     {

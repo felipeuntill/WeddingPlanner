@@ -1,6 +1,6 @@
 using System;
 
-namespace _4._01_CommunicationBus.Areas.HelpPage.ModelDescriptions
+namespace WeddingPlanner.CommunicationBus.Areas.HelpPage.ModelDescriptions
 {
     /// <summary>
     /// Describes a type model.
