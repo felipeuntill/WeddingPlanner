@@ -32,7 +32,7 @@ namespace WeddingPlanner.Domain.Model
 
         public void Dispose()
         {
-            throw new NotImplementedException();
+            
         }
     }
 }
