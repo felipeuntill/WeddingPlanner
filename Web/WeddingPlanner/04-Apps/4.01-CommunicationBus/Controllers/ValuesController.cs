@@ -33,6 +33,3 @@ namespace WeddingPlanner.CommunicationBus.Controllers
         }
     }
 }
-    }
-    }
-}
