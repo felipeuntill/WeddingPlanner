@@ -6,18 +6,18 @@ using System.Security.Cryptography;
 using System.Threading.Tasks;
 using System.Web;
 using System.Web.Http;
-using System.Web.Http.ModelBinding;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.OAuth;
-using _4._01_CommunicationBus.Models;
-using _4._01_CommunicationBus.Providers;
+using WeddingPlanner.Domain.Model;
+using WeddingPlanner.Web.Mvc.Provider;
+using _4._01_CommunicationBus;
 using _4._01_CommunicationBus.Results;
 
-namespace _4._01_CommunicationBus.Controllers
+namespace WeddingPlanner.CommunicationBus.Controllers
 {
     [Authorize]
     [RoutePrefix("api/Account")]

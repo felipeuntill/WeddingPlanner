@@ -3,7 +3,7 @@ using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin;
-using _4._01_CommunicationBus.Models;
+using WeddingPlanner.Domain.Model;
 
 namespace _4._01_CommunicationBus
 {

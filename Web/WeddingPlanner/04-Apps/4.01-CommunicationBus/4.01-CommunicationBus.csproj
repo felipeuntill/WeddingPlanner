@@ -202,11 +202,8 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\AccountBindingModels.cs" />
-    <Compile Include="Models\AccountViewModels.cs" />
-    <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Providers\ApplicationOAuthProvider.cs" />
+    <Compile Include="Provider\ApplicationOAuthProvider.cs" />
     <Compile Include="Results\ChallengeResult.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -275,6 +272,28 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\02-Domain\2.01-Entity\2.01-Entity.csproj">
+      <Project>{348c110b-aa3b-47c2-b81a-5bf950544633}</Project>
+      <Name>2.01-Entity</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\02-Domain\2.02-Repository\2.02-Repository.csproj">
+      <Project>{4d4cbdcc-da8f-4c2f-baa7-5a5ab9cc33c6}</Project>
+      <Name>2.02-Repository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\02-Domain\2.03-Model\2.03-Model.csproj">
+      <Project>{B411CE17-A103-4403-9E50-2B07935270FE}</Project>
+      <Name>2.03-Model</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\03-Web\3.01-Mvc\3.01-Mvc.csproj">
+      <Project>{909a6ce8-e7c5-4839-b9e8-fd688e893cdd}</Project>
+      <Name>3.01-Mvc</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\03-Web\3.02-WebApi\3.02-WebApi.csproj">
+      <Project>{642b8425-420c-4e18-94b8-f94e2f4e8ec2}</Project>
+      <Name>3.02-WebApi</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
