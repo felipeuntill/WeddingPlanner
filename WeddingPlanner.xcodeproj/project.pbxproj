@@ -14,6 +14,13 @@
 		7CC8CBA61CC6F9B100D1699D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CC8CBA51CC6F9B100D1699D /* Assets.xcassets */; };
 		7CC8CBA91CC6F9B100D1699D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CC8CBA71CC6F9B100D1699D /* LaunchScreen.storyboard */; };
 		7CC8CBB41CC6F9B200D1699D /* WeddingPlannerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC8CBB31CC6F9B200D1699D /* WeddingPlannerTests.swift */; };
+		7CC8CBC01CC6FAAD00D1699D /* Wedding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC8CBBF1CC6FAAD00D1699D /* Wedding.swift */; };
+		7CC8CBC31CC6FC9800D1699D /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC8CBC21CC6FC9800D1699D /* MainViewController.swift */; };
+		7CC8CBC51CC710DD00D1699D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC8CBC41CC710DD00D1699D /* User.swift */; };
+		7CC8CBC71CC7125600D1699D /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC8CBC61CC7125600D1699D /* Task.swift */; };
+		7CC8CBCA1CC713B900D1699D /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC8CBC91CC713B900D1699D /* Category.swift */; };
+		7CC8CBCC1CC7145000D1699D /* Requirement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC8CBCB1CC7145000D1699D /* Requirement.swift */; };
+		7CC8CBCE1CC714CB00D1699D /* PayObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC8CBCD1CC714CB00D1699D /* PayObject.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +45,13 @@
 		7CC8CBAF1CC6F9B200D1699D /* WeddingPlannerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeddingPlannerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CC8CBB31CC6F9B200D1699D /* WeddingPlannerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeddingPlannerTests.swift; sourceTree = "<group>"; };
 		7CC8CBB51CC6F9B200D1699D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7CC8CBBF1CC6FAAD00D1699D /* Wedding.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Wedding.swift; sourceTree = "<group>"; };
+		7CC8CBC21CC6FC9800D1699D /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		7CC8CBC41CC710DD00D1699D /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		7CC8CBC61CC7125600D1699D /* Task.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		7CC8CBC91CC713B900D1699D /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		7CC8CBCB1CC7145000D1699D /* Requirement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Requirement.swift; sourceTree = "<group>"; };
+		7CC8CBCD1CC714CB00D1699D /* PayObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayObject.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,11 +93,14 @@
 		7CC8CB9A1CC6F9B100D1699D /* WeddingPlanner */ = {
 			isa = PBXGroup;
 			children = (
+				7CC8CBC81CC7134400D1699D /* Repository */,
+				7CC8CBC11CC6FC7600D1699D /* Controller */,
+				7CC8CBBE1CC6FA9300D1699D /* Model */,
 				7CC8CB9B1CC6F9B100D1699D /* AppDelegate.swift */,
 				7CC8CB9D1CC6F9B100D1699D /* ViewController.swift */,
 				7CC8CB9F1CC6F9B100D1699D /* Main.storyboard */,
-				7CC8CBA51CC6F9B100D1699D /* Assets.xcassets */,
 				7CC8CBA71CC6F9B100D1699D /* LaunchScreen.storyboard */,
+				7CC8CBA51CC6F9B100D1699D /* Assets.xcassets */,
 				7CC8CBAA1CC6F9B100D1699D /* Info.plist */,
 				7CC8CBA21CC6F9B100D1699D /* WeddingPlanner.xcdatamodeld */,
 			);
@@ -97,6 +114,34 @@
 				7CC8CBB51CC6F9B200D1699D /* Info.plist */,
 			);
 			path = WeddingPlannerTests;
+			sourceTree = "<group>";
+		};
+		7CC8CBBE1CC6FA9300D1699D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7CC8CBBF1CC6FAAD00D1699D /* Wedding.swift */,
+				7CC8CBC41CC710DD00D1699D /* User.swift */,
+				7CC8CBC61CC7125600D1699D /* Task.swift */,
+				7CC8CBC91CC713B900D1699D /* Category.swift */,
+				7CC8CBCB1CC7145000D1699D /* Requirement.swift */,
+				7CC8CBCD1CC714CB00D1699D /* PayObject.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		7CC8CBC11CC6FC7600D1699D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				7CC8CBC21CC6FC9800D1699D /* MainViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		7CC8CBC81CC7134400D1699D /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Repository;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -203,8 +248,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				7CC8CB9E1CC6F9B100D1699D /* ViewController.swift in Sources */,
+				7CC8CBCC1CC7145000D1699D /* Requirement.swift in Sources */,
 				7CC8CB9C1CC6F9B100D1699D /* AppDelegate.swift in Sources */,
+				7CC8CBCE1CC714CB00D1699D /* PayObject.swift in Sources */,
+				7CC8CBC51CC710DD00D1699D /* User.swift in Sources */,
+				7CC8CBC01CC6FAAD00D1699D /* Wedding.swift in Sources */,
 				7CC8CBA41CC6F9B100D1699D /* WeddingPlanner.xcdatamodeld in Sources */,
+				7CC8CBC71CC7125600D1699D /* Task.swift in Sources */,
+				7CC8CBC31CC6FC9800D1699D /* MainViewController.swift in Sources */,
+				7CC8CBCA1CC713B900D1699D /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,6 +448,7 @@
 				7CC8CBBA1CC6F9B200D1699D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7CC8CBBB1CC6F9B200D1699D /* Build configuration list for PBXNativeTarget "WeddingPlannerTests" */ = {
 			isa = XCConfigurationList;
@@ -404,6 +457,7 @@
 				7CC8CBBD1CC6F9B200D1699D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
