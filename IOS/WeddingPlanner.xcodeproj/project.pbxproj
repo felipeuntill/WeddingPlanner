@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C4DE63B1CC835C800FED72D /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C4DE63A1CC835C800FED72D /* SWRevealViewController.m */; };
 		7CC8CB9C1CC6F9B100D1699D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC8CB9B1CC6F9B100D1699D /* AppDelegate.swift */; };
 		7CC8CB9E1CC6F9B100D1699D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC8CB9D1CC6F9B100D1699D /* ViewController.swift */; };
 		7CC8CBA11CC6F9B100D1699D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CC8CB9F1CC6F9B100D1699D /* Main.storyboard */; };
@@ -34,6 +35,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7C4DE6381CC835C700FED72D /* WeddingPlanner-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WeddingPlanner-Bridging-Header.h"; sourceTree = "<group>"; };
+		7C4DE6391CC835C800FED72D /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		7C4DE63A1CC835C800FED72D /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		7CC8CB981CC6F9B100D1699D /* WeddingPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeddingPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CC8CB9B1CC6F9B100D1699D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7CC8CB9D1CC6F9B100D1699D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -72,6 +76,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C4DE63C1CC835D400FED72D /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				7C4DE63A1CC835C800FED72D /* SWRevealViewController.m */,
+				7C4DE6391CC835C800FED72D /* SWRevealViewController.h */,
+				7C4DE6381CC835C700FED72D /* WeddingPlanner-Bridging-Header.h */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
 		7CC8CB8F1CC6F9B100D1699D = {
 			isa = PBXGroup;
 			children = (
@@ -93,6 +107,7 @@
 		7CC8CB9A1CC6F9B100D1699D /* WeddingPlanner */ = {
 			isa = PBXGroup;
 			children = (
+				7C4DE63C1CC835D400FED72D /* Library */,
 				7CC8CBC81CC7134400D1699D /* Repository */,
 				7CC8CBC11CC6FC7600D1699D /* Controller */,
 				7CC8CBBE1CC6FA9300D1699D /* Model */,
@@ -255,6 +270,7 @@
 				7CC8CBC01CC6FAAD00D1699D /* Wedding.swift in Sources */,
 				7CC8CBA41CC6F9B100D1699D /* WeddingPlanner.xcdatamodeld in Sources */,
 				7CC8CBC71CC7125600D1699D /* Task.swift in Sources */,
+				7C4DE63B1CC835C800FED72D /* SWRevealViewController.m in Sources */,
 				7CC8CBC31CC6FC9800D1699D /* MainViewController.swift in Sources */,
 				7CC8CBCA1CC713B900D1699D /* Category.swift in Sources */,
 			);
@@ -387,10 +403,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = WeddingPlanner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.acquire.WeddingPlanner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WeddingPlanner/WeddingPlanner-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -398,10 +417,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = WeddingPlanner/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.acquire.WeddingPlanner;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "WeddingPlanner/WeddingPlanner-Bridging-Header.h";
 			};
 			name = Release;
 		};
