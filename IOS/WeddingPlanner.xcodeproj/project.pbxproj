@@ -27,8 +27,9 @@
 		7CCAE3911CC8902D004A9088 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCAE3901CC8902D004A9088 /* RegisterViewController.swift */; };
 		7CCAE3931CC89592004A9088 /* ValidationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCAE3921CC89592004A9088 /* ValidationExtensions.swift */; };
 		7CEE51481CC9483D00FC687A /* WeddingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEE51471CC9483D00FC687A /* WeddingViewController.swift */; };
-		7CEE514A1CC948AF00FC687A /* RequirementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEE51491CC948AF00FC687A /* RequirementViewController.swift */; };
+		7CEE514A1CC948AF00FC687A /* RequirementListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEE51491CC948AF00FC687A /* RequirementListViewController.swift */; };
 		7CEE514C1CC9497F00FC687A /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEE514B1CC9497F00FC687A /* BaseViewController.swift */; };
+		7CEE514E1CC9629B00FC687A /* RequirementTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEE514D1CC9629B00FC687A /* RequirementTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,8 +69,9 @@
 		7CCAE3901CC8902D004A9088 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		7CCAE3921CC89592004A9088 /* ValidationExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationExtensions.swift; sourceTree = "<group>"; };
 		7CEE51471CC9483D00FC687A /* WeddingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeddingViewController.swift; sourceTree = "<group>"; };
-		7CEE51491CC948AF00FC687A /* RequirementViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequirementViewController.swift; sourceTree = "<group>"; };
+		7CEE51491CC948AF00FC687A /* RequirementListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequirementListViewController.swift; sourceTree = "<group>"; };
 		7CEE514B1CC9497F00FC687A /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		7CEE514D1CC9629B00FC687A /* RequirementTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequirementTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +124,7 @@
 		7CC8CB9A1CC6F9B100D1699D /* WeddingPlanner */ = {
 			isa = PBXGroup;
 			children = (
+				7CEE514F1CC9779100FC687A /* Mock */,
 				7CCAE38F1CC88749004A9088 /* Domain */,
 				7C4DE63C1CC835D400FED72D /* Library */,
 				7CC8CB9B1CC6F9B100D1699D /* AppDelegate.swift */,
@@ -164,7 +167,7 @@
 				7CCAE3891CC868A3004A9088 /* MainViewController.swift */,
 				7CCAE3901CC8902D004A9088 /* RegisterViewController.swift */,
 				7CEE51471CC9483D00FC687A /* WeddingViewController.swift */,
-				7CEE51491CC948AF00FC687A /* RequirementViewController.swift */,
+				7CEE51491CC948AF00FC687A /* RequirementListViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -208,8 +211,16 @@
 		7CEE51421CC8BDFD00FC687A /* Objects */ = {
 			isa = PBXGroup;
 			children = (
+				7CEE514D1CC9629B00FC687A /* RequirementTableViewCell.swift */,
 			);
 			name = Objects;
+			sourceTree = "<group>";
+		};
+		7CEE514F1CC9779100FC687A /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Mock;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,10 +340,11 @@
 				7CC8CBA41CC6F9B100D1699D /* WeddingPlanner.xcdatamodeld in Sources */,
 				7CCAE3911CC8902D004A9088 /* RegisterViewController.swift in Sources */,
 				7CC8CBC71CC7125600D1699D /* Task.swift in Sources */,
-				7CEE514A1CC948AF00FC687A /* RequirementViewController.swift in Sources */,
+				7CEE514A1CC948AF00FC687A /* RequirementListViewController.swift in Sources */,
 				7C4DE63B1CC835C800FED72D /* SWRevealViewController.m in Sources */,
 				7CC8CBC31CC6FC9800D1699D /* LoginViewController.swift in Sources */,
 				7CC8CBCA1CC713B900D1699D /* Category.swift in Sources */,
+				7CEE514E1CC9629B00FC687A /* RequirementTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
