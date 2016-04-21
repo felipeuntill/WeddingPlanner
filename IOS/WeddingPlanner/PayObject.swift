@@ -15,5 +15,5 @@ class PayObject: NSObject {
         , parcels       : Int?
         , parcelsPaid   : Int?
         , parcelsPrice  : NSDecimal?
-    
+        , Paid          : Bool?
 }

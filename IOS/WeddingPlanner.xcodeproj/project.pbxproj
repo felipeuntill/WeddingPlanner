@@ -24,6 +24,8 @@
 		7CC8CBCE1CC714CB00D1699D /* PayObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC8CBCD1CC714CB00D1699D /* PayObject.swift */; };
 		7CCAE38A1CC868A3004A9088 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCAE3891CC868A3004A9088 /* MainViewController.swift */; };
 		7CCAE38C1CC886AB004A9088 /* ViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCAE38B1CC886AB004A9088 /* ViewControllerExtensions.swift */; };
+		7CCAE3911CC8902D004A9088 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCAE3901CC8902D004A9088 /* RegisterViewController.swift */; };
+		7CCAE3931CC89592004A9088 /* ValidationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCAE3921CC89592004A9088 /* ValidationExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +62,8 @@
 		7CC8CBCD1CC714CB00D1699D /* PayObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayObject.swift; sourceTree = "<group>"; };
 		7CCAE3891CC868A3004A9088 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		7CCAE38B1CC886AB004A9088 /* ViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerExtensions.swift; sourceTree = "<group>"; };
+		7CCAE3901CC8902D004A9088 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		7CCAE3921CC89592004A9088 /* ValidationExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,8 @@
 		7C4DE63C1CC835D400FED72D /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				7CC8CBAA1CC6F9B100D1699D /* Info.plist */,
+				7CC8CBA21CC6F9B100D1699D /* WeddingPlanner.xcdatamodeld */,
 				7CCAE38E1CC88730004A9088 /* SWReveal */,
 				7CCAE38D1CC88719004A9088 /* Extension */,
 			);
@@ -116,8 +122,6 @@
 				7CC8CB9F1CC6F9B100D1699D /* Main.storyboard */,
 				7CC8CBA71CC6F9B100D1699D /* LaunchScreen.storyboard */,
 				7CC8CBA51CC6F9B100D1699D /* Assets.xcassets */,
-				7CC8CBAA1CC6F9B100D1699D /* Info.plist */,
-				7CC8CBA21CC6F9B100D1699D /* WeddingPlanner.xcdatamodeld */,
 			);
 			path = WeddingPlanner;
 			sourceTree = "<group>";
@@ -150,6 +154,7 @@
 				7CC8CBC21CC6FC9800D1699D /* LoginViewController.swift */,
 				7CB33B9D1CC83EE600CBCAC1 /* SidebarTableViewController.swift */,
 				7CCAE3891CC868A3004A9088 /* MainViewController.swift */,
+				7CCAE3901CC8902D004A9088 /* RegisterViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -165,6 +170,7 @@
 			isa = PBXGroup;
 			children = (
 				7CCAE38B1CC886AB004A9088 /* ViewControllerExtensions.swift */,
+				7CCAE3921CC89592004A9088 /* ValidationExtensions.swift */,
 			);
 			name = Extension;
 			sourceTree = "<group>";
@@ -294,6 +300,7 @@
 			files = (
 				7CC8CBCC1CC7145000D1699D /* Requirement.swift in Sources */,
 				7CC8CB9C1CC6F9B100D1699D /* AppDelegate.swift in Sources */,
+				7CCAE3931CC89592004A9088 /* ValidationExtensions.swift in Sources */,
 				7CC8CBCE1CC714CB00D1699D /* PayObject.swift in Sources */,
 				7CCAE38C1CC886AB004A9088 /* ViewControllerExtensions.swift in Sources */,
 				7CCAE38A1CC868A3004A9088 /* MainViewController.swift in Sources */,
@@ -301,6 +308,7 @@
 				7CC8CBC51CC710DD00D1699D /* User.swift in Sources */,
 				7CC8CBC01CC6FAAD00D1699D /* Wedding.swift in Sources */,
 				7CC8CBA41CC6F9B100D1699D /* WeddingPlanner.xcdatamodeld in Sources */,
+				7CCAE3911CC8902D004A9088 /* RegisterViewController.swift in Sources */,
 				7CC8CBC71CC7125600D1699D /* Task.swift in Sources */,
 				7C4DE63B1CC835C800FED72D /* SWRevealViewController.m in Sources */,
 				7CC8CBC31CC6FC9800D1699D /* LoginViewController.swift in Sources */,

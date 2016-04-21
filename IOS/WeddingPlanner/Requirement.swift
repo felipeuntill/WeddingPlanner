@@ -12,6 +12,5 @@ class Requirement: PayObject {
 
     var   requirementId : Int?
         , name          : String?
-        , done          : Bool?
     
 }
