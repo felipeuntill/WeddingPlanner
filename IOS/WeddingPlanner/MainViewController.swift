@@ -10,10 +10,22 @@ import UIKit
 
 class MainViewController: UIViewController {
 
+    @IBOutlet var userImageView: UIImageView!
+    
     @IBAction func menuButton_TouchDown(sender: AnyObject) {
         revealViewController().revealToggle(sender)
     }
     
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        userImageView.layer.borderWidth = 0
+        userImageView.layer.masksToBounds = false
+        userImageView.layer.borderColor = UIColor.whiteColor().CGColor
+        userImageView.layer.cornerRadius = 44
+        userImageView.clipsToBounds = true
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
