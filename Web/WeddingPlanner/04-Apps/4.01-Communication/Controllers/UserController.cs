@@ -12,24 +12,24 @@ using Microsoft.AspNet.Identity.Owin;
 using Microsoft.Owin.Security;
 using Microsoft.Owin.Security.Cookies;
 using Microsoft.Owin.Security.OAuth;
-using WeddingPlanner.CommunicationBus.Provider;
-using WeddingPlanner.CommunicationBus.Results;
 using WeddingPlanner.Domain.Model;
+using _4._01_Communication.Provider;
+using ApplicationUser = _4._01_Communication.Models.ApplicationUser;
 
-namespace WeddingPlanner.CommunicationBus.Controllers
+namespace _4._01_Communication.Controllers
 {
     [Authorize]
     [RoutePrefix("api/Account")]
-    public class AccountController : ApiController
+    public class UserController : ApiController
     {
         private const string LocalLoginProvider = "Local";
         private ApplicationUserManager _userManager;
 
-        public AccountController()
+        public UserController()
         {
         }
 
-        public AccountController(ApplicationUserManager userManager,
+        public UserController(ApplicationUserManager userManager,
             ISecureDataFormat<AuthenticationTicket> accessTokenFormat)
         {
             UserManager = userManager;
@@ -233,7 +233,7 @@ namespace WeddingPlanner.CommunicationBus.Controllers
 
             if (!User.Identity.IsAuthenticated)
             {
-                return new ChallengeResult(provider, this);
+               // return new AccountController.ChallengeResult(provider, "/home");
             }
 
             ExternalLoginData externalLogin = ExternalLoginData.FromIdentity(User.Identity as ClaimsIdentity);
@@ -246,7 +246,7 @@ namespace WeddingPlanner.CommunicationBus.Controllers
             if (externalLogin.LoginProvider != provider)
             {
                 Authentication.SignOut(DefaultAuthenticationTypes.ExternalCookie);
-                return new ChallengeResult(provider, this);
+                //return new AccountController.ChallengeResult(provider, "");
             }
 
             ApplicationUser user = await UserManager.FindAsync(new UserLoginInfo(externalLogin.LoginProvider,
@@ -258,10 +258,8 @@ namespace WeddingPlanner.CommunicationBus.Controllers
             {
                 Authentication.SignOut(DefaultAuthenticationTypes.ExternalCookie);
                 
-                 ClaimsIdentity oAuthIdentity = await user.GenerateUserIdentityAsync(UserManager,
-                    OAuthDefaults.AuthenticationType);
-                ClaimsIdentity cookieIdentity = await user.GenerateUserIdentityAsync(UserManager,
-                    CookieAuthenticationDefaults.AuthenticationType);
+                 ClaimsIdentity oAuthIdentity =  await user.GenerateUserIdentityAsync(UserManager);
+                ClaimsIdentity cookieIdentity =  await user.GenerateUserIdentityAsync(UserManager);
 
                 AuthenticationProperties properties = ApplicationOAuthProvider.CreateProperties(user.UserName);
                 Authentication.SignIn(properties, oAuthIdentity, cookieIdentity);
@@ -305,7 +303,7 @@ namespace WeddingPlanner.CommunicationBus.Controllers
                     {
                         provider = description.AuthenticationType,
                         response_type = "token",
-                        client_id = Startup.PublicClientId,
+                        client_id = "ID",
                         redirect_uri = new Uri(Request.RequestUri, returnUrl).AbsoluteUri,
                         state = state
                     }),
@@ -320,6 +318,7 @@ namespace WeddingPlanner.CommunicationBus.Controllers
         // POST api/Account/Register
         [AllowAnonymous]
         [Route("Register")]
+        [HttpGet]
         public async Task<IHttpActionResult> Register(RegisterBindingModel model)
         {
             if (!ModelState.IsValid)
