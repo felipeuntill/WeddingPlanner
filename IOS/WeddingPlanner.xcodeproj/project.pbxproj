@@ -22,6 +22,8 @@
 		7CC8CBCA1CC713B900D1699D /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC8CBC91CC713B900D1699D /* Category.swift */; };
 		7CC8CBCC1CC7145000D1699D /* Requirement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC8CBCB1CC7145000D1699D /* Requirement.swift */; };
 		7CC8CBCE1CC714CB00D1699D /* PayObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC8CBCD1CC714CB00D1699D /* PayObject.swift */; };
+		7CCAE38A1CC868A3004A9088 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCAE3891CC868A3004A9088 /* MainViewController.swift */; };
+		7CCAE38C1CC886AB004A9088 /* ViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCAE38B1CC886AB004A9088 /* ViewControllerExtensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +58,8 @@
 		7CC8CBC91CC713B900D1699D /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		7CC8CBCB1CC7145000D1699D /* Requirement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Requirement.swift; sourceTree = "<group>"; };
 		7CC8CBCD1CC714CB00D1699D /* PayObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayObject.swift; sourceTree = "<group>"; };
+		7CCAE3891CC868A3004A9088 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		7CCAE38B1CC886AB004A9088 /* ViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerExtensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,9 +83,8 @@
 		7C4DE63C1CC835D400FED72D /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				7C4DE63A1CC835C800FED72D /* SWRevealViewController.m */,
-				7C4DE6391CC835C800FED72D /* SWRevealViewController.h */,
-				7C4DE6381CC835C700FED72D /* WeddingPlanner-Bridging-Header.h */,
+				7CCAE38E1CC88730004A9088 /* SWReveal */,
+				7CCAE38D1CC88719004A9088 /* Extension */,
 			);
 			name = Library;
 			sourceTree = "<group>";
@@ -107,10 +110,8 @@
 		7CC8CB9A1CC6F9B100D1699D /* WeddingPlanner */ = {
 			isa = PBXGroup;
 			children = (
+				7CCAE38F1CC88749004A9088 /* Domain */,
 				7C4DE63C1CC835D400FED72D /* Library */,
-				7CC8CBC81CC7134400D1699D /* Repository */,
-				7CC8CBC11CC6FC7600D1699D /* Controller */,
-				7CC8CBBE1CC6FA9300D1699D /* Model */,
 				7CC8CB9B1CC6F9B100D1699D /* AppDelegate.swift */,
 				7CC8CB9F1CC6F9B100D1699D /* Main.storyboard */,
 				7CC8CBA71CC6F9B100D1699D /* LaunchScreen.storyboard */,
@@ -148,6 +149,7 @@
 			children = (
 				7CC8CBC21CC6FC9800D1699D /* LoginViewController.swift */,
 				7CB33B9D1CC83EE600CBCAC1 /* SidebarTableViewController.swift */,
+				7CCAE3891CC868A3004A9088 /* MainViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -157,6 +159,34 @@
 			children = (
 			);
 			name = Repository;
+			sourceTree = "<group>";
+		};
+		7CCAE38D1CC88719004A9088 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				7CCAE38B1CC886AB004A9088 /* ViewControllerExtensions.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		7CCAE38E1CC88730004A9088 /* SWReveal */ = {
+			isa = PBXGroup;
+			children = (
+				7C4DE63A1CC835C800FED72D /* SWRevealViewController.m */,
+				7C4DE6391CC835C800FED72D /* SWRevealViewController.h */,
+				7C4DE6381CC835C700FED72D /* WeddingPlanner-Bridging-Header.h */,
+			);
+			name = SWReveal;
+			sourceTree = "<group>";
+		};
+		7CCAE38F1CC88749004A9088 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				7CC8CBC81CC7134400D1699D /* Repository */,
+				7CC8CBC11CC6FC7600D1699D /* Controller */,
+				7CC8CBBE1CC6FA9300D1699D /* Model */,
+			);
+			name = Domain;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -265,6 +295,8 @@
 				7CC8CBCC1CC7145000D1699D /* Requirement.swift in Sources */,
 				7CC8CB9C1CC6F9B100D1699D /* AppDelegate.swift in Sources */,
 				7CC8CBCE1CC714CB00D1699D /* PayObject.swift in Sources */,
+				7CCAE38C1CC886AB004A9088 /* ViewControllerExtensions.swift in Sources */,
+				7CCAE38A1CC868A3004A9088 /* MainViewController.swift in Sources */,
 				7CB33B9E1CC83EE600CBCAC1 /* SidebarTableViewController.swift in Sources */,
 				7CC8CBC51CC710DD00D1699D /* User.swift in Sources */,
 				7CC8CBC01CC6FAAD00D1699D /* Wedding.swift in Sources */,

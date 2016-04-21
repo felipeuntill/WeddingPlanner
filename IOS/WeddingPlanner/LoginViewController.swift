@@ -10,8 +10,10 @@ import UIKit
 
 class LoginViewController: UIViewController {
     
-//    @IBAction func openmenu(sender: AnyObject) {
-//        revealViewController().revealToggle(sender);
-//    }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        self.hideKeyboardWhenTappedAround()
+    }
     
 }
