@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+class MainViewController: BaseViewController {
 
     @IBOutlet var userImageView: UIImageView!
     
@@ -25,12 +25,5 @@ class MainViewController: UIViewController {
         userImageView.layer.borderColor = UIColor.whiteColor().CGColor
         userImageView.layer.cornerRadius = 44
         userImageView.clipsToBounds = true
-    }
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        if revealViewController() != nil {
-            self.view.addGestureRecognizer(revealViewController().panGestureRecognizer())
-        }
     }
 }

@@ -8,9 +8,7 @@
 
 import UIKit
 
-class Category: NSObject {
-
-    var   categoryId : Int?
-        , name       : String?
-    
+enum Category : Int {
+    case Party = 1
+    case House = 2
 }

@@ -1,5 +1,5 @@
 //
-//  RegisterViewController.swift
+//  WeddingViewController.swift
 //  WeddingPlanner
 //
 //  Created by Felipe Assunção on 4/21/16.
@@ -8,6 +8,6 @@
 
 import UIKit
 
-class RegisterViewController: BaseViewController {
+class WeddingViewController : BaseViewController {
 
 }

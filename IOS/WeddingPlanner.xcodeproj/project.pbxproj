@@ -26,6 +26,9 @@
 		7CCAE38C1CC886AB004A9088 /* ViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCAE38B1CC886AB004A9088 /* ViewControllerExtensions.swift */; };
 		7CCAE3911CC8902D004A9088 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCAE3901CC8902D004A9088 /* RegisterViewController.swift */; };
 		7CCAE3931CC89592004A9088 /* ValidationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCAE3921CC89592004A9088 /* ValidationExtensions.swift */; };
+		7CEE51481CC9483D00FC687A /* WeddingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEE51471CC9483D00FC687A /* WeddingViewController.swift */; };
+		7CEE514A1CC948AF00FC687A /* RequirementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEE51491CC948AF00FC687A /* RequirementViewController.swift */; };
+		7CEE514C1CC9497F00FC687A /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEE514B1CC9497F00FC687A /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +67,9 @@
 		7CCAE38B1CC886AB004A9088 /* ViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerExtensions.swift; sourceTree = "<group>"; };
 		7CCAE3901CC8902D004A9088 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		7CCAE3921CC89592004A9088 /* ValidationExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationExtensions.swift; sourceTree = "<group>"; };
+		7CEE51471CC9483D00FC687A /* WeddingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeddingViewController.swift; sourceTree = "<group>"; };
+		7CEE51491CC948AF00FC687A /* RequirementViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequirementViewController.swift; sourceTree = "<group>"; };
+		7CEE514B1CC9497F00FC687A /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -152,10 +158,13 @@
 			isa = PBXGroup;
 			children = (
 				7CEE51421CC8BDFD00FC687A /* Objects */,
+				7CEE514B1CC9497F00FC687A /* BaseViewController.swift */,
 				7CC8CBC21CC6FC9800D1699D /* LoginViewController.swift */,
 				7CB33B9D1CC83EE600CBCAC1 /* NavigationViewController.swift */,
 				7CCAE3891CC868A3004A9088 /* MainViewController.swift */,
 				7CCAE3901CC8902D004A9088 /* RegisterViewController.swift */,
+				7CEE51471CC9483D00FC687A /* WeddingViewController.swift */,
+				7CEE51491CC948AF00FC687A /* RequirementViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -311,13 +320,16 @@
 				7CCAE3931CC89592004A9088 /* ValidationExtensions.swift in Sources */,
 				7CC8CBCE1CC714CB00D1699D /* PayObject.swift in Sources */,
 				7CCAE38C1CC886AB004A9088 /* ViewControllerExtensions.swift in Sources */,
+				7CEE514C1CC9497F00FC687A /* BaseViewController.swift in Sources */,
 				7CCAE38A1CC868A3004A9088 /* MainViewController.swift in Sources */,
 				7CB33B9E1CC83EE600CBCAC1 /* NavigationViewController.swift in Sources */,
+				7CEE51481CC9483D00FC687A /* WeddingViewController.swift in Sources */,
 				7CC8CBC51CC710DD00D1699D /* User.swift in Sources */,
 				7CC8CBC01CC6FAAD00D1699D /* Wedding.swift in Sources */,
 				7CC8CBA41CC6F9B100D1699D /* WeddingPlanner.xcdatamodeld in Sources */,
 				7CCAE3911CC8902D004A9088 /* RegisterViewController.swift in Sources */,
 				7CC8CBC71CC7125600D1699D /* Task.swift in Sources */,
+				7CEE514A1CC948AF00FC687A /* RequirementViewController.swift in Sources */,
 				7C4DE63B1CC835C800FED72D /* SWRevealViewController.m in Sources */,
 				7CC8CBC31CC6FC9800D1699D /* LoginViewController.swift in Sources */,
 				7CC8CBCA1CC713B900D1699D /* Category.swift in Sources */,
