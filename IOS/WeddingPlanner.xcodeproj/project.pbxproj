@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7C4DE63B1CC835C800FED72D /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C4DE63A1CC835C800FED72D /* SWRevealViewController.m */; };
-		7CB33B9E1CC83EE600CBCAC1 /* SidebarTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB33B9D1CC83EE600CBCAC1 /* SidebarTableViewController.swift */; };
+		7CB33B9E1CC83EE600CBCAC1 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB33B9D1CC83EE600CBCAC1 /* NavigationViewController.swift */; };
 		7CC8CB9C1CC6F9B100D1699D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC8CB9B1CC6F9B100D1699D /* AppDelegate.swift */; };
 		7CC8CBA11CC6F9B100D1699D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CC8CB9F1CC6F9B100D1699D /* Main.storyboard */; };
 		7CC8CBA41CC6F9B100D1699D /* WeddingPlanner.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 7CC8CBA21CC6F9B100D1699D /* WeddingPlanner.xcdatamodeld */; };
@@ -42,7 +42,7 @@
 		7C4DE6381CC835C700FED72D /* WeddingPlanner-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WeddingPlanner-Bridging-Header.h"; sourceTree = "<group>"; };
 		7C4DE6391CC835C800FED72D /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		7C4DE63A1CC835C800FED72D /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
-		7CB33B9D1CC83EE600CBCAC1 /* SidebarTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SidebarTableViewController.swift; sourceTree = "<group>"; };
+		7CB33B9D1CC83EE600CBCAC1 /* NavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 		7CC8CB981CC6F9B100D1699D /* WeddingPlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeddingPlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CC8CB9B1CC6F9B100D1699D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7CC8CBA01CC6F9B100D1699D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -151,8 +151,9 @@
 		7CC8CBC11CC6FC7600D1699D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				7CEE51421CC8BDFD00FC687A /* Objects */,
 				7CC8CBC21CC6FC9800D1699D /* LoginViewController.swift */,
-				7CB33B9D1CC83EE600CBCAC1 /* SidebarTableViewController.swift */,
+				7CB33B9D1CC83EE600CBCAC1 /* NavigationViewController.swift */,
 				7CCAE3891CC868A3004A9088 /* MainViewController.swift */,
 				7CCAE3901CC8902D004A9088 /* RegisterViewController.swift */,
 			);
@@ -193,6 +194,13 @@
 				7CC8CBBE1CC6FA9300D1699D /* Model */,
 			);
 			name = Domain;
+			sourceTree = "<group>";
+		};
+		7CEE51421CC8BDFD00FC687A /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Objects;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,7 +312,7 @@
 				7CC8CBCE1CC714CB00D1699D /* PayObject.swift in Sources */,
 				7CCAE38C1CC886AB004A9088 /* ViewControllerExtensions.swift in Sources */,
 				7CCAE38A1CC868A3004A9088 /* MainViewController.swift in Sources */,
-				7CB33B9E1CC83EE600CBCAC1 /* SidebarTableViewController.swift in Sources */,
+				7CB33B9E1CC83EE600CBCAC1 /* NavigationViewController.swift in Sources */,
 				7CC8CBC51CC710DD00D1699D /* User.swift in Sources */,
 				7CC8CBC01CC6FAAD00D1699D /* Wedding.swift in Sources */,
 				7CC8CBA41CC6F9B100D1699D /* WeddingPlanner.xcdatamodeld in Sources */,
