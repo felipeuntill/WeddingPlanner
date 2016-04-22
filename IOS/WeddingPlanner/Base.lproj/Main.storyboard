@@ -171,6 +171,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <view key="tableFooterView" contentMode="scaleToFill" id="xxv-aq-IHT">
+                            <rect key="frame" x="0.0" y="182" width="375" height="44"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </view>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="0.0" reuseIdentifier="requirement" rowHeight="90" id="2EY-3U-y4N" customClass="RequirementTableViewCell" customModule="WeddingPlanner" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="92" width="375" height="90"/>
@@ -186,14 +191,24 @@
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Esh-Mi-S31">
-                                            <rect key="frame" x="0.0" y="-1" width="89.5" height="89.5"/>
-                                            <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="89.5" height="89.5"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="isu-CJ-b60">
+                                                    <rect key="frame" x="42" y="0.0" width="3" height="102"/>
+                                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                                </view>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zfQ-KW-l6n">
+                                                    <rect key="frame" x="34" y="35" width="20" height="20"/>
+                                                    <color key="backgroundColor" red="0.65098039220000004" green="0.68627450980000004" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.97360178970917222" green="0.97360178970917222" blue="0.97360178970917222" alpha="1" colorSpace="calibratedRGB"/>
                                         </view>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="titleLabel" destination="3fp-t2-eHN" id="wAS-vj-FKx"/>
-                                    <segue destination="prw-rE-zwr" kind="custom" trigger="accessoryAction" customClass="SWRevealViewControllerSeguePushController" id="v26-Q0-Fsg"/>
+                                    <segue destination="prw-rE-zwr" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="M5a-l6-RnM"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -203,7 +218,16 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="akQ-pI-QW0">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="dqK-bw-gRb"/>
+                        <barButtonItem key="leftBarButtonItem" image="main_button_menu" id="BnA-Pi-nit">
+                            <connections>
+                                <segue destination="Icb-ty-hnJ" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="ar5-Ya-9CU"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="dqK-bw-gRb">
+                            <connections>
+                                <segue destination="prw-rE-zwr" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="u8f-5v-JE5"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </tableViewController>
@@ -229,6 +253,23 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hFu-fC-uR2">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                <items>
+                                    <navigationItem title="Title" id="gPm-Jq-d2a">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="cSI-Oy-89w">
+                                            <connections>
+                                                <segue destination="mMa-WW-rQL" kind="custom" customClass="SWRevealViewControllerSegueSetController" id="mEB-dw-bv3"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="sxe-rv-TrH">
+                                            <connections>
+                                                <segue destination="mMa-WW-rQL" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="JZE-aj-yJE"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -236,7 +277,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VsS-k0-sFt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2929.5" y="1310.5"/>
+            <point key="canvasLocation" x="2561.5" y="1310.5"/>
         </scene>
         <!--Reveal View Controller-->
         <scene sceneID="nuY-sx-o2d">
@@ -523,9 +564,16 @@
                                     </view>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rva-Av-Jrq">
-                                <rect key="frame" x="157" y="187" width="62" height="62"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rva-Av-Jrq">
+                                <rect key="frame" x="156.5" y="187" width="62" height="62"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="62" id="dnZ-Ol-6CK"/>
+                                    <constraint firstAttribute="height" constant="62" id="jhm-ex-yUg"/>
+                                </constraints>
                                 <state key="normal" title="Button" image="main_button_new"/>
+                                <connections>
+                                    <segue destination="mMa-WW-rQL" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="hl7-aW-E5c"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -536,9 +584,11 @@
                             <constraint firstItem="E1D-w6-ZeS" firstAttribute="top" secondItem="1z1-lS-mof" secondAttribute="bottom" id="VOe-DA-JtG"/>
                             <constraint firstAttribute="trailing" secondItem="E1D-w6-ZeS" secondAttribute="trailing" id="X1c-ef-bPi"/>
                             <constraint firstItem="g1R-lG-fTC" firstAttribute="top" secondItem="HBY-Cc-qhf" secondAttribute="top" id="ZNh-Oe-ZMI"/>
+                            <constraint firstItem="rva-Av-Jrq" firstAttribute="top" secondItem="yOl-00-zJf" secondAttribute="bottom" constant="167" id="ZrG-Xk-nMF"/>
                             <constraint firstAttribute="trailing" secondItem="g1R-lG-fTC" secondAttribute="trailing" id="nmO-av-WYv"/>
                             <constraint firstItem="E1D-w6-ZeS" firstAttribute="leading" secondItem="HBY-Cc-qhf" secondAttribute="leading" id="oKZ-Bz-Zxg"/>
                             <constraint firstItem="1z1-lS-mof" firstAttribute="leading" secondItem="HBY-Cc-qhf" secondAttribute="leading" id="rdO-Cz-VFD"/>
+                            <constraint firstItem="rva-Av-Jrq" firstAttribute="centerX" secondItem="HBY-Cc-qhf" secondAttribute="centerX" id="wJb-cF-4xW"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -586,6 +636,8 @@
         <image name="navigation_task_icon" width="70" height="70"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="q9D-3O-vAv"/>
+        <segue reference="M5a-l6-RnM"/>
+        <segue reference="hl7-aW-E5c"/>
+        <segue reference="ar5-Ya-9CU"/>
     </inferredMetricsTieBreakers>
 </document>
