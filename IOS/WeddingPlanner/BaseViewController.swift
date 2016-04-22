@@ -18,3 +18,28 @@ class BaseViewController : UIViewController {
     }
     
 }
+
+extension BaseViewController {
+
+    func RedirectToController (storyboardControllerName : String ){
+        
+        RedirectToController(storyboardControllerName, transition: 0.0)
+    
+    }
+    
+    func RedirectToController (storyboardControllerName : String, transition : Double)
+    {
+        let secondViewController = (self.storyboard?.instantiateViewControllerWithIdentifier(storyboardControllerName))! as UIViewController
+        
+        let window = UIApplication.sharedApplication().windows[0] as UIWindow
+        UIView.transitionFromView(
+            window.rootViewController!.view,
+            toView: secondViewController.view,
+            duration: transition,
+            options: .TransitionCrossDissolve,
+            completion: {
+                finished in window.rootViewController = secondViewController
+        })
+    }
+
+}

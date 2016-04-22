@@ -15,7 +15,10 @@ class MainViewController: BaseViewController {
     @IBAction func menuButton_TouchDown(sender: AnyObject) {
         revealViewController().revealToggle(sender)
     }
-    
+
+    override func viewDidLoad() {
+        //self.RedirectToController("LoginScene")
+    }
     
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
