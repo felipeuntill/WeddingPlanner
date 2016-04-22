@@ -8,7 +8,7 @@
 
 import UIKit
 
-class WeddingRepository : GenericRepository {
+class WeddingRepository : GenericRepository<Wedding> {
 
     var wedding : Wedding?
 

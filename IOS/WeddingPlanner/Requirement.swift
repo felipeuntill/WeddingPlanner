@@ -12,5 +12,6 @@ class Requirement: PayObject {
 
     var   requirementId : Int?
         , name          : String?
+        , urgency       : Int?
     
 }

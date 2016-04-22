@@ -28,22 +28,7 @@ class RequirementListViewController : UITableViewController {
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("requirement")! as! RequirementTableViewCell
-        
-        cell.titleLabel.text = "\(indexPath.row)"
-        
-        if(indexPath.item % 2 == 0)
-        {
-            cell.backgroundColor = UIColor.clearColor()
-        }
-        else
-        {
-            cell.backgroundColor = UIColor.whiteColor()
-                .colorWithAlphaComponent(0.2)
-            cell.textLabel?.backgroundColor = UIColor.whiteColor()
-                .colorWithAlphaComponent(0.0)
-        }
-        
-        return cell
+        return cell.adapt(indexPath);
     }
     
     override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
@@ -53,6 +38,7 @@ class RequirementListViewController : UITableViewController {
             tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
         }
     }
+    
     
 //    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
 //        if(segue.identifier == "detailSegue"){

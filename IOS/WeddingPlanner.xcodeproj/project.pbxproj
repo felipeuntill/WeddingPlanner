@@ -28,6 +28,8 @@
 		7CCAE38C1CC886AB004A9088 /* ViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCAE38B1CC886AB004A9088 /* ViewControllerExtensions.swift */; };
 		7CCAE3911CC8902D004A9088 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCAE3901CC8902D004A9088 /* RegisterViewController.swift */; };
 		7CCAE3931CC89592004A9088 /* ValidationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCAE3921CC89592004A9088 /* ValidationExtensions.swift */; };
+		7CE7094E1CCAC89E00923495 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE7094D1CCAC89E00923495 /* UIColorExtensions.swift */; };
+		7CE709501CCACB8100923495 /* RequirementRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE7094F1CCACB8100923495 /* RequirementRepository.swift */; };
 		7CEE51481CC9483D00FC687A /* WeddingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEE51471CC9483D00FC687A /* WeddingViewController.swift */; };
 		7CEE514A1CC948AF00FC687A /* RequirementListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEE51491CC948AF00FC687A /* RequirementListViewController.swift */; };
 		7CEE514C1CC9497F00FC687A /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEE514B1CC9497F00FC687A /* BaseViewController.swift */; };
@@ -72,6 +74,8 @@
 		7CCAE38B1CC886AB004A9088 /* ViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerExtensions.swift; sourceTree = "<group>"; };
 		7CCAE3901CC8902D004A9088 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		7CCAE3921CC89592004A9088 /* ValidationExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationExtensions.swift; sourceTree = "<group>"; };
+		7CE7094D1CCAC89E00923495 /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
+		7CE7094F1CCACB8100923495 /* RequirementRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequirementRepository.swift; sourceTree = "<group>"; };
 		7CEE51471CC9483D00FC687A /* WeddingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeddingViewController.swift; sourceTree = "<group>"; };
 		7CEE51491CC948AF00FC687A /* RequirementListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequirementListViewController.swift; sourceTree = "<group>"; };
 		7CEE514B1CC9497F00FC687A /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -181,6 +185,7 @@
 			children = (
 				7C7F805E1CC9CA8A001E5656 /* WeddingRepository.swift */,
 				7C7F80601CC9CAEF001E5656 /* GenericRepository.swift */,
+				7CE7094F1CCACB8100923495 /* RequirementRepository.swift */,
 			);
 			name = Repository;
 			sourceTree = "<group>";
@@ -190,6 +195,7 @@
 			children = (
 				7CCAE38B1CC886AB004A9088 /* ViewControllerExtensions.swift */,
 				7CCAE3921CC89592004A9088 /* ValidationExtensions.swift */,
+				7CE7094D1CCAC89E00923495 /* UIColorExtensions.swift */,
 			);
 			name = Extension;
 			sourceTree = "<group>";
@@ -346,9 +352,11 @@
 				7CC8CBC51CC710DD00D1699D /* User.swift in Sources */,
 				7CC8CBC01CC6FAAD00D1699D /* Wedding.swift in Sources */,
 				7CC8CBA41CC6F9B100D1699D /* WeddingPlanner.xcdatamodeld in Sources */,
+				7CE709501CCACB8100923495 /* RequirementRepository.swift in Sources */,
 				7CCAE3911CC8902D004A9088 /* RegisterViewController.swift in Sources */,
 				7CC8CBC71CC7125600D1699D /* Task.swift in Sources */,
 				7CEE514A1CC948AF00FC687A /* RequirementListViewController.swift in Sources */,
+				7CE7094E1CCAC89E00923495 /* UIColorExtensions.swift in Sources */,
 				7C4DE63B1CC835C800FED72D /* SWRevealViewController.m in Sources */,
 				7CC8CBC31CC6FC9800D1699D /* LoginViewController.swift in Sources */,
 				7CC8CBCA1CC713B900D1699D /* Category.swift in Sources */,

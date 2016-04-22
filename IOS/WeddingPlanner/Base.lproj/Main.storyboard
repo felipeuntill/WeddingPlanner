@@ -167,46 +167,49 @@
         <scene sceneID="7s0-gC-3O3">
             <objects>
                 <tableViewController id="uK0-qJ-YmG" customClass="RequirementListViewController" customModule="WeddingPlanner" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" id="FBZ-D8-nUG">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="55" sectionHeaderHeight="28" sectionFooterHeight="28" id="FBZ-D8-nUG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <view key="tableFooterView" contentMode="scaleToFill" id="xxv-aq-IHT">
-                            <rect key="frame" x="0.0" y="182" width="375" height="44"/>
+                            <rect key="frame" x="0.0" y="147" width="375" height="44"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="0.0" reuseIdentifier="requirement" rowHeight="90" id="2EY-3U-y4N" customClass="RequirementTableViewCell" customModule="WeddingPlanner" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="92" width="375" height="90"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="0.0" reuseIdentifier="requirement" rowHeight="55" id="2EY-3U-y4N" customClass="RequirementTableViewCell" customModule="WeddingPlanner" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="375" height="55"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2EY-3U-y4N" id="b0R-ys-rvL">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="89.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="54.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3fp-t2-eHN">
-                                            <rect key="frame" x="156" y="34" width="42" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                         <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Esh-Mi-S31">
-                                            <rect key="frame" x="0.0" y="0.0" width="89.5" height="89.5"/>
+                                            <rect key="frame" x="13" y="0.0" width="54.5" height="54.5"/>
                                             <subviews>
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="isu-CJ-b60">
-                                                    <rect key="frame" x="42" y="0.0" width="1" height="102"/>
-                                                    <color key="backgroundColor" red="0.81176470588235294" green="0.84705882352941175" blue="0.90980392156862744" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <rect key="frame" x="26.5" y="0.0" width="1" height="54.5"/>
+                                                    <color key="backgroundColor" red="0.83529411764705885" green="0.8666666666666667" blue="0.92156862745098034" alpha="1" colorSpace="calibratedRGB"/>
                                                 </view>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zfQ-KW-l6n">
-                                                    <rect key="frame" x="36" y="38" width="12" height="12"/>
+                                                    <rect key="frame" x="22.5" y="22.5" width="10" height="10"/>
                                                     <color key="backgroundColor" red="0.65098039220000004" green="0.68627450980000004" blue="0.94509803920000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 </imageView>
                                             </subviews>
                                             <color key="backgroundColor" red="0.97360178970917222" green="0.97360178970917222" blue="0.97360178970917222" alpha="1" colorSpace="calibratedRGB"/>
                                         </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3fp-t2-eHN">
+                                            <rect key="frame" x="161" y="17" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="iconImageView" destination="zfQ-KW-l6n" id="UFZ-dk-9tu"/>
+                                    <outlet property="iconView" destination="Esh-Mi-S31" id="FEH-dn-0Uk"/>
+                                    <outlet property="lineView" destination="isu-CJ-b60" id="xaL-Jf-7Fq"/>
                                     <outlet property="titleLabel" destination="3fp-t2-eHN" id="wAS-vj-FKx"/>
                                     <segue destination="prw-rE-zwr" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="M5a-l6-RnM"/>
                                 </connections>
