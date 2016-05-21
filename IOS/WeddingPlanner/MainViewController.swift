@@ -19,6 +19,14 @@ class MainViewController: BaseViewController {
 
     override func viewDidLoad() {
         //self.RedirectToController("LoginScene")
+        
+        let wedding = Wedding()
+        wedding.brideId = 1
+        wedding.groomId = 2
+        
+        let repository = WeddingRepository()
+        repository.insert(wedding)
+        
     }
     
     override func viewDidAppear(animated: Bool) {

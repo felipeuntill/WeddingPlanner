@@ -8,9 +8,8 @@
 
 import UIKit
 
-class Wedding {
+class Wedding : Entity {
 
-    var   weddingId : Int?
-        , brideId   : Int?
+    var   brideId   : Int?
         , groomId   : Int?
 }

@@ -7,11 +7,36 @@
 //
 
 import Foundation
+import SwiftMongoDB
 
 class GenericRepository<T> : NSObject {
     
+    var mongodb     : MongoDB!
+    var dbCollection  : MongoCollection!
+    
+    init(collection: String!) {
+        super.init()
+        
+        mongodb = MongoDB(host: DatabaseConfiguration.host, port: DatabaseConfiguration.port, database: DatabaseConfiguration.database)
+        mongodb.login(username: DatabaseConfiguration.username, password: DatabaseConfiguration.password)
+        dbCollection = MongoCollection(name:collection)
+        mongodb.registerCollection(dbCollection)
+    }
+    
     func insert (entity : T) -> T {
     
+        do {
+            let converted = entity as! MongoObject
+            let document = converted.Document()
+            dbCollection.insert(document)
+            var result = dbCollection.findOne()
+            var x = result.successValue
+            var z = x?.data
+
+        } catch {
+            print(error)
+        }
+
         return entity;
     }
     

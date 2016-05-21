@@ -6,11 +6,11 @@
 //  Copyright © 2016 Felipe Assunção. All rights reserved.
 //
 
-import UIKit
-
 class WeddingRepository : GenericRepository<Wedding> {
 
-    var wedding : Wedding?
+    init() {
+        super.init(collection: "Wedding")
+    }
 
     
 }

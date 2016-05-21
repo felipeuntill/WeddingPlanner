@@ -8,6 +8,7 @@ target 'WeddingPlanner' do
   # Pods for WeddingPlanner
   pod 'Firebase'
   pod 'Firebase/Auth'
+  pod 'SwiftMongoDB'
 
   target 'WeddingPlannerTests' do
     inherit! :search_paths
