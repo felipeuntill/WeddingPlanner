@@ -34,6 +34,7 @@
 		7CEE514A1CC948AF00FC687A /* RequirementListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEE51491CC948AF00FC687A /* RequirementListViewController.swift */; };
 		7CEE514C1CC9497F00FC687A /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEE514B1CC9497F00FC687A /* BaseViewController.swift */; };
 		7CEE514E1CC9629B00FC687A /* RequirementTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEE514D1CC9629B00FC687A /* RequirementTableViewCell.swift */; };
+		A41E8D8CAAD1A40165456A78 /* libPods-WeddingPlanner.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4596EBFB9E983E6EF949AA7 /* libPods-WeddingPlanner.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		033CF40750202433DECA13F2 /* Pods-WeddingPlanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeddingPlanner.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeddingPlanner/Pods-WeddingPlanner.release.xcconfig"; sourceTree = "<group>"; };
+		2E3D41AC3234F608235FCB57 /* Pods-WeddingPlanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeddingPlanner.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeddingPlanner/Pods-WeddingPlanner.debug.xcconfig"; sourceTree = "<group>"; };
 		7C4DE6381CC835C700FED72D /* WeddingPlanner-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WeddingPlanner-Bridging-Header.h"; sourceTree = "<group>"; };
 		7C4DE6391CC835C800FED72D /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		7C4DE63A1CC835C800FED72D /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
@@ -80,6 +83,7 @@
 		7CEE51491CC948AF00FC687A /* RequirementListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequirementListViewController.swift; sourceTree = "<group>"; };
 		7CEE514B1CC9497F00FC687A /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		7CEE514D1CC9629B00FC687A /* RequirementTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequirementTableViewCell.swift; sourceTree = "<group>"; };
+		D4596EBFB9E983E6EF949AA7 /* libPods-WeddingPlanner.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WeddingPlanner.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A41E8D8CAAD1A40165456A78 /* libPods-WeddingPlanner.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +105,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6448A35238AFC106CAF55654 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D4596EBFB9E983E6EF949AA7 /* libPods-WeddingPlanner.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		7C4DE63C1CC835D400FED72D /* Library */ = {
 			isa = PBXGroup;
 			children = (
@@ -117,6 +130,8 @@
 				7CC8CB9A1CC6F9B100D1699D /* WeddingPlanner */,
 				7CC8CBB21CC6F9B200D1699D /* WeddingPlannerTests */,
 				7CC8CB991CC6F9B100D1699D /* Products */,
+				C33051B13DEC3884EE993A52 /* Pods */,
+				6448A35238AFC106CAF55654 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -235,6 +250,15 @@
 			name = Mock;
 			sourceTree = "<group>";
 		};
+		C33051B13DEC3884EE993A52 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2E3D41AC3234F608235FCB57 /* Pods-WeddingPlanner.debug.xcconfig */,
+				033CF40750202433DECA13F2 /* Pods-WeddingPlanner.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -242,9 +266,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7CC8CBB81CC6F9B200D1699D /* Build configuration list for PBXNativeTarget "WeddingPlanner" */;
 			buildPhases = (
+				4D0235E5FDE9330DE97E4D26 /* 📦 Check Pods Manifest.lock */,
 				7CC8CB941CC6F9B100D1699D /* Sources */,
 				7CC8CB951CC6F9B100D1699D /* Frameworks */,
 				7CC8CB961CC6F9B100D1699D /* Resources */,
+				37F431D4D5C0A362465B70F3 /* 📦 Embed Pods Frameworks */,
+				49F1F7DAD42E0C29F908BF64 /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -332,6 +359,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		37F431D4D5C0A362465B70F3 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WeddingPlanner/Pods-WeddingPlanner-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		49F1F7DAD42E0C29F908BF64 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-WeddingPlanner/Pods-WeddingPlanner-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D0235E5FDE9330DE97E4D26 /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		7CC8CB941CC6F9B100D1699D /* Sources */ = {
@@ -489,6 +564,7 @@
 		};
 		7CC8CBB91CC6F9B200D1699D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E3D41AC3234F608235FCB57 /* Pods-WeddingPlanner.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -503,6 +579,7 @@
 		};
 		7CC8CBBA1CC6F9B200D1699D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 033CF40750202433DECA13F2 /* Pods-WeddingPlanner.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
