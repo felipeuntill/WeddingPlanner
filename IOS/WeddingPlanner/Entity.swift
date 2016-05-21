@@ -9,12 +9,7 @@
 import Foundation
 import SwiftMongoDB
 
-public class Entity : MongoObject {
+public struct Entity : MongoObject {
 
-    init () {
-        Id = NSUUID()
-    }
-    
-    var Id : NSUUID?
     
 }

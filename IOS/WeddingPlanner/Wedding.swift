@@ -7,9 +7,10 @@
 //
 
 import UIKit
+import SwiftMongoDB
 
-class Wedding : Entity {
+public struct Wedding : MongoObject {
 
-    var   brideId   : Int?
-        , groomId   : Int?
+    var   brideId   : Int = 0
+        , groomId   : Int = 0
 }

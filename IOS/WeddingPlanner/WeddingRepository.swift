@@ -6,11 +6,12 @@
 //  Copyright © 2016 Felipe Assunção. All rights reserved.
 //
 
+import  SwiftMongoDB
+
 class WeddingRepository : GenericRepository<Wedding> {
 
     init() {
         super.init(collection: "Wedding")
     }
-
     
 }
