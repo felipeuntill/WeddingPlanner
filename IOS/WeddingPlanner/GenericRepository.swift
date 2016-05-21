@@ -10,7 +10,7 @@ import Foundation
 
 class GenericRepository<T> : NSObject {
 
-
+    var
     
     func insert (entity : T) -> T {
     

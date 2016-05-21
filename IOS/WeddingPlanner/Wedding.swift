@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Wedding {
+class Wedding: Mappable {
 
     var   weddingId : Int?
         , brideId   : Int?
