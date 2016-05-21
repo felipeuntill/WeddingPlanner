@@ -10,13 +10,26 @@ import Foundation
 
 class BaseViewController : UIViewController {
     
+    var warningLabel : UILabel!;
+    var enableNavigation : Bool! = true;
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        if revealViewController() != nil {
+        self.hideKeyboardWhenTappedAround()
+        if revealViewController() != nil && enableNavigation {
             self.view.addGestureRecognizer(revealViewController().panGestureRecognizer())
         }
     }
     
+    func createWarn(warning : String!){
+        warningLabel.hidden = false
+        warningLabel.text = warning
+    }
+    
+    func dismissWarn() {
+        warningLabel.hidden = true
+        warningLabel.text = ""
+    }
 }
 
 extension BaseViewController {

@@ -12,6 +12,7 @@ class RequirementListViewController : UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.hideKeyboardWhenTappedAround()
         if revealViewController() != nil {
             self.view.addGestureRecognizer(revealViewController().panGestureRecognizer())
         }

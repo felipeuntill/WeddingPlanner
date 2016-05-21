@@ -7,66 +7,59 @@
 //
 
 import UIKit
+import Firebase
 
-class LoginViewController: UIViewController {
+class LoginViewController: BaseViewController {
     
     // Summary: IBOulets
     // IBOulets,.
     @IBOutlet var userTextField: UITextField!
     @IBOutlet var passTextField: UITextField!
     @IBOutlet var activityIndicator: UIActivityIndicatorView!
+    @IBOutlet var warnLabel: UILabel!
     
-    let placeholderText = "yourname@domain.com"
-    
-    // Summary: Overrides
-    // Overrides,.
     override func viewDidLoad() {
-        super.viewDidLoad()
-        self.hideKeyboardWhenTappedAround()
-        self.placeholder()
-    }
-    
-    override func shouldPerformSegueWithIdentifier(identifier: String, sender: AnyObject!) -> Bool {
-
-        // Login Buttom, When user pressed the login button.
-        //if identifier == "loginSegue" {
-            //return validateLogin()
-        //}
         
-        return super.shouldPerformSegueWithIdentifier(identifier, sender: sender)
+        enableNavigation = false;
+        warningLabel = warnLabel
+        
+        super.viewDidLoad()
     }
     
-    func textFieldDidEndEditing(textField: UITextField) {
-        placeholder()
+    @IBAction func OnLogin(sender: UIButton) {
+        
+        self.dismissWarn()
+        
+        if validateLogin() {
+            
+            self.login()
+//            FIRAuth.auth()?.createUserWithEmail(userTextField.text!, password: passTextField.text!, completion: {
+//                user, error in
+//                
+//                if error == nil
+//                {
+//                    self.login()
+//                } else {
+//                    self.createWarn(error?.localizedDescription)
+//                }
+//            })
+        }
     }
     
-    func placeholder () {
-//        if userTextField?.text == "" || userTextField == placeholderText {
-//            userTextField?.text = placeholderText
-//            userTextField?.textColor = UIColor.whiteColor().colorWithAlphaComponent(0.5)
-//        }else {
-//            clearPlaceholder(userTextField)
-//        }
+    func login () {
+        
+       
+        FIRAuth.auth()?.signInWithEmail(userTextField.text!, password: passTextField.text!, completion: {
+            user, error in
+            
+            if error == nil {
+                self.RedirectToController("MainController")
+            } else {
+                self.createWarn(error?.localizedDescription)
+            }
+        })
     }
-    
-    func clearPlaceholder (sender :  UITextField) {
-//        if(sender.text == placeholderText){
-//            sender.text = ""
-//        }
-//        sender.textColor = UIColor.whiteColor()
-    }
-    
-   
-    // Summary: IBActions
-    // @IBAction,.
-    
-    @IBAction func textFieldEditBegin(sender: UITextField) {
-        clearPlaceholder(sender)
-    }
-    
-    @IBAction func textFieldEditDidEnd(sender: UITextField) {
-        placeholder()
-    }
+
     
     
     
@@ -77,10 +70,10 @@ class LoginViewController: UIViewController {
         
         activityIndicator.startAnimating()
         
-        let alert = UIAlertView()
+//        let alert = UIAlertView()
         var canLogin = true
     
-        if !(userTextField.text?.IsEmail())! || userTextField.text == placeholderText {
+        if !(userTextField.text?.IsEmail())! {
             canLogin = false
         }
         
@@ -90,10 +83,11 @@ class LoginViewController: UIViewController {
         
         if !canLogin {
             
-            alert.title = "Wrong login inputs"
-            alert.message = "Please review your login informations"
-            alert.addButtonWithTitle("Ok")
-            alert.show()
+            createWarn("Usuário ou senha inválidos")
+//            alert.title = "Wrong login inputs"
+//            alert.message = "Please review your login informations"
+//            alert.addButtonWithTitle("Ok")
+//            alert.show()
             
         }
         

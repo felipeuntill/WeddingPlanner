@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="dDi-VG-bxb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="dDi-VG-bxb">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -308,7 +308,7 @@
         <!--Login View Controller-->
         <scene sceneID="Y6a-5P-tdM">
             <objects>
-                <viewController storyboardIdentifier="LoginScene" id="U4D-lj-fdH" customClass="LoginViewController" customModule="WeddingPlanner" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginController" id="U4D-lj-fdH" customClass="LoginViewController" customModule="WeddingPlanner" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="c6q-KF-9br"/>
                         <viewControllerLayoutGuide type="bottom" id="f7O-3D-Ovm"/>
@@ -340,7 +340,7 @@
                                 </constraints>
                                 <state key="normal" title="Login" image="login_login_button"/>
                                 <connections>
-                                    <segue destination="Icb-ty-hnJ" kind="custom" identifier="loginSegue" customClass="SWRevealViewControllerSeguePushController" id="uON-sq-QI3"/>
+                                    <action selector="OnLogin:" destination="U4D-lj-fdH" eventType="touchUpInside" id="U8k-9r-d2K"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qu4-SA-AO3">
@@ -364,10 +364,6 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="next"/>
-                                        <connections>
-                                            <action selector="textFieldEditDidEnd:" destination="U4D-lj-fdH" eventType="editingDidEnd" id="lTD-JK-ggr"/>
-                                            <action selector="textFieldEditExit:" destination="U4D-lj-fdH" eventType="editingDidEndOnExit" id="7p5-KD-E7s"/>
-                                        </connections>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -396,10 +392,6 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" returnKeyType="go"/>
-                                        <connections>
-                                            <action selector="textFieldEditBegin:" destination="U4D-lj-fdH" eventType="editingDidBegin" id="EJq-du-5EF"/>
-                                            <action selector="textFieldEditExit:" destination="U4D-lj-fdH" eventType="editingDidEndOnExit" id="e7r-Nc-N6B"/>
-                                        </connections>
                                     </textField>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -416,15 +408,24 @@
                                     <constraint firstItem="Ua5-OC-K8a" firstAttribute="leading" secondItem="qbR-iY-YD2" secondAttribute="leading" constant="55" id="ozB-32-cbA"/>
                                 </constraints>
                             </view>
-                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="Le3-bV-Lwu">
-                                <rect key="frame" x="177.5" y="407" width="20" height="20"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Warns" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gJb-Vs-GUt">
+                                <rect key="frame" x="41" y="375" width="293" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" misplaced="YES" hidesWhenStopped="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="Le3-bV-Lwu">
+                                <rect key="frame" x="177" y="414" width="20" height="20"/>
                             </activityIndicatorView>
                         </subviews>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="LjE-HV-fX2" secondAttribute="trailing" id="7Ke-Og-Stc"/>
                             <constraint firstItem="qu4-SA-AO3" firstAttribute="centerX" secondItem="xTv-vg-RoF" secondAttribute="centerX" id="AVs-60-0ot"/>
                             <constraint firstItem="Jhw-qi-14l" firstAttribute="top" secondItem="cA1-bc-HIe" secondAttribute="bottom" constant="15" id="Ex6-3d-WEp"/>
+                            <constraint firstItem="gJb-Vs-GUt" firstAttribute="top" secondItem="qbR-iY-YD2" secondAttribute="bottom" constant="10" id="Oat-Bc-AnL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="gJb-Vs-GUt" secondAttribute="trailing" constant="25" id="RUB-cJ-r2t"/>
                             <constraint firstItem="LjE-HV-fX2" firstAttribute="leading" secondItem="xTv-vg-RoF" secondAttribute="leading" id="Vtu-Q7-6Pi"/>
+                            <constraint firstItem="Le3-bV-Lwu" firstAttribute="top" secondItem="gJb-Vs-GUt" secondAttribute="bottom" constant="15" id="Wdz-hH-NzZ"/>
                             <constraint firstItem="f7O-3D-Ovm" firstAttribute="top" secondItem="LjE-HV-fX2" secondAttribute="bottom" id="WlW-W3-uOf"/>
                             <constraint firstItem="Le3-bV-Lwu" firstAttribute="centerX" secondItem="xTv-vg-RoF" secondAttribute="centerX" id="Yhr-xW-vVW"/>
                             <constraint firstItem="f7O-3D-Ovm" firstAttribute="top" secondItem="Jhw-qi-14l" secondAttribute="bottom" constant="90" id="e5X-aZ-T4z"/>
@@ -433,10 +434,10 @@
                             <constraint firstItem="LjE-HV-fX2" firstAttribute="top" secondItem="xTv-vg-RoF" secondAttribute="top" id="mco-xj-Xkj"/>
                             <constraint firstItem="D9N-uw-XpR" firstAttribute="centerX" secondItem="xTv-vg-RoF" secondAttribute="centerX" id="oC6-Qo-hFU"/>
                             <constraint firstItem="qbR-iY-YD2" firstAttribute="top" secondItem="D9N-uw-XpR" secondAttribute="bottom" constant="21" id="pV5-jx-ZRy"/>
+                            <constraint firstItem="gJb-Vs-GUt" firstAttribute="leading" secondItem="xTv-vg-RoF" secondAttribute="leadingMargin" constant="25" id="sx5-DG-WRG"/>
                             <constraint firstItem="qu4-SA-AO3" firstAttribute="top" secondItem="c6q-KF-9br" secondAttribute="bottom" constant="100" id="toF-6l-MPS"/>
                             <constraint firstItem="cA1-bc-HIe" firstAttribute="top" secondItem="qbR-iY-YD2" secondAttribute="bottom" constant="100" id="wXB-As-XYH"/>
                             <constraint firstItem="qbR-iY-YD2" firstAttribute="centerX" secondItem="xTv-vg-RoF" secondAttribute="centerX" id="xHV-9e-Eqe"/>
-                            <constraint firstItem="Le3-bV-Lwu" firstAttribute="top" secondItem="qbR-iY-YD2" secondAttribute="bottom" constant="40" id="yhX-pC-fZ8"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
@@ -444,16 +445,17 @@
                         <outlet property="activityIndicator" destination="Le3-bV-Lwu" id="Wcu-Ke-oBi"/>
                         <outlet property="passTextField" destination="Ua5-OC-K8a" id="8Ea-6d-AVA"/>
                         <outlet property="userTextField" destination="5M2-oA-bIL" id="60p-uR-rGN"/>
+                        <outlet property="warnLabel" destination="gJb-Vs-GUt" id="ec4-PM-Nzo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZZd-8I-fLm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1640.5" y="385.5"/>
+            <point key="canvasLocation" x="1904.5" y="411.5"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="Hyj-jX-Yd1">
             <objects>
-                <viewController id="Icb-ty-hnJ" customClass="MainViewController" customModule="WeddingPlanner" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainController" id="Icb-ty-hnJ" customClass="MainViewController" customModule="WeddingPlanner" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yOl-00-zJf"/>
                         <viewControllerLayoutGuide type="bottom" id="kG9-7P-Uq2"/>
@@ -639,8 +641,8 @@
         <image name="navigation_task_icon" width="70" height="70"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="M5a-l6-RnM"/>
         <segue reference="hl7-aW-E5c"/>
-        <segue reference="ar5-Ya-9CU"/>
+        <segue reference="q9D-3O-vAv"/>
+        <segue reference="M5a-l6-RnM"/>
     </inferredMetricsTieBreakers>
 </document>

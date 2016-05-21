@@ -15,6 +15,6 @@ extension String {
         return emailTest.evaluateWithObject(self)
     }
     func IsPassword () -> Bool {
-        return self.characters.count > 8
+        return self.characters.count >= 6
     }
 }
