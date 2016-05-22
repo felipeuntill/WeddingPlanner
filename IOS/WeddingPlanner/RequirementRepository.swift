@@ -8,7 +8,7 @@
 
 import Foundation
 
-class RequirementRepository : GenericRepository<Requirement> {
+class RequirementRepository { //: GenericRepository<Requirement> {
 
 
 

@@ -29,6 +29,7 @@
 		7CCAE38C1CC886AB004A9088 /* ViewControllerExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCAE38B1CC886AB004A9088 /* ViewControllerExtensions.swift */; };
 		7CCAE3911CC8902D004A9088 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCAE3901CC8902D004A9088 /* RegisterViewController.swift */; };
 		7CCAE3931CC89592004A9088 /* ValidationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCAE3921CC89592004A9088 /* ValidationExtensions.swift */; };
+		7CCF74CD1CF1E642001C10E2 /* NSDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF74CC1CF1E642001C10E2 /* NSDataProvider.swift */; };
 		7CE7094E1CCAC89E00923495 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE7094D1CCAC89E00923495 /* UIColorExtensions.swift */; };
 		7CE709501CCACB8100923495 /* RequirementRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE7094F1CCACB8100923495 /* RequirementRepository.swift */; };
 		7CEE51481CC9483D00FC687A /* WeddingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEE51471CC9483D00FC687A /* WeddingViewController.swift */; };
@@ -36,7 +37,7 @@
 		7CEE514C1CC9497F00FC687A /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEE514B1CC9497F00FC687A /* BaseViewController.swift */; };
 		7CEE514E1CC9629B00FC687A /* RequirementTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEE514D1CC9629B00FC687A /* RequirementTableViewCell.swift */; };
 		7CF38BC61CF0A07400F30525 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7CF38BC51CF0A07400F30525 /* GoogleService-Info.plist */; };
-		7CF38BC81CF0C44900F30525 /* DatabaseConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF38BC71CF0C44900F30525 /* DatabaseConfiguration.swift */; };
+		7CF38BC81CF0C44900F30525 /* EndingPointConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CF38BC71CF0C44900F30525 /* EndingPointConfiguration.swift */; };
 		D68C4A31050CC8B4957208ED /* Pods_WeddingPlanner.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA6F7113287E7C484027783C /* Pods_WeddingPlanner.framework */; };
 /* End PBXBuildFile section */
 
@@ -81,6 +82,7 @@
 		7CCAE38B1CC886AB004A9088 /* ViewControllerExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerExtensions.swift; sourceTree = "<group>"; };
 		7CCAE3901CC8902D004A9088 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		7CCAE3921CC89592004A9088 /* ValidationExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationExtensions.swift; sourceTree = "<group>"; };
+		7CCF74CC1CF1E642001C10E2 /* NSDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDataProvider.swift; sourceTree = "<group>"; };
 		7CE7094D1CCAC89E00923495 /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		7CE7094F1CCACB8100923495 /* RequirementRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequirementRepository.swift; sourceTree = "<group>"; };
 		7CEE51471CC9483D00FC687A /* WeddingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeddingViewController.swift; sourceTree = "<group>"; };
@@ -88,7 +90,7 @@
 		7CEE514B1CC9497F00FC687A /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		7CEE514D1CC9629B00FC687A /* RequirementTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequirementTableViewCell.swift; sourceTree = "<group>"; };
 		7CF38BC51CF0A07400F30525 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		7CF38BC71CF0C44900F30525 /* DatabaseConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseConfiguration.swift; sourceTree = "<group>"; };
+		7CF38BC71CF0C44900F30525 /* EndingPointConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndingPointConfiguration.swift; sourceTree = "<group>"; };
 		DA6F7113287E7C484027783C /* Pods_WeddingPlanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeddingPlanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4CFA28332296F9E2D33F364 /* Pods-WeddingPlanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeddingPlanner.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeddingPlanner/Pods-WeddingPlanner.release.xcconfig"; sourceTree = "<group>"; };
 		F64A36B8A9359CF4EE85183B /* Pods-WeddingPlannerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeddingPlannerTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-WeddingPlannerTests/Pods-WeddingPlannerTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -117,12 +119,13 @@
 		7C4DE63C1CC835D400FED72D /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				7CF38BC71CF0C44900F30525 /* DatabaseConfiguration.swift */,
+				7CF38BC71CF0C44900F30525 /* EndingPointConfiguration.swift */,
 				7CF38BC51CF0A07400F30525 /* GoogleService-Info.plist */,
 				7CC8CBAA1CC6F9B100D1699D /* Info.plist */,
 				7CC8CBA21CC6F9B100D1699D /* WeddingPlanner.xcdatamodeld */,
 				7CCAE38E1CC88730004A9088 /* SWReveal */,
 				7CCAE38D1CC88719004A9088 /* Extension */,
+				7CCF74CC1CF1E642001C10E2 /* NSDataProvider.swift */,
 			);
 			name = Library;
 			sourceTree = "<group>";
@@ -482,12 +485,13 @@
 				7CCAE3931CC89592004A9088 /* ValidationExtensions.swift in Sources */,
 				7CC8CBCE1CC714CB00D1699D /* PayObject.swift in Sources */,
 				7CCAE38C1CC886AB004A9088 /* ViewControllerExtensions.swift in Sources */,
-				7CF38BC81CF0C44900F30525 /* DatabaseConfiguration.swift in Sources */,
+				7CF38BC81CF0C44900F30525 /* EndingPointConfiguration.swift in Sources */,
 				7CEE514C1CC9497F00FC687A /* BaseViewController.swift in Sources */,
 				7CCAE38A1CC868A3004A9088 /* MainViewController.swift in Sources */,
 				7CB33B9E1CC83EE600CBCAC1 /* NavigationViewController.swift in Sources */,
 				7CEE51481CC9483D00FC687A /* WeddingViewController.swift in Sources */,
 				7C7F80611CC9CAEF001E5656 /* GenericRepository.swift in Sources */,
+				7CCF74CD1CF1E642001C10E2 /* NSDataProvider.swift in Sources */,
 				7CC8CBC51CC710DD00D1699D /* User.swift in Sources */,
 				7CC8CBC01CC6FAAD00D1699D /* Wedding.swift in Sources */,
 				7CC8CBA41CC6F9B100D1699D /* WeddingPlanner.xcdatamodeld in Sources */,

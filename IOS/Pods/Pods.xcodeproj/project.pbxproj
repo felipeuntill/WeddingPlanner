@@ -7,155 +7,101 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1104592903FE8E4313756B3145F671A3 /* mongo-c-driver-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EE125CA88BFD1A8CAB4C9C3AA768FD54 /* mongo-c-driver-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		16685FF0F1C6EABE15DB45D8A859B01B /* Pods-WeddingPlannerTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F4283B847537138F435FC50B4E6AA45 /* Pods-WeddingPlannerTests-dummy.m */; };
-		1989BC91F99158393CBCE1F1A1B484BE /* gridfs.h in Headers */ = {isa = PBXBuildFile; fileRef = 1737DC9F3C0D1F5E8CE430E79F75802E /* gridfs.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1FCC9A78B21494BA35BEF04575C69B3C /* mongo_c_driver.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3167981744E865088BCF6BAC23F2CB11 /* mongo_c_driver.framework */; };
-		20DFBCABEB812ED62F9C328DDE56E959 /* SwiftMongoDB-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 42ECE20B62318D58E97E2615143203A1 /* SwiftMongoDB-dummy.m */; };
-		25D7417C6B77AC855AEBE4859AC0A35A /* encoding.c in Sources */ = {isa = PBXBuildFile; fileRef = A91DBACAD2EDFF48CEB3EE87DBB52AB4 /* encoding.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		2A9E0909275249C2E9104A29B23EB9D9 /* MongoObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F8F2F54A86A80CD5B1E4C232BD28FC5 /* MongoObject.swift */; };
-		2F082ECD577847D811D7C6E375114099 /* swiftMongoDB.h in Headers */ = {isa = PBXBuildFile; fileRef = D97F12068B2A3EC3A96A8E9729DD0AE7 /* swiftMongoDB.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3763BF90D1642C966D9F0AD54495DCE2 /* MongoError.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECAA0FEA4D051395BB4AA23DF279A148 /* MongoError.swift */; };
-		3C763B6E598ED3C453C224212611AF4A /* encoding.h in Headers */ = {isa = PBXBuildFile; fileRef = 29872E9B3097471F99EE8186102A9338 /* encoding.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3D7AA5FA80013EC1A9723369846F2659 /* md5.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BDBF5126C024E0F65B4EE46A1CF5BA5 /* md5.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		42CCFE2BA1746F6C936F7F98C55B660E /* mongo.h in Headers */ = {isa = PBXBuildFile; fileRef = 70B5B7DC23D443AD82F56F2F180C6F94 /* mongo.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4F9184BE37D1D3CCCCC6B9E39A61AAE4 /* env.h in Headers */ = {isa = PBXBuildFile; fileRef = 90F4D5046EAA163E92EA57350E99B6E9 /* env.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5B1E5CF8DBC5924FC61AE946DF2D616D /* gridfs.c in Sources */ = {isa = PBXBuildFile; fileRef = 3916EBAEAB2A09D4E43B6E5AA433E2C5 /* gridfs.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		5CD156EDEEDCF93A5528C87CB6D74DB5 /* env.c in Sources */ = {isa = PBXBuildFile; fileRef = A3189061277635742864A65F79B3EAF3 /* env.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		66922B29B16AF6126F42EC476B125691 /* md5.c in Sources */ = {isa = PBXBuildFile; fileRef = FD0A1F7A91320F74FEC17C5D37D6CA9A /* md5.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		67875E6959A25F7996E77BAB0A31D407 /* Pods-WeddingPlanner-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FC06A5A666F8343AA541598DF656376 /* Pods-WeddingPlanner-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		6CDE6EDC84E1B0DE1606CB59D4A801A9 /* bcon.c in Sources */ = {isa = PBXBuildFile; fileRef = 85147E0770DA4ADA61A139FAAED632B0 /* bcon.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		173152CB50392D210B40A6E2DCF373DC /* FromJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA46FD4043B8AE8603A96609D9FE2A0B /* FromJSON.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		1983DC860F3A88ED7169D09693FF179E /* Pods-WeddingPlanner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 48664D74EE24518439F7ECAE6CFD5841 /* Pods-WeddingPlanner-dummy.m */; };
+		22FE024066CE16A1AAF5DD12212BCAB6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		418134548DBB8A1168C6DB0984827234 /* Map.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5284A5A8303EC3ADDEA5DBF528DACF31 /* Map.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		48C0E193D666FDA1E469770B7CD43FFB /* ObjectMapper-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FC494C5386544F8E1000B421C7527E9A /* ObjectMapper-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		62A6E30DB3348AF32184235809696096 /* ObjectMapper-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D340F4CFE5E5B052064422F0885364F4 /* ObjectMapper-dummy.m */; };
+		6F6935DE624507427C4CEF6965A68ECF /* TransformType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F71D4FF82BE095B84A8F9D2ED24147 /* TransformType.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		7393153B8ADAEBE0FA05EDCA9886740F /* NSDecimalNumberTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = A565069DC883CC25B89D078C8BBE6818 /* NSDecimalNumberTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		83B716F9FB93C60296778522C2F0C356 /* Pods-WeddingPlannerTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EB7EF86204382380E49120567F872E9B /* Pods-WeddingPlannerTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		85B077670ADB84420D0EA5C7189B348F /* SwiftMongoDB-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0ACD348EC4012636BE2A242342A1FF6D /* SwiftMongoDB-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		85C77C97BABC1ABE7FBBFE2796C2493C /* MongoCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 681E3A0234EACC20FAD6983252307140 /* MongoCollection.swift */; };
-		8C75069C06457FF989557B98D0A69D78 /* bson.h in Headers */ = {isa = PBXBuildFile; fileRef = 6ACCFDA415CB0D1560C0B26621BAA70F /* bson.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9A1FECE44DA21AD7F8447FC36F1796AE /* bson.c in Sources */ = {isa = PBXBuildFile; fileRef = 98D51F7FE459C6B7255C76B0E3565F0B /* bson.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		9EA2653E12FF2F0F6093F84EDE637407 /* MongoCursor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D0BD268D61A43E085E133416D39D4C2 /* MongoCursor.swift */; };
-		A2BBC0DD48ED985BE76B7FBC7C4C28C0 /* MongoDocument.swift in Sources */ = {isa = PBXBuildFile; fileRef = 291CCB0A9C022FBD54A8684E79928FB5 /* MongoDocument.swift */; };
-		BA7545D54C9B62BC2D74C4CC08D873C9 /* mongo.c in Sources */ = {isa = PBXBuildFile; fileRef = AFCC7AA718662A884162DDFFA70EB766 /* mongo.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		BDF9AA5027D590EC17559E79EEA56C80 /* mongo-c-driver-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 085F0C2CE6EEE4E14CE38DCAB6EEA962 /* mongo-c-driver-dummy.m */; };
-		D92A2DFD709EE1E3F5E0C7AC4509A6FD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A47745835BA42BEB8C15752A812B0E8 /* Foundation.framework */; };
-		DF6F40E1844EBA5EBD190729FD68F36F /* MongoResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76934C3074F5EA17C1755EC77505E899 /* MongoResult.swift */; };
-		E14DC5BEC5B15192477866AAB2EFF2F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A47745835BA42BEB8C15752A812B0E8 /* Foundation.framework */; };
-		E2450D3B85C249286C6BF6B68EBD7AB7 /* MongoDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44D877F9BAB520792864FB63FD9D40AC /* MongoDB.swift */; };
-		E66869D2337F25C46D0A49DDD8FCEA5C /* MongoBSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB58A7626D006BD2089D44E97FE09C36 /* MongoBSON.swift */; };
-		E7E28D243C4C3818CB59C53F0525C0A6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A47745835BA42BEB8C15752A812B0E8 /* Foundation.framework */; };
-		EF829DFA3260934A98F430B683D226E3 /* helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB29CD9EF0FFD5223D374610A69F3EB8 /* helpers.swift */; };
-		F75835E2C7C738C5E41E853712268B94 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A47745835BA42BEB8C15752A812B0E8 /* Foundation.framework */; };
-		F904077E277D8768F4654B9F677483C6 /* bcon.h in Headers */ = {isa = PBXBuildFile; fileRef = 361781D42241821628CF670DAE0B0A6B /* bcon.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FB4E29FF84F836CD3CF694A5C1C2A833 /* Pods-WeddingPlanner-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 48664D74EE24518439F7ECAE6CFD5841 /* Pods-WeddingPlanner-dummy.m */; };
-		FDB2096215097FE4F87C3BE40F401ECD /* numbers.c in Sources */ = {isa = PBXBuildFile; fileRef = 2D7CAAFF7D2837205A5CFD3049F6F65A /* numbers.c */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		8D2537BE59E81695137ACEE1CAE3C56E /* TransformOf.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31BFD5C3535846D8BFF8713985451BF5 /* TransformOf.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		93891326E415660F208490D132B1C59D /* DateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = F50EEBADCA35B1D1F965FAD62FEECD99 /* DateTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B35C225A8132174D4A5606D4FFB84DF5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		B9D6828121A50E8D765B244FE1A9E928 /* DateFormatterTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8410B58954AAF12D4EBD88083FFD8C8C /* DateFormatterTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		BD84E7324AD44DF98AAF787B41311BF6 /* Mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83764BD7464CDDE21794D4EC7D023D15 /* Mapper.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		BD982146AB2D8F65A959654338DE2D38 /* EnumTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D311663FB85E4FF598CF95F086DF79C /* EnumTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C7C1FA1ACE7B5B754C6BE930CCC32B05 /* ISO8601DateTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1AC06847E1B67B5F79D901CA8D92D4F /* ISO8601DateTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C88F096FEDB8F5A5953B3C35481767B6 /* Operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4629CC1D5C9501F2D354B269FCCECB40 /* Operators.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D92A2DFD709EE1E3F5E0C7AC4509A6FD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		DBB2F76D21FC9CBD3AD67D8071C9C9F2 /* ToJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89530C30E4B0BB189002053F3FEBBC64 /* ToJSON.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		E437C1E272C35D0D65146C983B0195C9 /* CustomDateFormatTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF6E07F3243C297FB02CCDF94E15681 /* CustomDateFormatTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F75DCB718790F2E67CD5EC5BFE108AE1 /* Pods-WeddingPlanner-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FC06A5A666F8343AA541598DF656376 /* Pods-WeddingPlanner-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA38E0317CADF17F0F25DB7C959060E0 /* Mappable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D7F932E624E9D4B563BE708C741E78D /* Mappable.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		FB5291D5DC0D88C8DC804B39DC25132E /* URLTransform.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60D966BDD60601C79518AA303C08082A /* URLTransform.swift */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		12587512BC63E43C5BA2C63D116D393E /* PBXContainerItemProxy */ = {
+		6A0F3B07259FAF009D385888C04B3A50 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1CB56A58EC223ECEA3CA635865227A5A;
-			remoteInfo = SwiftMongoDB;
-		};
-		4EBD565780AC798CFCB220665D420C6A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6898EAAC425B25E0C580D20645221C75;
-			remoteInfo = "mongo-c-driver";
-		};
-		A0E019F23A74C3F968E8A2CBDE6E747E /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6898EAAC425B25E0C580D20645221C75;
-			remoteInfo = "mongo-c-driver";
+			remoteGlobalIDString = D5D6200D4BE741574DBD4FB768A6F55B;
+			remoteInfo = ObjectMapper;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		085F0C2CE6EEE4E14CE38DCAB6EEA962 /* mongo-c-driver-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "mongo-c-driver-dummy.m"; sourceTree = "<group>"; };
+		01E27217635E09F0430D634600066050 /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Headers/Firebase.h; sourceTree = "<group>"; };
+		0462A79E360C9874013529C16E076881 /* ObjectMapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ObjectMapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		091D58E93FA92057FD95CD740B8AF8BF /* Pods-WeddingPlanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WeddingPlanner.debug.xcconfig"; sourceTree = "<group>"; };
-		09CDF791202D81C572AACD72CE05C0D2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0ACD348EC4012636BE2A242342A1FF6D /* SwiftMongoDB-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftMongoDB-umbrella.h"; sourceTree = "<group>"; };
-		0D8E06D8AC83769E6D9019CB7CF95F4E /* mongo-c-driver-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "mongo-c-driver-prefix.pch"; sourceTree = "<group>"; };
-		1476519C44E9C1416876390D31604893 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		10F71D4FF82BE095B84A8F9D2ED24147 /* TransformType.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformType.swift; path = ObjectMapper/Transforms/TransformType.swift; sourceTree = "<group>"; };
 		1653B56B60AB45EF85894628DA1302BD /* Pods-WeddingPlanner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WeddingPlanner.release.xcconfig"; sourceTree = "<group>"; };
 		1653C039E3D130E24F6DB4B8ACBB7B28 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1737DC9F3C0D1F5E8CE430E79F75802E /* gridfs.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = gridfs.h; path = src/gridfs.h; sourceTree = "<group>"; };
-		1BDBF5126C024E0F65B4EE46A1CF5BA5 /* md5.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = md5.h; path = src/md5.h; sourceTree = "<group>"; };
-		1D0BD268D61A43E085E133416D39D4C2 /* MongoCursor.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MongoCursor.swift; path = swiftMongoDB/MongoCursor.swift; sourceTree = "<group>"; };
-		291CCB0A9C022FBD54A8684E79928FB5 /* MongoDocument.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MongoDocument.swift; path = swiftMongoDB/MongoDocument.swift; sourceTree = "<group>"; };
-		29872E9B3097471F99EE8186102A9338 /* encoding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = encoding.h; path = src/encoding.h; sourceTree = "<group>"; };
-		2D7CAAFF7D2837205A5CFD3049F6F65A /* numbers.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = numbers.c; path = src/numbers.c; sourceTree = "<group>"; };
-		3167981744E865088BCF6BAC23F2CB11 /* mongo_c_driver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = mongo_c_driver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EAF1D46AFDBC39427BBF976AF283146 /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Frameworks/GoogleUtilities.framework; sourceTree = "<group>"; };
+		31BFD5C3535846D8BFF8713985451BF5 /* TransformOf.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TransformOf.swift; path = ObjectMapper/Transforms/TransformOf.swift; sourceTree = "<group>"; };
 		31C4DB3F25FB421A672F63FCDA6654C7 /* Pods-WeddingPlannerTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WeddingPlannerTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		324616A7AFE3D993B38C37C57CF19767 /* Pods-WeddingPlanner-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-WeddingPlanner-acknowledgements.markdown"; sourceTree = "<group>"; };
-		3388ECBE6782E98920F4DD4713F2D9EA /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
-		361781D42241821628CF670DAE0B0A6B /* bcon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = bcon.h; path = src/bcon.h; sourceTree = "<group>"; };
-		3916EBAEAB2A09D4E43B6E5AA433E2C5 /* gridfs.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = gridfs.c; path = src/gridfs.c; sourceTree = "<group>"; };
-		402F1DF5B6F717C352E92925F71B8DC6 /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Frameworks/GoogleUtilities.framework; sourceTree = "<group>"; };
-		42ECE20B62318D58E97E2615143203A1 /* SwiftMongoDB-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftMongoDB-dummy.m"; sourceTree = "<group>"; };
-		44D877F9BAB520792864FB63FD9D40AC /* MongoDB.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MongoDB.swift; path = swiftMongoDB/MongoDB.swift; sourceTree = "<group>"; };
+		406300B9F488A36F5C3DFC045AF72B88 /* ObjectMapper-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ObjectMapper-prefix.pch"; sourceTree = "<group>"; };
 		44F454A023D567B67F7162B2A11F2D7D /* Pods-WeddingPlannerTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WeddingPlannerTests-resources.sh"; sourceTree = "<group>"; };
+		4629CC1D5C9501F2D354B269FCCECB40 /* Operators.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Operators.swift; path = ObjectMapper/Core/Operators.swift; sourceTree = "<group>"; };
 		48664D74EE24518439F7ECAE6CFD5841 /* Pods-WeddingPlanner-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WeddingPlanner-dummy.m"; sourceTree = "<group>"; };
 		4E64FE308F0CED1CFDC7AA5CC450727E /* Pods-WeddingPlannerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WeddingPlannerTests.debug.xcconfig"; sourceTree = "<group>"; };
-		4F8F2F54A86A80CD5B1E4C232BD28FC5 /* MongoObject.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MongoObject.swift; path = swiftMongoDB/MongoObject.swift; sourceTree = "<group>"; };
-		681E3A0234EACC20FAD6983252307140 /* MongoCollection.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MongoCollection.swift; path = swiftMongoDB/MongoCollection.swift; sourceTree = "<group>"; };
-		6ACCFDA415CB0D1560C0B26621BAA70F /* bson.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = bson.h; path = src/bson.h; sourceTree = "<group>"; };
+		5284A5A8303EC3ADDEA5DBF528DACF31 /* Map.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Map.swift; path = ObjectMapper/Core/Map.swift; sourceTree = "<group>"; };
+		5B079BA24C3D011AA6754CB3D551C2CC /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
+		5FEB850DC835C667900E389B05B42065 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		60D966BDD60601C79518AA303C08082A /* URLTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = URLTransform.swift; path = ObjectMapper/Transforms/URLTransform.swift; sourceTree = "<group>"; };
+		60EA661D3A0A4D0B6BE73E744D79CC21 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		60EDDE7E241AA92EF80F7B6B3B56D16E /* GoogleInterchangeUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleInterchangeUtilities.framework; path = Frameworks/GoogleInterchangeUtilities.framework; sourceTree = "<group>"; };
+		631CF127B46CAD7778D6A0365CFBEA84 /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSymbolUtilities.framework; path = Frameworks/GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
 		6E81353512FC47F08B60F90E127CA19C /* Pods-WeddingPlannerTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WeddingPlannerTests-frameworks.sh"; sourceTree = "<group>"; };
+		6EF6E07F3243C297FB02CCDF94E15681 /* CustomDateFormatTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = CustomDateFormatTransform.swift; path = ObjectMapper/Transforms/CustomDateFormatTransform.swift; sourceTree = "<group>"; };
 		6F4283B847537138F435FC50B4E6AA45 /* Pods-WeddingPlannerTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-WeddingPlannerTests-dummy.m"; sourceTree = "<group>"; };
-		70B5B7DC23D443AD82F56F2F180C6F94 /* mongo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = mongo.h; path = src/mongo.h; sourceTree = "<group>"; };
-		76934C3074F5EA17C1755EC77505E899 /* MongoResult.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MongoResult.swift; path = swiftMongoDB/MongoResult.swift; sourceTree = "<group>"; };
 		78857DA5FC4E43214C10842D44F930CD /* Pods-WeddingPlanner-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WeddingPlanner-frameworks.sh"; sourceTree = "<group>"; };
 		7888A624DF2E092F92718631C65B6EFA /* Pods-WeddingPlannerTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-WeddingPlannerTests.modulemap"; sourceTree = "<group>"; };
-		7A47745835BA42BEB8C15752A812B0E8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		85147E0770DA4ADA61A139FAAED632B0 /* bcon.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = bcon.c; path = src/bcon.c; sourceTree = "<group>"; };
-		8F740F197EDF75B6C12DC7E1B7BD6251 /* Pods_WeddingPlannerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeddingPlannerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		90F4D5046EAA163E92EA57350E99B6E9 /* env.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = env.h; path = src/env.h; sourceTree = "<group>"; };
+		83764BD7464CDDE21794D4EC7D023D15 /* Mapper.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mapper.swift; path = ObjectMapper/Core/Mapper.swift; sourceTree = "<group>"; };
+		8410B58954AAF12D4EBD88083FFD8C8C /* DateFormatterTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateFormatterTransform.swift; path = ObjectMapper/Transforms/DateFormatterTransform.swift; sourceTree = "<group>"; };
+		89530C30E4B0BB189002053F3FEBBC64 /* ToJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ToJSON.swift; path = ObjectMapper/Core/ToJSON.swift; sourceTree = "<group>"; };
+		8D7F932E624E9D4B563BE708C741E78D /* Mappable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Mappable.swift; path = ObjectMapper/Core/Mappable.swift; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		98D51F7FE459C6B7255C76B0E3565F0B /* bson.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = bson.c; path = src/bson.c; sourceTree = "<group>"; };
+		9D311663FB85E4FF598CF95F086DF79C /* EnumTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EnumTransform.swift; path = ObjectMapper/Transforms/EnumTransform.swift; sourceTree = "<group>"; };
 		9F638FAB06B1E480442946689A295F6F /* Pods-WeddingPlannerTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WeddingPlannerTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		9FC06A5A666F8343AA541598DF656376 /* Pods-WeddingPlanner-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WeddingPlanner-umbrella.h"; sourceTree = "<group>"; };
-		A3189061277635742864A65F79B3EAF3 /* env.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = env.c; path = src/env.c; sourceTree = "<group>"; };
-		A91DBACAD2EDFF48CEB3EE87DBB52AB4 /* encoding.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = encoding.c; path = src/encoding.c; sourceTree = "<group>"; };
-		AC7E12AD286FD44C5F7574B59D7C9B02 /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Headers/Firebase.h; sourceTree = "<group>"; };
-		AFCC7AA718662A884162DDFFA70EB766 /* mongo.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = mongo.c; path = src/mongo.c; sourceTree = "<group>"; };
-		B34185DA161A3E47DBD29EC72E4A4872 /* mongo-c-driver.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "mongo-c-driver.modulemap"; sourceTree = "<group>"; };
-		B73B90936CEFE6E9AF21AB01613C6690 /* SwiftMongoDB.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftMongoDB.modulemap; sourceTree = "<group>"; };
-		BB29CD9EF0FFD5223D374610A69F3EB8 /* helpers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = helpers.swift; path = swiftMongoDB/helpers.swift; sourceTree = "<group>"; };
-		BF82740C374971C98719247D6236A060 /* mongo_c_driver.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = mongo_c_driver.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A565069DC883CC25B89D078C8BBE6818 /* NSDecimalNumberTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSDecimalNumberTransform.swift; path = ObjectMapper/Transforms/NSDecimalNumberTransform.swift; sourceTree = "<group>"; };
+		AD443B4B19ACF5B0424C051DDA960137 /* FirebaseAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAuth.framework; path = Frameworks/FirebaseAuth.framework; sourceTree = "<group>"; };
+		AD9F267EC783F0FB1116068A988E2415 /* FIRInstanceID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstanceID.h; path = Headers/Public/FIRInstanceID.h; sourceTree = "<group>"; };
+		C12DDE93C5D8EFD21893133862C2EA09 /* ObjectMapper.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ObjectMapper.xcconfig; sourceTree = "<group>"; };
+		C1AC06847E1B67B5F79D901CA8D92D4F /* ISO8601DateTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ISO8601DateTransform.swift; path = ObjectMapper/Transforms/ISO8601DateTransform.swift; sourceTree = "<group>"; };
 		C2F88D40501E9B3C2716EE83B203E962 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C5EA926DFB15B5BB625FDBBA7080D3BD /* SwiftMongoDB.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftMongoDB.xcconfig; sourceTree = "<group>"; };
-		C81BE45AF137CE826A4C230D2EB9257E /* SwiftMongoDB.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftMongoDB.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		CB8D1E1414680AA69ADD91F31E967BD5 /* SwiftMongoDB-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftMongoDB-prefix.pch"; sourceTree = "<group>"; };
+		CA24EE5AF31DB8639F88DBF514F0BA9B /* Pods_WeddingPlanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeddingPlanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CADF878FE4B3EA1464DDD19B524A4A39 /* GoogleNetworkingUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleNetworkingUtilities.framework; path = Frameworks/GoogleNetworkingUtilities.framework; sourceTree = "<group>"; };
+		CB85009A660EE0021AD8F3E4FBDEB18D /* ObjectMapper.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ObjectMapper.modulemap; sourceTree = "<group>"; };
 		CC5D4D4DAD62AA80656252CB29D40904 /* Pods-WeddingPlanner-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-WeddingPlanner-resources.sh"; sourceTree = "<group>"; };
-		CD9CD9ACDDBD1F00850EC0AF0CC12F49 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
-		D21C68FB2B1F3F5A0E2FF251299E3EEE /* GoogleNetworkingUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleNetworkingUtilities.framework; path = Frameworks/GoogleNetworkingUtilities.framework; sourceTree = "<group>"; };
+		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D340F4CFE5E5B052064422F0885364F4 /* ObjectMapper-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ObjectMapper-dummy.m"; sourceTree = "<group>"; };
 		D420600B30B13050DC81C29B7C3927B7 /* Pods-WeddingPlannerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-WeddingPlannerTests.release.xcconfig"; sourceTree = "<group>"; };
-		D6B9F104B08FD1967426A7C7C55BB777 /* FIRInstanceID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstanceID.h; path = Headers/Public/FIRInstanceID.h; sourceTree = "<group>"; };
-		D97F12068B2A3EC3A96A8E9729DD0AE7 /* swiftMongoDB.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = swiftMongoDB.h; path = swiftMongoDB/swiftMongoDB.h; sourceTree = "<group>"; };
-		DB58A7626D006BD2089D44E97FE09C36 /* MongoBSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MongoBSON.swift; path = swiftMongoDB/MongoBSON.swift; sourceTree = "<group>"; };
-		DDDECC5FC5EC67929495F0C6D14C3D72 /* Pods_WeddingPlanner.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeddingPlanner.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDE481C88481B8104AA666AB196634DA /* Pods-WeddingPlanner.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-WeddingPlanner.modulemap"; sourceTree = "<group>"; };
-		E8B829DC2B9EFC2F0A111032FB752C89 /* FirebaseAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAuth.framework; path = Frameworks/FirebaseAuth.framework; sourceTree = "<group>"; };
+		EA46FD4043B8AE8603A96609D9FE2A0B /* FromJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FromJSON.swift; path = ObjectMapper/Core/FromJSON.swift; sourceTree = "<group>"; };
 		EB7194EC076326A7F6EB6D1F8A8554E4 /* Pods-WeddingPlanner-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-WeddingPlanner-acknowledgements.plist"; sourceTree = "<group>"; };
 		EB7EF86204382380E49120567F872E9B /* Pods-WeddingPlannerTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-WeddingPlannerTests-umbrella.h"; sourceTree = "<group>"; };
-		ECAA0FEA4D051395BB4AA23DF279A148 /* MongoError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MongoError.swift; path = swiftMongoDB/MongoError.swift; sourceTree = "<group>"; };
-		EE125CA88BFD1A8CAB4C9C3AA768FD54 /* mongo-c-driver-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "mongo-c-driver-umbrella.h"; sourceTree = "<group>"; };
-		F1BC7E5B7A0780C954704F350EC3BF00 /* GoogleInterchangeUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleInterchangeUtilities.framework; path = Frameworks/GoogleInterchangeUtilities.framework; sourceTree = "<group>"; };
-		FCE00DE963EC994C749CFF49AA413B16 /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSymbolUtilities.framework; path = Frameworks/GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
-		FD0A1F7A91320F74FEC17C5D37D6CA9A /* md5.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = md5.c; path = src/md5.c; sourceTree = "<group>"; };
-		FF62BD33458983DB6C7A27969D40B8D5 /* mongo-c-driver.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "mongo-c-driver.xcconfig"; sourceTree = "<group>"; };
+		F50EEBADCA35B1D1F965FAD62FEECD99 /* DateTransform.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DateTransform.swift; path = ObjectMapper/Transforms/DateTransform.swift; sourceTree = "<group>"; };
+		F7B2D76D092D7D82C590091A84AF9F49 /* Pods_WeddingPlannerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeddingPlannerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FC494C5386544F8E1000B421C7527E9A /* ObjectMapper-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ObjectMapper-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		06AB623707BC795AA03837865F8D8D7E /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				E14DC5BEC5B15192477866AAB2EFF2F5 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		37DF421A0B8F7A49A7E07E6722292F4E /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -164,90 +110,45 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D713873E9CC2D624660EDC5588254ED3 /* Frameworks */ = {
+		61020FE8C6DABB301EB6DBB1D0946AAE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F75835E2C7C738C5E41E853712268B94 /* Foundation.framework in Frameworks */,
+				22FE024066CE16A1AAF5DD12212BCAB6 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F970B52166D2E4C01B2610C00381B7FD /* Frameworks */ = {
+		8CFF055CC9D308C73235AA849D9CABF5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E7E28D243C4C3818CB59C53F0525C0A6 /* Foundation.framework in Frameworks */,
-				1FCC9A78B21494BA35BEF04575C69B3C /* mongo_c_driver.framework in Frameworks */,
+				B35C225A8132174D4A5606D4FFB84DF5 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0C0A01EED30887E70C29939E4C57DD08 /* Frameworks */ = {
+		04390E4DEDAEC4C8CC83CE595EC61222 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				FCE00DE963EC994C749CFF49AA413B16 /* GoogleSymbolUtilities.framework */,
+				60EA661D3A0A4D0B6BE73E744D79CC21 /* Info.plist */,
+				CB85009A660EE0021AD8F3E4FBDEB18D /* ObjectMapper.modulemap */,
+				C12DDE93C5D8EFD21893133862C2EA09 /* ObjectMapper.xcconfig */,
+				D340F4CFE5E5B052064422F0885364F4 /* ObjectMapper-dummy.m */,
+				406300B9F488A36F5C3DFC045AF72B88 /* ObjectMapper-prefix.pch */,
+				FC494C5386544F8E1000B421C7527E9A /* ObjectMapper-umbrella.h */,
 			);
-			name = Frameworks;
+			name = "Support Files";
+			path = "../Target Support Files/ObjectMapper";
 			sourceTree = "<group>";
 		};
-		153C7EF4D6036565F14ADEA91B55C222 /* Analytics */ = {
+		2B0B6C52688BC89D8DB811909D014DFF /* Analytics */ = {
 			isa = PBXGroup;
 			children = (
-				AC7E12AD286FD44C5F7574B59D7C9B02 /* Firebase.h */,
+				01E27217635E09F0430D634600066050 /* Firebase.h */,
 			);
 			name = Analytics;
-			sourceTree = "<group>";
-		};
-		18CB1735216EBCCC757CF255467BFA09 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				402F1DF5B6F717C352E92925F71B8DC6 /* GoogleUtilities.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		1B6293764A1294432FC0FEEBD5C135DB /* SwiftMongoDB */ = {
-			isa = PBXGroup;
-			children = (
-				BB29CD9EF0FFD5223D374610A69F3EB8 /* helpers.swift */,
-				DB58A7626D006BD2089D44E97FE09C36 /* MongoBSON.swift */,
-				681E3A0234EACC20FAD6983252307140 /* MongoCollection.swift */,
-				1D0BD268D61A43E085E133416D39D4C2 /* MongoCursor.swift */,
-				44D877F9BAB520792864FB63FD9D40AC /* MongoDB.swift */,
-				291CCB0A9C022FBD54A8684E79928FB5 /* MongoDocument.swift */,
-				ECAA0FEA4D051395BB4AA23DF279A148 /* MongoError.swift */,
-				4F8F2F54A86A80CD5B1E4C232BD28FC5 /* MongoObject.swift */,
-				76934C3074F5EA17C1755EC77505E899 /* MongoResult.swift */,
-				D97F12068B2A3EC3A96A8E9729DD0AE7 /* swiftMongoDB.h */,
-				403BAC70A2DE7AE05E795462FFB19514 /* Support Files */,
-			);
-			path = SwiftMongoDB;
-			sourceTree = "<group>";
-		};
-		2BA74069DD6629487FCE25347DCE5226 /* GoogleUtilities */ = {
-			isa = PBXGroup;
-			children = (
-				18CB1735216EBCCC757CF255467BFA09 /* Frameworks */,
-			);
-			path = GoogleUtilities;
-			sourceTree = "<group>";
-		};
-		2EABBD9B715A7B24F4BADCB86BD49FD3 /* GoogleSymbolUtilities */ = {
-			isa = PBXGroup;
-			children = (
-				0C0A01EED30887E70C29939E4C57DD08 /* Frameworks */,
-			);
-			path = GoogleSymbolUtilities;
-			sourceTree = "<group>";
-		};
-		304F8F95F28B14AE6DB3FE4AB9BDF463 /* GoogleInterchangeUtilities */ = {
-			isa = PBXGroup;
-			children = (
-				AD1AC1B3F25FC3F63EFBCA7C841F1DA3 /* Frameworks */,
-			);
-			path = GoogleInterchangeUtilities;
 			sourceTree = "<group>";
 		};
 		3747AA85953452A627C9393F0EAFB412 /* Pods-WeddingPlanner */ = {
@@ -268,45 +169,91 @@
 			path = "Target Support Files/Pods-WeddingPlanner";
 			sourceTree = "<group>";
 		};
-		403BAC70A2DE7AE05E795462FFB19514 /* Support Files */ = {
+		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				1476519C44E9C1416876390D31604893 /* Info.plist */,
-				B73B90936CEFE6E9AF21AB01613C6690 /* SwiftMongoDB.modulemap */,
-				C5EA926DFB15B5BB625FDBBA7080D3BD /* SwiftMongoDB.xcconfig */,
-				42ECE20B62318D58E97E2615143203A1 /* SwiftMongoDB-dummy.m */,
-				CB8D1E1414680AA69ADD91F31E967BD5 /* SwiftMongoDB-prefix.pch */,
-				0ACD348EC4012636BE2A242342A1FF6D /* SwiftMongoDB-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SwiftMongoDB";
-			sourceTree = "<group>";
-		};
-		4693503FEF3C14B72A571777A45AC893 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				3388ECBE6782E98920F4DD4713F2D9EA /* FirebaseAnalytics.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		7089741A0F49697F90805903B85C82FE /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				7A47745835BA42BEB8C15752A812B0E8 /* Foundation.framework */,
+				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		7225F16EE02F18824A64E0A8A30E9EFC /* Products */ = {
+		42D718D6E7D7EFD1DAE26E898DF820B3 /* FirebaseAuth */ = {
 			isa = PBXGroup;
 			children = (
-				BF82740C374971C98719247D6236A060 /* mongo_c_driver.framework */,
-				DDDECC5FC5EC67929495F0C6D14C3D72 /* Pods_WeddingPlanner.framework */,
-				8F740F197EDF75B6C12DC7E1B7BD6251 /* Pods_WeddingPlannerTests.framework */,
-				C81BE45AF137CE826A4C230D2EB9257E /* SwiftMongoDB.framework */,
+				C5173E6C356F84890D50936E5D6291FA /* Frameworks */,
 			);
-			name = Products;
+			path = FirebaseAuth;
+			sourceTree = "<group>";
+		};
+		466AB81F53D00F80AB4FCDFC8BC8456A /* GoogleSymbolUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				8327E4E5803FC1723155B84C33B1AA0B /* Frameworks */,
+			);
+			path = GoogleSymbolUtilities;
+			sourceTree = "<group>";
+		};
+		58FA44B01ADF7B01EDDC58CF9191574C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9831C9A31BE9D03759F8E5FBCF4AA10E /* Firebase */,
+				66C7A863DF660A5EB2A90FDF77526732 /* FirebaseAnalytics */,
+				42D718D6E7D7EFD1DAE26E898DF820B3 /* FirebaseAuth */,
+				E971B8B2EAEB13D8DF2E888788547327 /* FirebaseInstanceID */,
+				B79DBC45B304862AC61F68BD24ACDDAD /* GoogleInterchangeUtilities */,
+				8CD89D5EB582786F2DC4D6151AD888A7 /* GoogleNetworkingUtilities */,
+				466AB81F53D00F80AB4FCDFC8BC8456A /* GoogleSymbolUtilities */,
+				67857A8ABDBF47EADF7CA2ABFE492835 /* GoogleUtilities */,
+				6F9EE259C9356BE0DEC29C77E47D2E72 /* ObjectMapper */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		66C7A863DF660A5EB2A90FDF77526732 /* FirebaseAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				952E7C143CD64D97763C0C46F7EACE89 /* Frameworks */,
+			);
+			path = FirebaseAnalytics;
+			sourceTree = "<group>";
+		};
+		67857A8ABDBF47EADF7CA2ABFE492835 /* GoogleUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				B57314F14E93CD13C393409E4E7E83BC /* Frameworks */,
+			);
+			path = GoogleUtilities;
+			sourceTree = "<group>";
+		};
+		6F9EE259C9356BE0DEC29C77E47D2E72 /* ObjectMapper */ = {
+			isa = PBXGroup;
+			children = (
+				6EF6E07F3243C297FB02CCDF94E15681 /* CustomDateFormatTransform.swift */,
+				8410B58954AAF12D4EBD88083FFD8C8C /* DateFormatterTransform.swift */,
+				F50EEBADCA35B1D1F965FAD62FEECD99 /* DateTransform.swift */,
+				9D311663FB85E4FF598CF95F086DF79C /* EnumTransform.swift */,
+				EA46FD4043B8AE8603A96609D9FE2A0B /* FromJSON.swift */,
+				C1AC06847E1B67B5F79D901CA8D92D4F /* ISO8601DateTransform.swift */,
+				5284A5A8303EC3ADDEA5DBF528DACF31 /* Map.swift */,
+				8D7F932E624E9D4B563BE708C741E78D /* Mappable.swift */,
+				83764BD7464CDDE21794D4EC7D023D15 /* Mapper.swift */,
+				A565069DC883CC25B89D078C8BBE6818 /* NSDecimalNumberTransform.swift */,
+				4629CC1D5C9501F2D354B269FCCECB40 /* Operators.swift */,
+				89530C30E4B0BB189002053F3FEBBC64 /* ToJSON.swift */,
+				31BFD5C3535846D8BFF8713985451BF5 /* TransformOf.swift */,
+				10F71D4FF82BE095B84A8F9D2ED24147 /* TransformType.swift */,
+				60D966BDD60601C79518AA303C08082A /* URLTransform.swift */,
+				04390E4DEDAEC4C8CC83CE595EC61222 /* Support Files */,
+			);
+			path = ObjectMapper;
+			sourceTree = "<group>";
+		};
+		730293EC61656E036A89E95D6C30240D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				60EDDE7E241AA92EF80F7B6B3B56D16E /* GoogleInterchangeUtilities.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		743A9265A737972790DB0A91D68F75C8 /* Pods-WeddingPlannerTests */ = {
@@ -327,79 +274,97 @@
 			path = "Target Support Files/Pods-WeddingPlannerTests";
 			sourceTree = "<group>";
 		};
+		7B756EE31B4E281BF10673D50C47C68D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0462A79E360C9874013529C16E076881 /* ObjectMapper.framework */,
+				CA24EE5AF31DB8639F88DBF514F0BA9B /* Pods_WeddingPlanner.framework */,
+				F7B2D76D092D7D82C590091A84AF9F49 /* Pods_WeddingPlannerTests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				ED14B9D5EC8C580E83E70B599A8E155F /* Frameworks */,
-				BD44374D8563DE54450B9F32D3AAEA98 /* Pods */,
-				7225F16EE02F18824A64E0A8A30E9EFC /* Products */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				58FA44B01ADF7B01EDDC58CF9191574C /* Pods */,
+				7B756EE31B4E281BF10673D50C47C68D /* Products */,
 				CCE6CDB4E439F80D7401D04631DF8896 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		9C7240937C6F84F1B489BE4D4C31F211 /* GoogleNetworkingUtilities */ = {
+		8327E4E5803FC1723155B84C33B1AA0B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D65B415FA2457F8C3228389E7B9DA71D /* Frameworks */,
-			);
-			path = GoogleNetworkingUtilities;
-			sourceTree = "<group>";
-		};
-		A1B9504E2ED4461DBD6199B46A58EF37 /* FirebaseAuth */ = {
-			isa = PBXGroup;
-			children = (
-				F222B473BEED2D2EC8E43090B98F38D7 /* Frameworks */,
-			);
-			path = FirebaseAuth;
-			sourceTree = "<group>";
-		};
-		AD1AC1B3F25FC3F63EFBCA7C841F1DA3 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				F1BC7E5B7A0780C954704F350EC3BF00 /* GoogleInterchangeUtilities.framework */,
+				631CF127B46CAD7778D6A0365CFBEA84 /* GoogleSymbolUtilities.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BD44374D8563DE54450B9F32D3AAEA98 /* Pods */ = {
+		89CE3D28B6A115CA49BBB4B36E348224 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DF5179CBB61B411A0538352C5484516B /* Firebase */,
-				ED572DA6B6C26C8A336F9C455DBE2DFC /* FirebaseAnalytics */,
-				A1B9504E2ED4461DBD6199B46A58EF37 /* FirebaseAuth */,
-				FB02B00CE251492FB375E3B6B3323F11 /* FirebaseInstanceID */,
-				304F8F95F28B14AE6DB3FE4AB9BDF463 /* GoogleInterchangeUtilities */,
-				9C7240937C6F84F1B489BE4D4C31F211 /* GoogleNetworkingUtilities */,
-				2EABBD9B715A7B24F4BADCB86BD49FD3 /* GoogleSymbolUtilities */,
-				2BA74069DD6629487FCE25347DCE5226 /* GoogleUtilities */,
-				CB7826FC219B0A718068ED4090622754 /* mongo-c-driver */,
-				1B6293764A1294432FC0FEEBD5C135DB /* SwiftMongoDB */,
+				CADF878FE4B3EA1464DDD19B524A4A39 /* GoogleNetworkingUtilities.framework */,
 			);
-			name = Pods;
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		CB7826FC219B0A718068ED4090622754 /* mongo-c-driver */ = {
+		8CD89D5EB582786F2DC4D6151AD888A7 /* GoogleNetworkingUtilities */ = {
 			isa = PBXGroup;
 			children = (
-				85147E0770DA4ADA61A139FAAED632B0 /* bcon.c */,
-				361781D42241821628CF670DAE0B0A6B /* bcon.h */,
-				98D51F7FE459C6B7255C76B0E3565F0B /* bson.c */,
-				6ACCFDA415CB0D1560C0B26621BAA70F /* bson.h */,
-				A91DBACAD2EDFF48CEB3EE87DBB52AB4 /* encoding.c */,
-				29872E9B3097471F99EE8186102A9338 /* encoding.h */,
-				A3189061277635742864A65F79B3EAF3 /* env.c */,
-				90F4D5046EAA163E92EA57350E99B6E9 /* env.h */,
-				3916EBAEAB2A09D4E43B6E5AA433E2C5 /* gridfs.c */,
-				1737DC9F3C0D1F5E8CE430E79F75802E /* gridfs.h */,
-				FD0A1F7A91320F74FEC17C5D37D6CA9A /* md5.c */,
-				1BDBF5126C024E0F65B4EE46A1CF5BA5 /* md5.h */,
-				AFCC7AA718662A884162DDFFA70EB766 /* mongo.c */,
-				70B5B7DC23D443AD82F56F2F180C6F94 /* mongo.h */,
-				2D7CAAFF7D2837205A5CFD3049F6F65A /* numbers.c */,
-				E6247CDA78D2D1DC09C80506FC14FC96 /* Support Files */,
+				89CE3D28B6A115CA49BBB4B36E348224 /* Frameworks */,
 			);
-			path = "mongo-c-driver";
+			path = GoogleNetworkingUtilities;
+			sourceTree = "<group>";
+		};
+		952E7C143CD64D97763C0C46F7EACE89 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5FEB850DC835C667900E389B05B42065 /* FirebaseAnalytics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9831C9A31BE9D03759F8E5FBCF4AA10E /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				2B0B6C52688BC89D8DB811909D014DFF /* Analytics */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		B57314F14E93CD13C393409E4E7E83BC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2EAF1D46AFDBC39427BBF976AF283146 /* GoogleUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B79DBC45B304862AC61F68BD24ACDDAD /* GoogleInterchangeUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				730293EC61656E036A89E95D6C30240D /* Frameworks */,
+			);
+			path = GoogleInterchangeUtilities;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C5173E6C356F84890D50936E5D6291FA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AD443B4B19ACF5B0424C051DDA960137 /* FirebaseAuth.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		CCE6CDB4E439F80D7401D04631DF8896 /* Targets Support Files */ = {
@@ -411,74 +376,19 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		D65B415FA2457F8C3228389E7B9DA71D /* Frameworks */ = {
+		E971B8B2EAEB13D8DF2E888788547327 /* FirebaseInstanceID */ = {
 			isa = PBXGroup;
 			children = (
-				D21C68FB2B1F3F5A0E2FF251299E3EEE /* GoogleNetworkingUtilities.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		DF5179CBB61B411A0538352C5484516B /* Firebase */ = {
-			isa = PBXGroup;
-			children = (
-				153C7EF4D6036565F14ADEA91B55C222 /* Analytics */,
-			);
-			path = Firebase;
-			sourceTree = "<group>";
-		};
-		E6247CDA78D2D1DC09C80506FC14FC96 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				09CDF791202D81C572AACD72CE05C0D2 /* Info.plist */,
-				B34185DA161A3E47DBD29EC72E4A4872 /* mongo-c-driver.modulemap */,
-				FF62BD33458983DB6C7A27969D40B8D5 /* mongo-c-driver.xcconfig */,
-				085F0C2CE6EEE4E14CE38DCAB6EEA962 /* mongo-c-driver-dummy.m */,
-				0D8E06D8AC83769E6D9019CB7CF95F4E /* mongo-c-driver-prefix.pch */,
-				EE125CA88BFD1A8CAB4C9C3AA768FD54 /* mongo-c-driver-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/mongo-c-driver";
-			sourceTree = "<group>";
-		};
-		ED14B9D5EC8C580E83E70B599A8E155F /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				3167981744E865088BCF6BAC23F2CB11 /* mongo_c_driver.framework */,
-				7089741A0F49697F90805903B85C82FE /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		ED572DA6B6C26C8A336F9C455DBE2DFC /* FirebaseAnalytics */ = {
-			isa = PBXGroup;
-			children = (
-				4693503FEF3C14B72A571777A45AC893 /* Frameworks */,
-			);
-			path = FirebaseAnalytics;
-			sourceTree = "<group>";
-		};
-		F222B473BEED2D2EC8E43090B98F38D7 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				E8B829DC2B9EFC2F0A111032FB752C89 /* FirebaseAuth.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		FB02B00CE251492FB375E3B6B3323F11 /* FirebaseInstanceID */ = {
-			isa = PBXGroup;
-			children = (
-				D6B9F104B08FD1967426A7C7C55BB777 /* FIRInstanceID.h */,
-				FC19A5E415859D009C19CA1D0CE14EB2 /* Frameworks */,
+				AD9F267EC783F0FB1116068A988E2415 /* FIRInstanceID.h */,
+				FB6945996BD20FB8ADB961FF08D668D2 /* Frameworks */,
 			);
 			path = FirebaseInstanceID;
 			sourceTree = "<group>";
 		};
-		FC19A5E415859D009C19CA1D0CE14EB2 /* Frameworks */ = {
+		FB6945996BD20FB8ADB961FF08D668D2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				CD9CD9ACDDBD1F00850EC0AF0CC12F49 /* FirebaseInstanceID.framework */,
+				5B079BA24C3D011AA6754CB3D551C2CC /* FirebaseInstanceID.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -486,6 +396,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		007E8FBF0A480C242447B83360BE94C5 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48C0E193D666FDA1E469770B7CD43FFB /* ObjectMapper-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		014FF9A6141D720B7F4A00473D80BFF8 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -494,95 +412,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		82221D8B11397E425440B6C81EC987A4 /* Headers */ = {
+		87FA34B154AF4CE1956CBCE802933014 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85B077670ADB84420D0EA5C7189B348F /* SwiftMongoDB-umbrella.h in Headers */,
-				2F082ECD577847D811D7C6E375114099 /* swiftMongoDB.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		AA761B3D86AC01FB36EE4AAAF21751D5 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				F904077E277D8768F4654B9F677483C6 /* bcon.h in Headers */,
-				8C75069C06457FF989557B98D0A69D78 /* bson.h in Headers */,
-				3C763B6E598ED3C453C224212611AF4A /* encoding.h in Headers */,
-				4F9184BE37D1D3CCCCC6B9E39A61AAE4 /* env.h in Headers */,
-				1989BC91F99158393CBCE1F1A1B484BE /* gridfs.h in Headers */,
-				3D7AA5FA80013EC1A9723369846F2659 /* md5.h in Headers */,
-				1104592903FE8E4313756B3145F671A3 /* mongo-c-driver-umbrella.h in Headers */,
-				42CCFE2BA1746F6C936F7F98C55B660E /* mongo.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		E84A1A8443B5793EB4CD19EC2C8ED2F1 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				67875E6959A25F7996E77BAB0A31D407 /* Pods-WeddingPlanner-umbrella.h in Headers */,
+				F75DCB718790F2E67CD5EC5BFE108AE1 /* Pods-WeddingPlanner-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		1CB56A58EC223ECEA3CA635865227A5A /* SwiftMongoDB */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 44D7D35776911C5A142FE97D704368F4 /* Build configuration list for PBXNativeTarget "SwiftMongoDB" */;
-			buildPhases = (
-				23486C19C0EAB8899F5C782BA1ED2B68 /* Sources */,
-				F970B52166D2E4C01B2610C00381B7FD /* Frameworks */,
-				82221D8B11397E425440B6C81EC987A4 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				E76C49E8AAA07B8E495A9F234A7993D1 /* PBXTargetDependency */,
-			);
-			name = SwiftMongoDB;
-			productName = SwiftMongoDB;
-			productReference = C81BE45AF137CE826A4C230D2EB9257E /* SwiftMongoDB.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		33BCC0828536FB73A2D2163CDDAE659A /* Pods-WeddingPlanner */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8FBFC053AAE44ECF23C04FC226212AB0 /* Build configuration list for PBXNativeTarget "Pods-WeddingPlanner" */;
-			buildPhases = (
-				027FDA2BB1D6B3A876C471B1AC3C0F46 /* Sources */,
-				D713873E9CC2D624660EDC5588254ED3 /* Frameworks */,
-				E84A1A8443B5793EB4CD19EC2C8ED2F1 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				343FEDFD6A9CFA7CCA677B9222864EAD /* PBXTargetDependency */,
-				5F4C77A27202B2977F660E01BA8BFD21 /* PBXTargetDependency */,
-			);
-			name = "Pods-WeddingPlanner";
-			productName = "Pods-WeddingPlanner";
-			productReference = DDDECC5FC5EC67929495F0C6D14C3D72 /* Pods_WeddingPlanner.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		6898EAAC425B25E0C580D20645221C75 /* mongo-c-driver */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C7A9E2EE6CAD0B0DDC38323D724E22B6 /* Build configuration list for PBXNativeTarget "mongo-c-driver" */;
-			buildPhases = (
-				2BFCB5501316A512325239683FD66CC3 /* Sources */,
-				06AB623707BC795AA03837865F8D8D7E /* Frameworks */,
-				AA761B3D86AC01FB36EE4AAAF21751D5 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "mongo-c-driver";
-			productName = "mongo-c-driver";
-			productReference = BF82740C374971C98719247D6236A060 /* mongo_c_driver.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		90EF403E64D290335DA06DE836822E20 /* Pods-WeddingPlannerTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 216C6C588E76D302ECB7F7355E79D187 /* Build configuration list for PBXNativeTarget "Pods-WeddingPlannerTests" */;
@@ -597,7 +437,42 @@
 			);
 			name = "Pods-WeddingPlannerTests";
 			productName = "Pods-WeddingPlannerTests";
-			productReference = 8F740F197EDF75B6C12DC7E1B7BD6251 /* Pods_WeddingPlannerTests.framework */;
+			productReference = F7B2D76D092D7D82C590091A84AF9F49 /* Pods_WeddingPlannerTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		ACB2C3408908D3ECA15BA6B6CBE16C9B /* Pods-WeddingPlanner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B2035E251E8028482848094FD1EAE3B6 /* Build configuration list for PBXNativeTarget "Pods-WeddingPlanner" */;
+			buildPhases = (
+				EFA1F55347DA12B0BBC6DFFC295D8EFE /* Sources */,
+				61020FE8C6DABB301EB6DBB1D0946AAE /* Frameworks */,
+				87FA34B154AF4CE1956CBCE802933014 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F79E90722B250744EEF86FA68B146156 /* PBXTargetDependency */,
+			);
+			name = "Pods-WeddingPlanner";
+			productName = "Pods-WeddingPlanner";
+			productReference = CA24EE5AF31DB8639F88DBF514F0BA9B /* Pods_WeddingPlanner.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D5D6200D4BE741574DBD4FB768A6F55B /* ObjectMapper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 38397B75086B2C5B13E749C02A469E1A /* Build configuration list for PBXNativeTarget "ObjectMapper" */;
+			buildPhases = (
+				452031CAB85D1FEADD71A9D467FBF12E /* Sources */,
+				8CFF055CC9D308C73235AA849D9CABF5 /* Frameworks */,
+				007E8FBF0A480C242447B83360BE94C5 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ObjectMapper;
+			productName = ObjectMapper;
+			productReference = 0462A79E360C9874013529C16E076881 /* ObjectMapper.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -617,57 +492,38 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 7225F16EE02F18824A64E0A8A30E9EFC /* Products */;
+			productRefGroup = 7B756EE31B4E281BF10673D50C47C68D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				6898EAAC425B25E0C580D20645221C75 /* mongo-c-driver */,
-				33BCC0828536FB73A2D2163CDDAE659A /* Pods-WeddingPlanner */,
+				D5D6200D4BE741574DBD4FB768A6F55B /* ObjectMapper */,
+				ACB2C3408908D3ECA15BA6B6CBE16C9B /* Pods-WeddingPlanner */,
 				90EF403E64D290335DA06DE836822E20 /* Pods-WeddingPlannerTests */,
-				1CB56A58EC223ECEA3CA635865227A5A /* SwiftMongoDB */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		027FDA2BB1D6B3A876C471B1AC3C0F46 /* Sources */ = {
+		452031CAB85D1FEADD71A9D467FBF12E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB4E29FF84F836CD3CF694A5C1C2A833 /* Pods-WeddingPlanner-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		23486C19C0EAB8899F5C782BA1ED2B68 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EF829DFA3260934A98F430B683D226E3 /* helpers.swift in Sources */,
-				E66869D2337F25C46D0A49DDD8FCEA5C /* MongoBSON.swift in Sources */,
-				85C77C97BABC1ABE7FBBFE2796C2493C /* MongoCollection.swift in Sources */,
-				9EA2653E12FF2F0F6093F84EDE637407 /* MongoCursor.swift in Sources */,
-				E2450D3B85C249286C6BF6B68EBD7AB7 /* MongoDB.swift in Sources */,
-				A2BBC0DD48ED985BE76B7FBC7C4C28C0 /* MongoDocument.swift in Sources */,
-				3763BF90D1642C966D9F0AD54495DCE2 /* MongoError.swift in Sources */,
-				2A9E0909275249C2E9104A29B23EB9D9 /* MongoObject.swift in Sources */,
-				DF6F40E1844EBA5EBD190729FD68F36F /* MongoResult.swift in Sources */,
-				20DFBCABEB812ED62F9C328DDE56E959 /* SwiftMongoDB-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		2BFCB5501316A512325239683FD66CC3 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6CDE6EDC84E1B0DE1606CB59D4A801A9 /* bcon.c in Sources */,
-				9A1FECE44DA21AD7F8447FC36F1796AE /* bson.c in Sources */,
-				25D7417C6B77AC855AEBE4859AC0A35A /* encoding.c in Sources */,
-				5CD156EDEEDCF93A5528C87CB6D74DB5 /* env.c in Sources */,
-				5B1E5CF8DBC5924FC61AE946DF2D616D /* gridfs.c in Sources */,
-				66922B29B16AF6126F42EC476B125691 /* md5.c in Sources */,
-				BDF9AA5027D590EC17559E79EEA56C80 /* mongo-c-driver-dummy.m in Sources */,
-				BA7545D54C9B62BC2D74C4CC08D873C9 /* mongo.c in Sources */,
-				FDB2096215097FE4F87C3BE40F401ECD /* numbers.c in Sources */,
+				E437C1E272C35D0D65146C983B0195C9 /* CustomDateFormatTransform.swift in Sources */,
+				B9D6828121A50E8D765B244FE1A9E928 /* DateFormatterTransform.swift in Sources */,
+				93891326E415660F208490D132B1C59D /* DateTransform.swift in Sources */,
+				BD982146AB2D8F65A959654338DE2D38 /* EnumTransform.swift in Sources */,
+				173152CB50392D210B40A6E2DCF373DC /* FromJSON.swift in Sources */,
+				C7C1FA1ACE7B5B754C6BE930CCC32B05 /* ISO8601DateTransform.swift in Sources */,
+				418134548DBB8A1168C6DB0984827234 /* Map.swift in Sources */,
+				FA38E0317CADF17F0F25DB7C959060E0 /* Mappable.swift in Sources */,
+				BD84E7324AD44DF98AAF787B41311BF6 /* Mapper.swift in Sources */,
+				7393153B8ADAEBE0FA05EDCA9886740F /* NSDecimalNumberTransform.swift in Sources */,
+				62A6E30DB3348AF32184235809696096 /* ObjectMapper-dummy.m in Sources */,
+				C88F096FEDB8F5A5953B3C35481767B6 /* Operators.swift in Sources */,
+				DBB2F76D21FC9CBD3AD67D8071C9C9F2 /* ToJSON.swift in Sources */,
+				8D2537BE59E81695137ACEE1CAE3C56E /* TransformOf.swift in Sources */,
+				6F6935DE624507427C4CEF6965A68ECF /* TransformType.swift in Sources */,
+				FB5291D5DC0D88C8DC804B39DC25132E /* URLTransform.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -679,30 +535,60 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		EFA1F55347DA12B0BBC6DFFC295D8EFE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1983DC860F3A88ED7169D09693FF179E /* Pods-WeddingPlanner-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		343FEDFD6A9CFA7CCA677B9222864EAD /* PBXTargetDependency */ = {
+		F79E90722B250744EEF86FA68B146156 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = SwiftMongoDB;
-			target = 1CB56A58EC223ECEA3CA635865227A5A /* SwiftMongoDB */;
-			targetProxy = 12587512BC63E43C5BA2C63D116D393E /* PBXContainerItemProxy */;
-		};
-		5F4C77A27202B2977F660E01BA8BFD21 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "mongo-c-driver";
-			target = 6898EAAC425B25E0C580D20645221C75 /* mongo-c-driver */;
-			targetProxy = 4EBD565780AC798CFCB220665D420C6A /* PBXContainerItemProxy */;
-		};
-		E76C49E8AAA07B8E495A9F234A7993D1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "mongo-c-driver";
-			target = 6898EAAC425B25E0C580D20645221C75 /* mongo-c-driver */;
-			targetProxy = A0E019F23A74C3F968E8A2CBDE6E747E /* PBXContainerItemProxy */;
+			name = ObjectMapper;
+			target = D5D6200D4BE741574DBD4FB768A6F55B /* ObjectMapper */;
+			targetProxy = 6A0F3B07259FAF009D385888C04B3A50 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		16DD3A088CEDF93B39796243A7C65712 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 091D58E93FA92057FD95CD740B8AF8BF /* Pods-WeddingPlanner.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-WeddingPlanner/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WeddingPlanner/Pods-WeddingPlanner.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_WeddingPlanner;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 		1965EE6889D7CF62A2E36998F2F9576C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4E64FE308F0CED1CFDC7AA5CC450727E /* Pods-WeddingPlannerTests.debug.xcconfig */;
@@ -735,39 +621,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		2150D62EAFE8598728F60AC4F41DC59F /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1653B56B60AB45EF85894628DA1302BD /* Pods-WeddingPlanner.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-WeddingPlanner/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-WeddingPlanner/Pods-WeddingPlanner.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_WeddingPlanner;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		3FA451D268613890FA8A5A03801E11D5 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -807,9 +660,9 @@
 			};
 			name = Release;
 		};
-		445C34834D7212FCE7A69393FBBAECF3 /* Debug */ = {
+		5881F841731C02AF57FA5CD770DE4F58 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FF62BD33458983DB6C7A27969D40B8D5 /* mongo-c-driver.xcconfig */;
+			baseConfigurationReference = C12DDE93C5D8EFD21893133862C2EA09 /* ObjectMapper.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -820,16 +673,17 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/mongo-c-driver/mongo-c-driver-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/mongo-c-driver/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/ObjectMapper/ObjectMapper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ObjectMapper/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/mongo-c-driver/mongo-c-driver.modulemap";
+				MODULEMAP_FILE = "Target Support Files/ObjectMapper/ObjectMapper.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = mongo_c_driver;
+				PRODUCT_NAME = ObjectMapper;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -878,9 +732,9 @@
 			};
 			name = Debug;
 		};
-		891AFE573347FCC77A47709151D4AA1D /* Release */ = {
+		7421725DB8DD9C8C355CD30BD7713A22 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FF62BD33458983DB6C7A27969D40B8D5 /* mongo-c-driver.xcconfig */;
+			baseConfigurationReference = 1653B56B60AB45EF85894628DA1302BD /* Pods-WeddingPlanner.release.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -891,14 +745,18 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/mongo-c-driver/mongo-c-driver-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/mongo-c-driver/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-WeddingPlanner/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/mongo-c-driver/mongo-c-driver.modulemap";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-WeddingPlanner/Pods-WeddingPlanner.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = mongo_c_driver;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_WeddingPlanner;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -907,9 +765,9 @@
 			};
 			name = Release;
 		};
-		A9B15F2E51A52326DBA2F426208396FC /* Release */ = {
+		B12A4DC59E3BAD599E798A05C58BAD6F /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C5EA926DFB15B5BB625FDBBA7080D3BD /* SwiftMongoDB.xcconfig */;
+			baseConfigurationReference = C12DDE93C5D8EFD21893133862C2EA09 /* ObjectMapper.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 1;
@@ -920,14 +778,14 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftMongoDB/SwiftMongoDB-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftMongoDB/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/ObjectMapper/ObjectMapper-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ObjectMapper/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftMongoDB/SwiftMongoDB.modulemap";
+				MODULEMAP_FILE = "Target Support Files/ObjectMapper/ObjectMapper.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SwiftMongoDB;
+				PRODUCT_NAME = ObjectMapper;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -969,70 +827,6 @@
 			};
 			name = Release;
 		};
-		D242C7A941AF61B6996DD1209E864B07 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = C5EA926DFB15B5BB625FDBBA7080D3BD /* SwiftMongoDB.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftMongoDB/SwiftMongoDB-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftMongoDB/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SwiftMongoDB/SwiftMongoDB.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SwiftMongoDB;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		F50548F52BA474A8AD960EA696DCF2CA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 091D58E93FA92057FD95CD740B8AF8BF /* Pods-WeddingPlanner.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-WeddingPlanner/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-WeddingPlanner/Pods-WeddingPlanner.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_WeddingPlanner;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1054,29 +848,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		44D7D35776911C5A142FE97D704368F4 /* Build configuration list for PBXNativeTarget "SwiftMongoDB" */ = {
+		38397B75086B2C5B13E749C02A469E1A /* Build configuration list for PBXNativeTarget "ObjectMapper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D242C7A941AF61B6996DD1209E864B07 /* Debug */,
-				A9B15F2E51A52326DBA2F426208396FC /* Release */,
+				5881F841731C02AF57FA5CD770DE4F58 /* Debug */,
+				B12A4DC59E3BAD599E798A05C58BAD6F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8FBFC053AAE44ECF23C04FC226212AB0 /* Build configuration list for PBXNativeTarget "Pods-WeddingPlanner" */ = {
+		B2035E251E8028482848094FD1EAE3B6 /* Build configuration list for PBXNativeTarget "Pods-WeddingPlanner" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F50548F52BA474A8AD960EA696DCF2CA /* Debug */,
-				2150D62EAFE8598728F60AC4F41DC59F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C7A9E2EE6CAD0B0DDC38323D724E22B6 /* Build configuration list for PBXNativeTarget "mongo-c-driver" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				445C34834D7212FCE7A69393FBBAECF3 /* Debug */,
-				891AFE573347FCC77A47709151D4AA1D /* Release */,
+				16DD3A088CEDF93B39796243A7C65712 /* Debug */,
+				7421725DB8DD9C8C355CD30BD7713A22 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

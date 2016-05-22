@@ -7,9 +7,9 @@
 //
 
 import UIKit
-import SwiftMongoDB
 
-public struct Task: MongoObject {
+
+public struct Task {
 
     var   weddingId : Int?
         , title     : String?

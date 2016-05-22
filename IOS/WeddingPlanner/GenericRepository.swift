@@ -7,41 +7,24 @@
 //
 
 import Foundation
-import SwiftMongoDB
+import ObjectMapper
 
-class GenericRepository<T> : NSObject {
+class GenericRepository<T: Mappable>  {
     
-    var mongodb     : MongoDB!
-    var dbCollection  : MongoCollection!
-    
-    init(collection: String!) {
-        super.init()
-        
-        //mongodb = MongoDB(host: DatabaseConfiguration.host, port: DatabaseConfiguration.port, database: DatabaseConfiguration.database,
-        //                  usernameAndPassword  :(username: DatabaseConfiguration.username, password: DatabaseConfiguration.password)
-        mongodb = MongoDB(database: DatabaseConfiguration.database)        //mongodb.login(username: DatabaseConfiguration.username, password: DatabaseConfiguration.password)
-        if mongodb.connectionStatus != .Success {
-            print("connection was not successful")
-            return
-        }
-
-        dbCollection = MongoCollection(name:collection)
-        mongodb.registerCollection(dbCollection)
+    var address : String!
+  
+    init(address: String!) {
+        self.address = address
     }
     
     func insert (entity : T) -> T {
-    
-        do {
-            let converted = entity as! MongoObject
-            let document = converted.Document()
-            dbCollection.insert(document)
-        }
-
-        return entity;
+        return entity
     }
     
-    func load (id : Int) -> T? {
-        return nil
+    func load (id : String) -> T? {
+        let uri = "\(address)/\(id)"
+        let raw = NSDataProvider.LoadFromUri(uri)
+        let entity = Mapper<T>().map(raw)
+      return entity
     }
-    
 }

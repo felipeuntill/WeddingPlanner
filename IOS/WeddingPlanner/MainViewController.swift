@@ -19,6 +19,13 @@ class MainViewController: BaseViewController {
 
     override func viewDidLoad() {
         //self.RedirectToController("LoginScene")
+        
+        let repository = WeddingRepository(address: EndingPointConfiguration.WeddingService)
+        let wedding = repository.load("5741bbf4e839afde530e56ca");
+        var x = wedding?.id
+        var y = wedding?.brideId
+        var z = wedding?.groomId
+        
     }
     
     override func viewDidAppear(animated: Bool) {

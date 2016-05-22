@@ -7,10 +7,22 @@
 //
 
 import UIKit
-import SwiftMongoDB
+import ObjectMapper
 
-public struct Wedding : MongoObject {
+class Wedding : Mappable {
 
-    var   brideId   : Int = 0
-        , groomId   : Int = 0
+    var   id        : String!
+        , brideId   : Int!
+        , groomId   : Int!
+    
+    required init?(_ map: Map) {
+        
+    }
+    
+    // Mappable
+    func mapping(map: Map) {
+        id              <- map["_id"]
+        brideId         <- map["brideId"]
+        groomId         <- map["groomId"]
+    }
 }
