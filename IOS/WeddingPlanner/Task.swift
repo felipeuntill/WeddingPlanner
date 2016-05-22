@@ -7,11 +7,11 @@
 //
 
 import UIKit
+import SwiftMongoDB
 
-class Task: NSObject {
+public struct Task: MongoObject {
 
-    var   taskId    : Int?
-        , weddingId : Int?
+    var   weddingId : Int?
         , title     : String?
         , done      : Bool?
 }

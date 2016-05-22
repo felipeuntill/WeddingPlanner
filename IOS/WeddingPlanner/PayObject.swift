@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import SwiftMongoDB
 
-class PayObject: NSObject {
+public struct PayObject: MongoObject {
 
     var   price         : NSDecimal?
         , incoming      : NSDecimal?

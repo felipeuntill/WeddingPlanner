@@ -7,8 +7,9 @@
 //
 
 import UIKit
+import SwiftMongoDB
 
-class Requirement: PayObject {
+public struct Requirement: MongoObject {
 
     var   requirementId : Int?
         , name          : String?

@@ -7,10 +7,10 @@
 //
 
 import UIKit
+import SwiftMongoDB
 
-class User: NSObject {
+public struct User: MongoObject {
     
-    var   userId : Int?
-        , gender : Bool?
+    var gender : Bool?
     
 }
