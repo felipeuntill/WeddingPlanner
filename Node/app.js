@@ -1,22 +1,25 @@
 // Summary:  Requirements
 // Description:
-var express = require('express');
-var path = require('path');
-var favicon = require('serve-favicon');
-var logger = require('morgan');
-var cookieParser = require('cookie-parser');
-var bodyParser = require('body-parser');
+var express       = require('express');
+var path          = require('path');
+var favicon       = require('serve-favicon');
+var logger        = require('morgan');
+var cookieParser  = require('cookie-parser');
+var bodyParser    = require('body-parser');
+var mongoose      = require('mongoose');
 
 // Summary: Application Routes
-// Description:
-var routes = require('./routes/index');
-var users = require('./routes/users');
+// Description: Requiring application routes
+var routes    = require('./routes/index');
+var users     = require('./routes/users');
+var wedding   = require('./routes/api/wedding');
 
 
 // Summary:
 // Description
 var app = express();
 
+// Summary:
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
@@ -29,8 +32,11 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+// Summary: Dellegating routes
+// Description: delegating routes and specifying paths
 app.use('/', routes);
 app.use('/users', users);
+app.use('/api/wedding', wedding);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
