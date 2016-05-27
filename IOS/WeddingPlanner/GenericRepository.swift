@@ -11,7 +11,7 @@ import ObjectMapper
 
 class GenericRepository<T: Mappable>  {
     
-    var address : String!
+    private var address : String!
   
     init(address: String!) {
         self.address = address

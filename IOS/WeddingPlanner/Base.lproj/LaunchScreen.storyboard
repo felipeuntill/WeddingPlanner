@@ -17,11 +17,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="login_bridge_background" translatesAutoresizingMaskIntoConstraints="NO" id="WtH-y9-EIl">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_bridge_background" translatesAutoresizingMaskIntoConstraints="NO" id="WtH-y9-EIl">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="uN4-St-ZDo">
-                                <rect key="frame" x="169" y="354.5" width="37" height="37"/>
+                                <rect key="frame" x="169" y="354" width="37" height="37"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="37" id="Vgh-7u-Pei"/>
                                     <constraint firstAttribute="height" constant="37" id="pfg-sH-mIQ"/>
@@ -43,12 +43,16 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="uN4-St-ZDo" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="7iq-6R-pQr"/>
+                            <constraint firstItem="WtH-y9-EIl" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="978-7N-yCr"/>
                             <constraint firstItem="Rpn-Cu-ea3" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="180" id="FhS-nD-H3i"/>
                             <constraint firstItem="pe9-cC-7h6" firstAttribute="top" secondItem="Rpn-Cu-ea3" secondAttribute="bottom" constant="8" id="I5T-qS-oSg"/>
                             <constraint firstItem="uN4-St-ZDo" firstAttribute="top" secondItem="pe9-cC-7h6" secondAttribute="bottom" constant="80" id="QmI-yj-Jpw"/>
                             <constraint firstItem="uN4-St-ZDo" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="WFA-AS-BRr"/>
+                            <constraint firstItem="WtH-y9-EIl" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="ebz-tb-lkN"/>
                             <constraint firstItem="pe9-cC-7h6" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="pkc-rQ-3MO"/>
                             <constraint firstItem="Rpn-Cu-ea3" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="rKB-bJ-WId"/>
+                            <constraint firstAttribute="trailing" secondItem="WtH-y9-EIl" secondAttribute="trailing" id="tPz-KL-TJG"/>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="WtH-y9-EIl" secondAttribute="bottom" id="xJ8-fb-5oE"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>

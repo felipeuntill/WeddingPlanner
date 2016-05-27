@@ -29,17 +29,17 @@ router.get('/', function(req, res, next) {
 // Description:  GET Wedding listing
 router.post('/', function(req, res, next) {
 
-  var wedding = new Wedding({
-    brideId: req.body.brideId,
-    groomId: req.body.groomId
-  });
+  var wedding = new Wedding();
+
+  for (var key in req.body) {
+    if (wedding[key])
+      wedding[key] = req.body[key];
+  }
 
   wedding.save(function (err) {
     if (err) {
       res.send(err);
     } else {
-      console.log(req.body.brideId);
-      console.log(req.body.groomId);
       res.send(wedding);
     }
   });

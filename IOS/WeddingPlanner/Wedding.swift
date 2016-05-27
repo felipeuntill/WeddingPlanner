@@ -15,6 +15,11 @@ class Wedding : Mappable {
         , brideId   : Int!
         , groomId   : Int!
     
+    
+    init () {
+
+    }
+    
     required init?(_ map: Map) {
         
     }
