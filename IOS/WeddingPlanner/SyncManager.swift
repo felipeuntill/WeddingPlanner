@@ -15,17 +15,17 @@ public class SyncManager {
     
     static func Flush () {
         // Storages
-        let userDomainStorage = LocalStorageProvider<FIRUser>(storage:"userdomain")
+        //let userDomainStorage = LocalStorageProvider<FIRUser>(storage:"userdomain")
         
-        userDomainStorage.syncronize(UserDomain.user)
+        //userDomainStorage.syncronize(UserDomain.user)
     }
     
     static func Load () {
         // Storages
-        let userDomainStorage = LocalStorageProvider<FIRUser>(storage:"userdomain")
+        //let userDomainStorage = LocalStorageProvider<FIRUser>(storage:"userdomain")
         
         
-        UserDomain.user = userDomainStorage.restore()
+        //UserDomain.user = userDomainStorage.restore()
     
     }
 }

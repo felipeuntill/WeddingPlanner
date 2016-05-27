@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Icb-ty-hnJ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Mrw-vN-gt9">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -125,7 +125,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JJe-qs-98o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1194.5" y="385.5"/>
+            <point key="canvasLocation" x="930.5" y="356.5"/>
         </scene>
         <!--Wedding View Controller-->
         <scene sceneID="FKO-zt-dWi">
@@ -168,7 +168,7 @@
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="0.0" reuseIdentifier="requirement" rowHeight="55" id="2EY-3U-y4N" customClass="RequirementTableViewCell" customModule="WeddingPlanner" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="0.0" reuseIdentifier="requirement" rowHeight="55" id="2EY-3U-y4N">
                                 <rect key="frame" x="0.0" y="92" width="375" height="55"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2EY-3U-y4N" id="b0R-ys-rvL">
@@ -288,8 +288,8 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <segue destination="Icb-ty-hnJ" kind="custom" identifier="sw_front" customClass="SWRevealViewControllerSegueSetController" id="THy-x4-5WP"/>
-                        <segue destination="TIt-Io-Ca6" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="R8S-D5-34B"/>
+                        <segue destination="TIt-Io-Ca6" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="f7C-FY-SIi"/>
+                        <segue destination="Mrw-vN-gt9" kind="custom" customClass="SWRevealViewControllerSegueSetController" id="Bcs-f0-avb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NS4-Ta-pu5" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -563,6 +563,37 @@
             </objects>
             <point key="canvasLocation" x="2346.5" y="411.5"/>
         </scene>
+        <!--Teste View Controller-->
+        <scene sceneID="hlO-33-pNG">
+            <objects>
+                <viewController id="Mrw-vN-gt9" customClass="TesteViewController" customModule="WeddingPlanner" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="5qs-2l-b9o"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZE7-9q-gCq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3wo-kN-Hjk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="login_bridge_background" translatesAutoresizingMaskIntoConstraints="NO" id="TKg-rr-Q8D">
+                                <rect key="frame" x="67" y="191" width="240" height="128"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WLm-Db-Um6">
+                                <rect key="frame" x="149" y="374" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="open:" destination="Mrw-vN-gt9" eventType="touchUpInside" id="pgW-bZ-hEm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="l2S-ue-dGI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="479.5" y="-426.5"/>
+        </scene>
         <!--Main View Controller-->
         <scene sceneID="Hyj-jX-Yd1">
             <objects>
@@ -752,7 +783,6 @@
         <image name="navigation_task_icon" width="70" height="70"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="THy-x4-5WP"/>
         <segue reference="hl7-aW-E5c"/>
         <segue reference="M5a-l6-RnM"/>
     </inferredMetricsTieBreakers>

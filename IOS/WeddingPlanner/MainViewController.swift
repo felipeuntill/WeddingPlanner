@@ -45,10 +45,10 @@ class MainViewController: BaseViewController {
     override func viewDidAppear (animated: Bool) {
         super.viewDidAppear(animated)
         
-        userImageView.layer.borderWidth = 0
-        userImageView.layer.masksToBounds = false
-        userImageView.layer.borderColor = UIColor.whiteColor().CGColor
-        userImageView.layer.cornerRadius = 44
-        userImageView.clipsToBounds = true
+//        userImageView.layer.borderWidth = 0
+//        userImageView.layer.masksToBounds = false
+//        userImageView.layer.borderColor = UIColor.whiteColor().CGColor
+//        userImageView.layer.cornerRadius = 44
+//        userImageView.clipsToBounds = true
     }
 }

@@ -35,6 +35,7 @@
 		7CCF74D41CF8E07F001C10E2 /* UserDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF74D31CF8E07F001C10E2 /* UserDomain.swift */; };
 		7CCF74D61CF8E71B001C10E2 /* SyncManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF74D51CF8E71B001C10E2 /* SyncManager.swift */; };
 		7CCF74D81CF8E7BB001C10E2 /* LocalStorageConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF74D71CF8E7BB001C10E2 /* LocalStorageConfiguration.swift */; };
+		7CCF74DC1CF90E2C001C10E2 /* TesteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF74DB1CF90E2C001C10E2 /* TesteViewController.swift */; };
 		7CE7094E1CCAC89E00923495 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE7094D1CCAC89E00923495 /* UIColorExtensions.swift */; };
 		7CE709501CCACB8100923495 /* RequirementRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE7094F1CCACB8100923495 /* RequirementRepository.swift */; };
 		7CEE51481CC9483D00FC687A /* WeddingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEE51471CC9483D00FC687A /* WeddingViewController.swift */; };
@@ -93,6 +94,7 @@
 		7CCF74D31CF8E07F001C10E2 /* UserDomain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDomain.swift; sourceTree = "<group>"; };
 		7CCF74D51CF8E71B001C10E2 /* SyncManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SyncManager.swift; sourceTree = "<group>"; };
 		7CCF74D71CF8E7BB001C10E2 /* LocalStorageConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalStorageConfiguration.swift; sourceTree = "<group>"; };
+		7CCF74DB1CF90E2C001C10E2 /* TesteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TesteViewController.swift; sourceTree = "<group>"; };
 		7CE7094D1CCAC89E00923495 /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		7CE7094F1CCACB8100923495 /* RequirementRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequirementRepository.swift; sourceTree = "<group>"; };
 		7CEE51471CC9483D00FC687A /* WeddingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeddingViewController.swift; sourceTree = "<group>"; };
@@ -204,6 +206,7 @@
 				7CCAE3901CC8902D004A9088 /* RegisterViewController.swift */,
 				7CEE51471CC9483D00FC687A /* WeddingViewController.swift */,
 				7CEE51491CC948AF00FC687A /* RequirementListViewController.swift */,
+				7CCF74DB1CF90E2C001C10E2 /* TesteViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -519,6 +522,7 @@
 				7CC8CBCE1CC714CB00D1699D /* PayObject.swift in Sources */,
 				7CCAE38C1CC886AB004A9088 /* ViewControllerExtensions.swift in Sources */,
 				7CF38BC81CF0C44900F30525 /* EndingPointConfiguration.swift in Sources */,
+				7CCF74DC1CF90E2C001C10E2 /* TesteViewController.swift in Sources */,
 				7CEE514C1CC9497F00FC687A /* BaseViewController.swift in Sources */,
 				7CCF74D81CF8E7BB001C10E2 /* LocalStorageConfiguration.swift in Sources */,
 				7CCAE38A1CC868A3004A9088 /* MainViewController.swift in Sources */,

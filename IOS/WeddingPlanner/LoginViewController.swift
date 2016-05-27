@@ -26,10 +26,6 @@ class LoginViewController: BaseViewController {
         super.viewDidLoad()
     }
     
-    override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(animated)
-    }
-    
     @IBAction func OnLogin(sender: UIButton) {
         
         self.dismissWarn()
