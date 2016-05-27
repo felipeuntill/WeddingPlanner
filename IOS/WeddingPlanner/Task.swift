@@ -7,11 +7,35 @@
 //
 
 import UIKit
+import ObjectMapper
 
-
-public struct Task {
-
-    var   weddingId : Int?
-        , title     : String?
-        , done      : Bool?
+class Task : Mappable {
+    
+    var   id        : String!
+    , weddingId     : String!
+    , name          : String!
+    , description   : String!
+    , dueDate       : NSDate?
+    , done          : Bool!
+    
+    
+    
+    init () {
+        
+    }
+    
+    required init?(_ map: Map) {
+        
+    }
+    
+    // Mappable
+    func mapping(map: Map) {
+        id              <- map["_id"]
+        weddingId       <- map["weddingId"]
+        name            <- map["name"]
+        description     <- map["description"]
+        dueDate         <- map["dueDate"]
+        done            <- map["done"]
+    }
 }
+

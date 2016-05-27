@@ -17,26 +17,32 @@ class MainViewController: BaseViewController {
         revealViewController().revealToggle(sender)
     }
 
-    override func viewDidLoad() {
-        //self.RedirectToController("LoginScene")
+    override func viewDidLoad () {
         
-        let repository = WeddingRepository(address: EndingPointConfiguration.WeddingService)
-        let wedding = Wedding()
+//        if(UserDomain.user == nil) {
+//            self.RedirectToController("LoginController")
+//            return
+//        }
         
-        wedding.brideId = 9876
-        wedding.groomId = 5678
-        
-        let inserted = repository.insert(wedding)
-        let a = inserted.groomId
-        let b = inserted.id
-        
-        let list = repository.list()
-        let x = list?.count
-        let z = list?.isEmpty
+        super.viewDidLoad()
+//        
+//        let repository = WeddingRepository(address: EndingPointConfiguration.WeddingService)
+//        let wedding = Wedding()
+//        
+//        wedding.brideId = "9876"
+//        wedding.groomId = "5678"
+//        
+//        let inserted = repository.insert(wedding)
+//        let a = inserted.groomId
+//        let b = inserted.id
+//        
+//        let list = repository.list()
+//        let x = list?.count
+//        let z = list?.isEmpty
         
     }
     
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear (animated: Bool) {
         super.viewDidAppear(animated)
         
         userImageView.layer.borderWidth = 0

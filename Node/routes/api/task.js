@@ -3,41 +3,41 @@
 var express         = require('express');
 var mongoose        = require('mongoose');
 var database        = require('../../configuration/database');
-var WeddingSchema   = require('../../schemas/WeddingSchema');
+var TaskSchema   = require('../../schemas/TaskSchema');
 
 // Summary:
 // Description:
 var router    = express.Router();
-var Wedding   = mongoose.model('Wedding', WeddingSchema);
+var Task   = mongoose.model('Task', TaskSchema);
 
 // Summary: actions
 // Action: List
-// Description:  GET Wedding listing
+// Description:  GET Task listing
 router.get('/', function(req, res, next) {
 
-  Wedding.find(function(err, weddings) {
+  Task.find(function(err, Tasks) {
     if (err) res.send(err);
-    res.json(weddings);
+    res.json(Tasks);
   });
 
 });
 
 // Action: Insert
-// Description:  GET Wedding listing
+// Description:  GET Task listing
 router.post('/', function(req, res, next) {
 
-  var wedding = new Wedding();
+  var Task = new Task();
 
   for (var key in req.body) {
-    if (wedding[key])
-      wedding[key] = req.body[key];
+    if (Task[key])
+      Task[key] = req.body[key];
   }
 
-  wedding.save(function (err) {
+  Task.save(function (err) {
     if (err) {
       res.send(err);
     } else {
-      res.send(wedding);
+      res.send(Task);
     }
   });
 
@@ -45,27 +45,27 @@ router.post('/', function(req, res, next) {
 
 router.get('/:id', function(req, res, next) {
 
-  Wedding.findById(req.params.id, function(err, wedding) {
+  Task.findById(req.params.id, function(err, Task) {
       if (err) res.send(err);
-      res.json(wedding);
+      res.json(Task);
   });
 
 });
 
 router.put('/:id', function(req, res, next) {
 
-  Wedding.findById(req.params.id, function(err, wedding) {
+  Task.findById(req.params.id, function(err, Task) {
 
       if (err) res.send(err);
 
       for (var key in req.body) {
-        if (wedding[key])
-          wedding[key] = req.body[key];
+        if (Task[key])
+          Task[key] = req.body[key];
       }
 
-      wedding.save(function(err) {
+      Task.save(function(err) {
         if (err) res.send(err);
-        res.json(wedding);
+        res.json(Task);
       });
 
   });
@@ -74,7 +74,7 @@ router.put('/:id', function(req, res, next) {
 
 router.delete('/:id', function(req, res, next) {
 
-  Wedding.remove({
+  Task.remove({
       _id: req.params.id
   }, function(err, bear) {
       if (err) res.send(err);
@@ -83,5 +83,18 @@ router.delete('/:id', function(req, res, next) {
 
 });
 
+// Summary: actions
+// Action: Get By Wedding
+// Description:  GET Task listing given a wedding
+router.get('/given-wedding/:id', function(req, res, next) {
+
+  Task.find({
+    weddingId : req.params.id
+  },function(err, Tasks) {
+      if (err) res.send(err);
+    res.json(Tasks);
+  });
+
+});
 
 module.exports = router;

@@ -8,11 +8,16 @@ var cookieParser  = require('cookie-parser');
 var bodyParser    = require('body-parser');
 var mongoose      = require('mongoose');
 
+// Connection to database
+var database  = require('./configuration/database');
+mongoose.connect(database.host);
+
+
 // Summary: Application Routes
 // Description: Requiring application routes
 var routes    = require('./routes/index');
-var users     = require('./routes/users');
 var wedding   = require('./routes/api/wedding');
+var task      = require('./routes/api/task');
 
 
 // Summary:
@@ -35,8 +40,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 // Summary: Dellegating routes
 // Description: delegating routes and specifying paths
 app.use('/', routes);
-app.use('/users', users);
 app.use('/api/wedding', wedding);
+app.use('/api/task', task);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

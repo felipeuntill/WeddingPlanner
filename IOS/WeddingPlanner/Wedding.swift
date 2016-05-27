@@ -12,8 +12,9 @@ import ObjectMapper
 class Wedding : Mappable {
 
     var   id        : String!
-        , brideId   : Int!
-        , groomId   : Int!
+        , brideId   : String!
+        , groomId   : String!
+        , date      : NSDate?
     
     
     init () {
@@ -29,5 +30,6 @@ class Wedding : Mappable {
         id              <- map["_id"]
         brideId         <- map["brideId"]
         groomId         <- map["groomId"]
+        date            <- map["date"]
     }
 }

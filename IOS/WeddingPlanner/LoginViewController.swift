@@ -26,6 +26,10 @@ class LoginViewController: BaseViewController {
         super.viewDidLoad()
     }
     
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+    }
+    
     @IBAction func OnLogin(sender: UIButton) {
         
         self.dismissWarn()
@@ -48,12 +52,13 @@ class LoginViewController: BaseViewController {
     
     func login () {
         
-       
         FIRAuth.auth()?.signInWithEmail(userTextField.text!, password: passTextField.text!, completion: {
             user, error in
-            
             if error == nil {
+                
+                UserDomain.user = user
                 self.RedirectToController("MainController")
+                
             } else {
                 self.createWarn(error?.localizedDescription)
             }
@@ -70,7 +75,6 @@ class LoginViewController: BaseViewController {
         
         activityIndicator.startAnimating()
         
-//        let alert = UIAlertView()
         var canLogin = true
     
         if !(userTextField.text?.IsEmail())! {
@@ -82,13 +86,7 @@ class LoginViewController: BaseViewController {
         }
         
         if !canLogin {
-            
             createWarn("Usuário ou senha inválidos")
-//            alert.title = "Wrong login inputs"
-//            alert.message = "Please review your login informations"
-//            alert.addButtonWithTitle("Ok")
-//            alert.show()
-            
         }
         
         // Produces an small delay before stop the animation against

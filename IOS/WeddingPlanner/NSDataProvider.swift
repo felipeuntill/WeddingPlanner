@@ -8,7 +8,7 @@
 
 import Foundation
 
-class NSDataProvider {
+public class NSDataProvider {
 
     static func LoadFromUri(address : String, method : String? = nil, json : String? = nil) -> NSString {
     

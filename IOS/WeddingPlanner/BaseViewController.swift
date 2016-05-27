@@ -49,7 +49,7 @@ extension BaseViewController {
             window.rootViewController!.view,
             toView: secondViewController.view,
             duration: transition,
-            options: .TransitionCrossDissolve,
+            options: .TransitionCurlUp,
             completion: {
                 finished in window.rootViewController = secondViewController
         })
