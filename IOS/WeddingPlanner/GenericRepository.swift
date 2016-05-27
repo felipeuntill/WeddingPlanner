@@ -18,7 +18,16 @@ class GenericRepository<T: Mappable>  {
     }
     
     func insert (entity : T) -> T {
-        return entity
+        let json = Mapper().toJSONString(entity, prettyPrint: true)
+        let raw = NSDataProvider.LoadFromUri(address, method: "POST", json: json)
+        let result = Mapper<T>().map(raw)
+        return result!
+    }
+    
+    func list () -> Array<T>? {
+        let raw = NSDataProvider.LoadFromUri(address)
+        let list = Mapper<T>().mapArray(raw)
+        return list
     }
     
     func load (id : String) -> T? {

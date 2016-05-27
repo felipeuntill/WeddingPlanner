@@ -21,10 +21,9 @@ class MainViewController: BaseViewController {
         //self.RedirectToController("LoginScene")
         
         let repository = WeddingRepository(address: EndingPointConfiguration.WeddingService)
-        let wedding = repository.load("5741bbf4e839afde530e56ca");
-        var x = wedding?.id
-        var y = wedding?.brideId
-        var z = wedding?.groomId
+        let wedding = repository.list()
+        let x = wedding?.count
+        let z = wedding?.isEmpty
         
     }
     
