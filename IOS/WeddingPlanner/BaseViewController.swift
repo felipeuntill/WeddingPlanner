@@ -16,9 +16,9 @@ class BaseViewController : UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
-        if revealViewController() != nil && enableNavigation {
-            self.view.addGestureRecognizer(revealViewController().panGestureRecognizer())
-        }
+//        if revealViewController() != nil && enableNavigation {
+//            self.view.addGestureRecognizer(revealViewController().panGestureRecognizer())
+//        }
     }
     
     func createWarn(warning : String!){

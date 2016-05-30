@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Mrw-vN-gt9">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Icb-ty-hnJ">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
@@ -9,7 +9,7 @@
         <!--Navigation View Controller-->
         <scene sceneID="ceo-K2-LWN">
             <objects>
-                <viewController id="TIt-Io-Ca6" customClass="NavigationViewController" customModule="WeddingPlanner" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NavigationController" id="TIt-Io-Ca6" customClass="NavigationViewController" customModule="WeddingPlanner" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="P3M-1z-Kf9"/>
                         <viewControllerLayoutGuide type="bottom" id="4L1-7t-ZVS"/>
@@ -202,7 +202,6 @@
                                     <outlet property="iconView" destination="Esh-Mi-S31" id="FEH-dn-0Uk"/>
                                     <outlet property="lineView" destination="isu-CJ-b60" id="xaL-Jf-7Fq"/>
                                     <outlet property="titleLabel" destination="3fp-t2-eHN" id="wAS-vj-FKx"/>
-                                    <segue destination="prw-rE-zwr" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="M5a-l6-RnM"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
@@ -212,16 +211,8 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="akQ-pI-QW0">
-                        <barButtonItem key="leftBarButtonItem" image="main_button_menu" id="BnA-Pi-nit">
-                            <connections>
-                                <segue destination="Icb-ty-hnJ" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="ar5-Ya-9CU"/>
-                            </connections>
-                        </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="dqK-bw-gRb">
-                            <connections>
-                                <segue destination="prw-rE-zwr" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="u8f-5v-JE5"/>
-                            </connections>
-                        </barButtonItem>
+                        <barButtonItem key="leftBarButtonItem" image="main_button_menu" id="BnA-Pi-nit"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="dqK-bw-gRb"/>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </tableViewController>
@@ -251,16 +242,8 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                 <items>
                                     <navigationItem title="Title" id="gPm-Jq-d2a">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="cSI-Oy-89w">
-                                            <connections>
-                                                <segue destination="mMa-WW-rQL" kind="custom" customClass="SWRevealViewControllerSegueSetController" id="mEB-dw-bv3"/>
-                                            </connections>
-                                        </barButtonItem>
-                                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="sxe-rv-TrH">
-                                            <connections>
-                                                <segue destination="mMa-WW-rQL" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="JZE-aj-yJE"/>
-                                            </connections>
-                                        </barButtonItem>
+                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="cSI-Oy-89w"/>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="sxe-rv-TrH"/>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -272,29 +255,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VsS-k0-sFt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2561.5" y="1310.5"/>
-        </scene>
-        <!--Reveal View Controller-->
-        <scene sceneID="nuY-sx-o2d">
-            <objects>
-                <viewController id="dDi-VG-bxb" customClass="SWRevealViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="d74-P4-Ejs"/>
-                        <viewControllerLayoutGuide type="bottom" id="ed4-2i-S0T"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="2Af-Jl-fah">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                    <connections>
-                        <segue destination="TIt-Io-Ca6" kind="custom" identifier="sw_rear" customClass="SWRevealViewControllerSegueSetController" id="f7C-FY-SIi"/>
-                        <segue destination="Mrw-vN-gt9" kind="custom" customClass="SWRevealViewControllerSegueSetController" id="Bcs-f0-avb"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NS4-Ta-pu5" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1194.5" y="-426.5"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="Y6a-5P-tdM">
@@ -320,9 +280,6 @@
                                 <state key="normal" title="CREATE NEW ACCOUNT">
                                     <color key="titleColor" red="0.70588235294117641" green="0.70980392156862748" blue="0.78431372549019607" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <connections>
-                                    <segue destination="fwp-94-NIe" kind="show" id="gW5-M3-7Wr"/>
-                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cA1-bc-HIe">
                                 <rect key="frame" x="27" y="467" width="320" height="65"/>
@@ -521,11 +478,7 @@
                                 <rect key="frame" x="0.0" y="25" width="375" height="44"/>
                                 <items>
                                     <navigationItem title="Register" id="YQs-Ue-n9Y">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="bDg-tc-Wqz">
-                                            <connections>
-                                                <segue destination="U4D-lj-fdH" kind="show" id="yPN-Yv-1AK"/>
-                                            </connections>
-                                        </barButtonItem>
+                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="bDg-tc-Wqz"/>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -718,9 +671,6 @@
                                     <constraint firstAttribute="height" constant="62" id="jhm-ex-yUg"/>
                                 </constraints>
                                 <state key="normal" title="Button" image="main_button_new"/>
-                                <connections>
-                                    <segue destination="mMa-WW-rQL" kind="custom" customClass="SWRevealViewControllerSeguePushController" id="hl7-aW-E5c"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -745,7 +695,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bSU-jE-Yb8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1808.5" y="-426.5"/>
+            <point key="canvasLocation" x="1402.5" y="356.5"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="bH9-Qr-yC0">
@@ -782,8 +732,4 @@
         <image name="navigation_settings_icon" width="70" height="70"/>
         <image name="navigation_task_icon" width="70" height="70"/>
     </resources>
-    <inferredMetricsTieBreakers>
-        <segue reference="hl7-aW-E5c"/>
-        <segue reference="M5a-l6-RnM"/>
-    </inferredMetricsTieBreakers>
 </document>

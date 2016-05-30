@@ -14,7 +14,7 @@ class MainViewController: BaseViewController {
     @IBOutlet var userImageView: UIImageView!
     
     @IBAction func menuButton_TouchDown(sender: AnyObject) {
-        revealViewController().revealToggle(sender)
+        //revealViewController().revealToggle(sender)
     }
 
     override func viewDidLoad () {

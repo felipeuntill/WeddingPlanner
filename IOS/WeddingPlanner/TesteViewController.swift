@@ -15,7 +15,7 @@ class TesteViewController: UIViewController {
         // Do view setup here.
     }
     @IBAction func open(sender: UIButton) {
-        revealViewController().revealToggle(sender)
+        //revealViewController().revealToggle(sender)
     }
     
 }

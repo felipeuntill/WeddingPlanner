@@ -36,6 +36,10 @@
 		7CCF74D61CF8E71B001C10E2 /* SyncManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF74D51CF8E71B001C10E2 /* SyncManager.swift */; };
 		7CCF74D81CF8E7BB001C10E2 /* LocalStorageConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF74D71CF8E7BB001C10E2 /* LocalStorageConfiguration.swift */; };
 		7CCF74DC1CF90E2C001C10E2 /* TesteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF74DB1CF90E2C001C10E2 /* TesteViewController.swift */; };
+		7CD3C09E1CFA235B006284AC /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD3C0961CFA235B006284AC /* MMDrawerBarButtonItem.m */; };
+		7CD3C09F1CFA235B006284AC /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD3C0981CFA235B006284AC /* MMDrawerController.m */; };
+		7CD3C0A01CFA235B006284AC /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD3C09B1CFA235B006284AC /* MMDrawerVisualState.m */; };
+		7CD3C0A11CFA235B006284AC /* UIViewController+MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD3C09D1CFA235B006284AC /* UIViewController+MMDrawerController.m */; };
 		7CE7094E1CCAC89E00923495 /* UIColorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE7094D1CCAC89E00923495 /* UIColorExtensions.swift */; };
 		7CE709501CCACB8100923495 /* RequirementRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CE7094F1CCACB8100923495 /* RequirementRepository.swift */; };
 		7CEE51481CC9483D00FC687A /* WeddingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CEE51471CC9483D00FC687A /* WeddingViewController.swift */; };
@@ -95,6 +99,15 @@
 		7CCF74D51CF8E71B001C10E2 /* SyncManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SyncManager.swift; sourceTree = "<group>"; };
 		7CCF74D71CF8E7BB001C10E2 /* LocalStorageConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalStorageConfiguration.swift; sourceTree = "<group>"; };
 		7CCF74DB1CF90E2C001C10E2 /* TesteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TesteViewController.swift; sourceTree = "<group>"; };
+		7CD3C0951CFA235B006284AC /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
+		7CD3C0961CFA235B006284AC /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
+		7CD3C0971CFA235B006284AC /* MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerController.h; sourceTree = "<group>"; };
+		7CD3C0981CFA235B006284AC /* MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerController.m; sourceTree = "<group>"; };
+		7CD3C0991CFA235B006284AC /* MMDrawerController+Subclass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MMDrawerController+Subclass.h"; sourceTree = "<group>"; };
+		7CD3C09A1CFA235B006284AC /* MMDrawerVisualState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerVisualState.h; sourceTree = "<group>"; };
+		7CD3C09B1CFA235B006284AC /* MMDrawerVisualState.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerVisualState.m; sourceTree = "<group>"; };
+		7CD3C09C1CFA235B006284AC /* UIViewController+MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+MMDrawerController.h"; sourceTree = "<group>"; };
+		7CD3C09D1CFA235B006284AC /* UIViewController+MMDrawerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+MMDrawerController.m"; sourceTree = "<group>"; };
 		7CE7094D1CCAC89E00923495 /* UIColorExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtensions.swift; sourceTree = "<group>"; };
 		7CE7094F1CCACB8100923495 /* RequirementRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequirementRepository.swift; sourceTree = "<group>"; };
 		7CEE51471CC9483D00FC687A /* WeddingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeddingViewController.swift; sourceTree = "<group>"; };
@@ -131,9 +144,11 @@
 		7C4DE63C1CC835D400FED72D /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				7CD3C0941CFA229B006284AC /* MMDrawer */,
 				7CF38BC51CF0A07400F30525 /* GoogleService-Info.plist */,
 				7CC8CBAA1CC6F9B100D1699D /* Info.plist */,
 				7CC8CBA21CC6F9B100D1699D /* WeddingPlanner.xcdatamodeld */,
+				7C4DE6381CC835C700FED72D /* WeddingPlanner-Bridging-Header.h */,
 				7CCAE38E1CC88730004A9088 /* SWReveal */,
 			);
 			name = Library;
@@ -236,7 +251,6 @@
 			children = (
 				7C4DE63A1CC835C800FED72D /* SWRevealViewController.m */,
 				7C4DE6391CC835C800FED72D /* SWRevealViewController.h */,
-				7C4DE6381CC835C700FED72D /* WeddingPlanner-Bridging-Header.h */,
 			);
 			name = SWReveal;
 			sourceTree = "<group>";
@@ -280,6 +294,22 @@
 				7CCF74CC1CF1E642001C10E2 /* NSDataProvider.swift */,
 			);
 			name = Provider;
+			sourceTree = "<group>";
+		};
+		7CD3C0941CFA229B006284AC /* MMDrawer */ = {
+			isa = PBXGroup;
+			children = (
+				7CD3C0951CFA235B006284AC /* MMDrawerBarButtonItem.h */,
+				7CD3C0961CFA235B006284AC /* MMDrawerBarButtonItem.m */,
+				7CD3C0971CFA235B006284AC /* MMDrawerController.h */,
+				7CD3C0981CFA235B006284AC /* MMDrawerController.m */,
+				7CD3C0991CFA235B006284AC /* MMDrawerController+Subclass.h */,
+				7CD3C09A1CFA235B006284AC /* MMDrawerVisualState.h */,
+				7CD3C09B1CFA235B006284AC /* MMDrawerVisualState.m */,
+				7CD3C09C1CFA235B006284AC /* UIViewController+MMDrawerController.h */,
+				7CD3C09D1CFA235B006284AC /* UIViewController+MMDrawerController.m */,
+			);
+			name = MMDrawer;
 			sourceTree = "<group>";
 		};
 		7CEE51421CC8BDFD00FC687A /* Objects */ = {
@@ -532,12 +562,16 @@
 				7CCF74CD1CF1E642001C10E2 /* NSDataProvider.swift in Sources */,
 				7CC8CBC51CC710DD00D1699D /* User.swift in Sources */,
 				7CC8CBC01CC6FAAD00D1699D /* Wedding.swift in Sources */,
+				7CD3C09F1CFA235B006284AC /* MMDrawerController.m in Sources */,
 				7CCF74D61CF8E71B001C10E2 /* SyncManager.swift in Sources */,
 				7CC8CBA41CC6F9B100D1699D /* WeddingPlanner.xcdatamodeld in Sources */,
 				7CE709501CCACB8100923495 /* RequirementRepository.swift in Sources */,
 				7CCAE3911CC8902D004A9088 /* RegisterViewController.swift in Sources */,
 				7CC8CBC71CC7125600D1699D /* Task.swift in Sources */,
+				7CD3C0A01CFA235B006284AC /* MMDrawerVisualState.m in Sources */,
+				7CD3C0A11CFA235B006284AC /* UIViewController+MMDrawerController.m in Sources */,
 				7CEE514A1CC948AF00FC687A /* RequirementListViewController.swift in Sources */,
+				7CD3C09E1CFA235B006284AC /* MMDrawerBarButtonItem.m in Sources */,
 				7CE7094E1CCAC89E00923495 /* UIColorExtensions.swift in Sources */,
 				7C4DE63B1CC835C800FED72D /* SWRevealViewController.m in Sources */,
 				7CC8CBC31CC6FC9800D1699D /* LoginViewController.swift in Sources */,
