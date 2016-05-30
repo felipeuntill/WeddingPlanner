@@ -14,9 +14,10 @@ class MainViewController: BaseViewController {
     @IBOutlet var userImageView: UIImageView!
     
     @IBAction func menuButton_TouchDown(sender: AnyObject) {
-        //revealViewController().revealToggle(sender)
+        
+        appDelegate.centerContainer!.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil)
     }
-
+    
     override func viewDidLoad () {
         
 //        if(UserDomain.user == nil) {
@@ -25,7 +26,7 @@ class MainViewController: BaseViewController {
 //        }
         
         super.viewDidLoad()
-//        
+ 
 //        let repository = WeddingRepository(address: EndingPointConfiguration.WeddingService)
 //        let wedding = Wedding()
 //        
@@ -44,11 +45,10 @@ class MainViewController: BaseViewController {
     
     override func viewDidAppear (animated: Bool) {
         super.viewDidAppear(animated)
-        
-//        userImageView.layer.borderWidth = 0
-//        userImageView.layer.masksToBounds = false
-//        userImageView.layer.borderColor = UIColor.whiteColor().CGColor
-//        userImageView.layer.cornerRadius = 44
-//        userImageView.clipsToBounds = true
+        userImageView.layer.borderWidth = 0
+        userImageView.layer.masksToBounds = false
+        userImageView.layer.borderColor = UIColor.whiteColor().CGColor
+        userImageView.layer.cornerRadius = 44
+        userImageView.clipsToBounds = true
     }
 }

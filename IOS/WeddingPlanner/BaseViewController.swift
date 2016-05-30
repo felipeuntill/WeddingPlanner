@@ -10,15 +10,21 @@ import Foundation
 
 class BaseViewController : UIViewController {
     
-    var warningLabel : UILabel!;
-    var enableNavigation : Bool! = true;
+    var warningLabel : UILabel!
+    var enableNavigation : Bool! = true
+    var appDelegate:AppDelegate!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
-//        if revealViewController() != nil && enableNavigation {
-//            self.view.addGestureRecognizer(revealViewController().panGestureRecognizer())
-//        }
+        self.appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+    }
+    
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBarHidden = true
     }
     
     func createWarn(warning : String!){
