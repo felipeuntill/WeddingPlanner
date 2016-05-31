@@ -51,10 +51,8 @@ class LoginViewController: BaseViewController {
         FIRAuth.auth()?.signInWithEmail(userTextField.text!, password: passTextField.text!, completion: {
             user, error in
             if error == nil {
-                
                 UserDomain.user = user
-                self.RedirectToController("MainController")
-                
+                self.RecirectToController(Controller.Main, keepMenu: false)
             } else {
                 self.createWarn(error?.localizedDescription)
             }

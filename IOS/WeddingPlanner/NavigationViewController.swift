@@ -8,11 +8,14 @@
 
 import UIKit
 
-class NavigationViewController: UIViewController {
+class NavigationViewController: BaseViewController {
 
     @IBOutlet var userImageView: UIImageView!
  
     override func viewDidAppear(animated: Bool) {
+        
+        enableNavigation = false;
+        
         super.viewDidAppear(animated)
         
         userImageView.layer.borderWidth = 0
@@ -26,5 +29,8 @@ class NavigationViewController: UIViewController {
         super.viewWillAppear(animated)
         self.navigationController?.navigationBarHidden = true
     }
-
+    
+    @IBAction func Logout(sender: AnyObject) {
+        self.RecirectToController(Controller.Login, keepMenu: false)
+    }
 }

@@ -13,26 +13,42 @@ import Firebase
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
-    var window: UIWindow?
-    var centerContainer: MMDrawerController?
-
+    var window                  : UIWindow?
+    var centerContainer         : MMDrawerController?
+    var mainStoryboard          : UIStoryboard?
+    var centerViewController    : UIViewController?
+    var leftViewController      : UIViewController?
+    var leftSideNav             : UINavigationController?
+    var centerNav               : UINavigationController?
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
         
         FIRApp.configure()
         SyncManager.Load()
         
-
-        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let centerViewController = mainStoryboard.instantiateViewControllerWithIdentifier("MainController") as! MainViewController
-        let leftViewController = mainStoryboard.instantiateViewControllerWithIdentifier("NavigationController") as! NavigationViewController
-        let leftSideNav = UINavigationController(rootViewController: leftViewController)
-        let centerNav = UINavigationController(rootViewController: centerViewController)
+        mainStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        leftViewController = mainStoryboard!.instantiateViewControllerWithIdentifier("NavigationController") as! NavigationViewController
+        setController(mainStoryboard!.instantiateViewControllerWithIdentifier("MainController") as! MainViewController)
+        
+        return true
+    }
+    
+    func presetController (viewController : UIViewController, withCloseAnimation : Bool = true) {
+        centerContainer?.setCenterViewController(viewController, withCloseAnimation: withCloseAnimation, completion: nil)
+        window!.rootViewController = centerContainer
+        window!.makeKeyAndVisible()
+    }
+    
+    func setController (viewController : UIViewController) {
+        centerViewController = viewController//mainStoryboard!.instantiateViewControllerWithIdentifier("MainController") as! MainViewController
+        leftSideNav = UINavigationController(rootViewController: leftViewController!)
+        centerNav = UINavigationController(rootViewController: centerViewController!)
         
         centerContainer = MMDrawerController(centerViewController: centerNav, leftDrawerViewController: leftSideNav)
         centerContainer!.openDrawerGestureModeMask = MMOpenDrawerGestureMode.All
         centerContainer!.closeDrawerGestureModeMask = MMCloseDrawerGestureMode.All
-        centerContainer!.maximumLeftDrawerWidth = 340
+        //centerContainer!.maximumLeftDrawerWidth = 340
         centerContainer!.showsShadow = true
         centerContainer!.edgesForExtendedLayout = .None
         centerContainer!.showsStatusBarBackgroundView = false
@@ -40,7 +56,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         window!.rootViewController = centerContainer
         window!.makeKeyAndVisible()
-        return true
     }
 
     func applicationWillResignActive(application: UIApplication) {

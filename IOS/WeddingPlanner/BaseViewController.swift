@@ -14,13 +14,11 @@ class BaseViewController : UIViewController {
     var enableNavigation : Bool! = true
     var appDelegate:AppDelegate!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.hideKeyboardWhenTappedAround()
         self.appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
     }
-    
     
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
@@ -38,15 +36,48 @@ class BaseViewController : UIViewController {
     }
 }
 
-extension BaseViewController {
 
-    func RedirectToController (storyboardControllerName : String ){
-        
-        RedirectToController(storyboardControllerName, transition: 0.0)
+enum Controller {
+    case Login
+    case Main
+    case Wedding
+    case Tasks
+}
+
+extension BaseViewController {
     
+    func RecirectToController(selectedController : Controller, keepMenu : Bool) {
+    
+        let storyboard = appDelegate.mainStoryboard
+        var controller : BaseViewController!
+        
+        switch selectedController {
+        
+            case .Login:
+                RedirectToControllerStatic("LoginController")
+                return
+            case .Main:
+                controller = storyboard!.instantiateViewControllerWithIdentifier("MainController") as! MainViewController
+            case .Wedding:
+                controller = storyboard!.instantiateViewControllerWithIdentifier("MainController") as! MainViewController
+            case .Tasks:
+                controller = storyboard!.instantiateViewControllerWithIdentifier("MainController") as! MainViewController
+        }
+               
+        if keepMenu {
+            appDelegate.presetController(controller)
+        } else {
+            appDelegate.setController(controller)
+        }
     }
     
-    func RedirectToController (storyboardControllerName : String, transition : Double)
+    
+    
+    private func RedirectToControllerStatic (storyboardControllerName : String ){
+        RedirectToControllerStatic(storyboardControllerName, transition: 0.0)
+    }
+    
+    private func RedirectToControllerStatic (storyboardControllerName : String, transition : Double)
     {
         let secondViewController = (self.storyboard?.instantiateViewControllerWithIdentifier(storyboardControllerName))! as UIViewController
         

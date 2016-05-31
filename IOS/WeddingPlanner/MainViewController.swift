@@ -14,19 +14,16 @@ class MainViewController: BaseViewController {
     @IBOutlet var userImageView: UIImageView!
     
     @IBAction func menuButton_TouchDown(sender: AnyObject) {
-        
         appDelegate.centerContainer!.toggleDrawerSide(MMDrawerSide.Left, animated: true, completion: nil)
     }
     
     override func viewDidLoad () {
-        
 //        if(UserDomain.user == nil) {
 //            self.RedirectToController("LoginController")
 //            return
 //        }
         
         super.viewDidLoad()
- 
 //        let repository = WeddingRepository(address: EndingPointConfiguration.WeddingService)
 //        let wedding = Wedding()
 //        
@@ -40,7 +37,6 @@ class MainViewController: BaseViewController {
 //        let list = repository.list()
 //        let x = list?.count
 //        let z = list?.isEmpty
-        
     }
     
     override func viewDidAppear (animated: Bool) {
