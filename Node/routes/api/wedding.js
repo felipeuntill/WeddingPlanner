@@ -10,6 +10,8 @@ var WeddingSchema   = require('../../schemas/WeddingSchema');
 var router    = express.Router();
 var Wedding   = mongoose.model('Wedding', WeddingSchema);
 
+-mongoose.connect(database.host);
+
 // Summary: actions
 // Action: List
 // Description:  GET Wedding listing

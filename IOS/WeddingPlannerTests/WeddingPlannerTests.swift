@@ -7,7 +7,6 @@
 //
 
 import XCTest
-@testable import WeddingPlanner
 
 class WeddingPlannerTests: XCTestCase {
     

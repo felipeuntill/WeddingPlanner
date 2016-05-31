@@ -46,6 +46,10 @@ class LoginViewController: BaseViewController {
         }
     }
     
+    @IBAction func OnRegister(sender: AnyObject) {
+        //self.RecirectToController(Controller.Register, keepMenu: false)
+    }
+    
     func login () {
         
         FIRAuth.auth()?.signInWithEmail(userTextField.text!, password: passTextField.text!, completion: {

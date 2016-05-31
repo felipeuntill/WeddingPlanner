@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7977A1790ABAE242BD29560F /* Pods_WeddingPlannerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64875246C4A1ADD68CAA7235 /* Pods_WeddingPlannerTests.framework */; };
+		7C3FF4D01CFE41B600966E87 /* TaskRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3FF4CF1CFE41B600966E87 /* TaskRepository.swift */; };
 		7C7F805F1CC9CA8A001E5656 /* WeddingRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7F805E1CC9CA8A001E5656 /* WeddingRepository.swift */; };
 		7C7F80611CC9CAEF001E5656 /* GenericRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7F80601CC9CAEF001E5656 /* GenericRepository.swift */; };
 		7CB33B9E1CC83EE600CBCAC1 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB33B9D1CC83EE600CBCAC1 /* NavigationViewController.swift */; };
@@ -29,7 +30,6 @@
 		7CCAE3911CC8902D004A9088 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCAE3901CC8902D004A9088 /* RegisterViewController.swift */; };
 		7CCAE3931CC89592004A9088 /* ValidationExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCAE3921CC89592004A9088 /* ValidationExtensions.swift */; };
 		7CCF74CD1CF1E642001C10E2 /* NSDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF74CC1CF1E642001C10E2 /* NSDataProvider.swift */; };
-		7CCF74CF1CF881D3001C10E2 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CCF74CE1CF881D3001C10E2 /* Default-568h@2x.png */; };
 		7CCF74D11CF8DBBC001C10E2 /* LocalStorageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF74D01CF8DBBC001C10E2 /* LocalStorageProvider.swift */; };
 		7CCF74D41CF8E07F001C10E2 /* UserDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF74D31CF8E07F001C10E2 /* UserDomain.swift */; };
 		7CCF74D61CF8E71B001C10E2 /* SyncManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF74D51CF8E71B001C10E2 /* SyncManager.swift */; };
@@ -63,6 +63,7 @@
 		0B8F18A5579651FD34213052 /* Pods-WeddingPlanner.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeddingPlanner.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeddingPlanner/Pods-WeddingPlanner.debug.xcconfig"; sourceTree = "<group>"; };
 		64875246C4A1ADD68CAA7235 /* Pods_WeddingPlannerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeddingPlannerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		76DA97E6E84001D24ECD5DD9 /* Pods-WeddingPlannerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeddingPlannerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeddingPlannerTests/Pods-WeddingPlannerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		7C3FF4CF1CFE41B600966E87 /* TaskRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TaskRepository.swift; sourceTree = "<group>"; };
 		7C4DE6381CC835C700FED72D /* WeddingPlanner-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WeddingPlanner-Bridging-Header.h"; sourceTree = "<group>"; };
 		7C7F805E1CC9CA8A001E5656 /* WeddingRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeddingRepository.swift; sourceTree = "<group>"; };
 		7C7F80601CC9CAEF001E5656 /* GenericRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericRepository.swift; sourceTree = "<group>"; };
@@ -89,7 +90,6 @@
 		7CCAE3901CC8902D004A9088 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
 		7CCAE3921CC89592004A9088 /* ValidationExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationExtensions.swift; sourceTree = "<group>"; };
 		7CCF74CC1CF1E642001C10E2 /* NSDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSDataProvider.swift; sourceTree = "<group>"; };
-		7CCF74CE1CF881D3001C10E2 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		7CCF74D01CF8DBBC001C10E2 /* LocalStorageProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalStorageProvider.swift; sourceTree = "<group>"; };
 		7CCF74D31CF8E07F001C10E2 /* UserDomain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDomain.swift; sourceTree = "<group>"; };
 		7CCF74D51CF8E71B001C10E2 /* SyncManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SyncManager.swift; sourceTree = "<group>"; };
@@ -139,6 +139,7 @@
 		7C4DE63C1CC835D400FED72D /* Library */ = {
 			isa = PBXGroup;
 			children = (
+				7CCF74DA1CF8E89E001C10E2 /* Provider */,
 				7CD3C0941CFA229B006284AC /* MMDrawer */,
 				7CF38BC51CF0A07400F30525 /* GoogleService-Info.plist */,
 				7CC8CBAA1CC6F9B100D1699D /* Info.plist */,
@@ -151,7 +152,6 @@
 		7CC8CB8F1CC6F9B100D1699D = {
 			isa = PBXGroup;
 			children = (
-				7CCF74CE1CF881D3001C10E2 /* Default-568h@2x.png */,
 				7CC8CB9A1CC6F9B100D1699D /* WeddingPlanner */,
 				7CC8CBB21CC6F9B200D1699D /* WeddingPlannerTests */,
 				7CC8CB991CC6F9B100D1699D /* Products */,
@@ -207,6 +207,7 @@
 		7CC8CBC11CC6FC7600D1699D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				7CCAE38D1CC88719004A9088 /* Extension */,
 				7CEE51421CC8BDFD00FC687A /* Objects */,
 				7CEE514B1CC9497F00FC687A /* BaseViewController.swift */,
 				7CC8CBC21CC6FC9800D1699D /* LoginViewController.swift */,
@@ -225,6 +226,7 @@
 				7C7F805E1CC9CA8A001E5656 /* WeddingRepository.swift */,
 				7C7F80601CC9CAEF001E5656 /* GenericRepository.swift */,
 				7CE7094F1CCACB8100923495 /* RequirementRepository.swift */,
+				7C3FF4CF1CFE41B600966E87 /* TaskRepository.swift */,
 			);
 			name = Repository;
 			sourceTree = "<group>";
@@ -242,12 +244,8 @@
 		7CCAE38F1CC88749004A9088 /* Business */ = {
 			isa = PBXGroup;
 			children = (
-				7CCAE38D1CC88719004A9088 /* Extension */,
-				7CCF74D91CF8E7EE001C10E2 /* Configuration */,
 				7CCF74D21CF8E053001C10E2 /* Domain */,
-				7CC8CBC81CC7134400D1699D /* Repository */,
 				7CC8CBC11CC6FC7600D1699D /* Controller */,
-				7CC8CBBE1CC6FA9300D1699D /* Model */,
 			);
 			name = Business;
 			sourceTree = "<group>";
@@ -255,7 +253,9 @@
 		7CCF74D21CF8E053001C10E2 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
-				7CCF74DA1CF8E89E001C10E2 /* Provider */,
+				7CC8CBBE1CC6FA9300D1699D /* Model */,
+				7CCF74D91CF8E7EE001C10E2 /* Configuration */,
+				7CC8CBC81CC7134400D1699D /* Repository */,
 				7CCF74D31CF8E07F001C10E2 /* UserDomain.swift */,
 				7CCF74D51CF8E71B001C10E2 /* SyncManager.swift */,
 			);
@@ -416,7 +416,6 @@
 				7CC8CBA91CC6F9B100D1699D /* LaunchScreen.storyboard in Resources */,
 				7CF38BC61CF0A07400F30525 /* GoogleService-Info.plist in Resources */,
 				7CC8CBA61CC6F9B100D1699D /* Assets.xcassets in Resources */,
-				7CCF74CF1CF881D3001C10E2 /* Default-568h@2x.png in Resources */,
 				7CC8CBA11CC6F9B100D1699D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -543,6 +542,7 @@
 				7CEE51481CC9483D00FC687A /* WeddingViewController.swift in Sources */,
 				7C7F80611CC9CAEF001E5656 /* GenericRepository.swift in Sources */,
 				7CCF74CD1CF1E642001C10E2 /* NSDataProvider.swift in Sources */,
+				7C3FF4D01CFE41B600966E87 /* TaskRepository.swift in Sources */,
 				7CC8CBC51CC710DD00D1699D /* User.swift in Sources */,
 				7CC8CBC01CC6FAAD00D1699D /* Wedding.swift in Sources */,
 				7CD3C09F1CFA235B006284AC /* MMDrawerController.m in Sources */,

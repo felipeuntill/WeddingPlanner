@@ -39,6 +39,7 @@ class BaseViewController : UIViewController {
 
 enum Controller {
     case Login
+    case Register
     case Main
     case Wedding
     case Tasks
@@ -55,6 +56,9 @@ extension BaseViewController {
         
             case .Login:
                 RedirectToControllerStatic("LoginController")
+                return
+            case .Register:
+                RedirectToControllerStatic("RegisterController")
                 return
             case .Main:
                 controller = storyboard!.instantiateViewControllerWithIdentifier("MainController") as! MainViewController
@@ -74,7 +78,7 @@ extension BaseViewController {
     
     
     private func RedirectToControllerStatic (storyboardControllerName : String ){
-        RedirectToControllerStatic(storyboardControllerName, transition: 0.0)
+        RedirectToControllerStatic(storyboardControllerName, transition: 1)
     }
     
     private func RedirectToControllerStatic (storyboardControllerName : String, transition : Double)
@@ -86,7 +90,7 @@ extension BaseViewController {
             window.rootViewController!.view,
             toView: secondViewController.view,
             duration: transition,
-            options: .TransitionCurlUp,
+            options: .TransitionNone,
             completion: {
                 finished in window.rootViewController = secondViewController
         })

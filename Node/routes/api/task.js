@@ -10,6 +10,8 @@ var TaskSchema   = require('../../schemas/TaskSchema');
 var router    = express.Router();
 var Task   = mongoose.model('Task', TaskSchema);
 
+mongoose.connect(database.host);
+
 // Summary: actions
 // Action: List
 // Description:  GET Task listing

@@ -10,4 +10,7 @@ import UIKit
 
 class RegisterViewController: BaseViewController {
 
+    @IBAction func OnCancel(sender: UIBarButtonItem) {
+        //self.RecirectToController(Controller.Login, keepMenu: false)
+    }
 }

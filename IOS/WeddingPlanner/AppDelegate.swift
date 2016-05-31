@@ -48,7 +48,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         centerContainer = MMDrawerController(centerViewController: centerNav, leftDrawerViewController: leftSideNav)
         centerContainer!.openDrawerGestureModeMask = MMOpenDrawerGestureMode.All
         centerContainer!.closeDrawerGestureModeMask = MMCloseDrawerGestureMode.All
-        //centerContainer!.maximumLeftDrawerWidth = 340
+        centerContainer!.maximumLeftDrawerWidth = 320
         centerContainer!.showsShadow = true
         centerContainer!.edgesForExtendedLayout = .None
         centerContainer!.showsStatusBarBackgroundView = false

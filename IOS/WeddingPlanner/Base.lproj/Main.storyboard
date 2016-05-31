@@ -290,6 +290,10 @@
                                 <state key="normal" title="CREATE NEW ACCOUNT">
                                     <color key="titleColor" red="0.70588235294117641" green="0.70980392156862748" blue="0.78431372549019607" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="OnRegister:" destination="U4D-lj-fdH" eventType="touchUpInside" id="Zzs-ZO-QeR"/>
+                                    <segue destination="fwp-94-NIe" kind="show" id="Nbs-Lj-Bed"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cA1-bc-HIe">
                                 <rect key="frame" x="27" y="467" width="320" height="65"/>
@@ -411,12 +415,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZZd-8I-fLm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1904.5" y="411.5"/>
+            <point key="canvasLocation" x="1874.5" y="356.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Register View Controller-->
         <scene sceneID="pQJ-1W-DlH">
             <objects>
-                <viewController id="fwp-94-NIe" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RegisterController" id="fwp-94-NIe" customClass="RegisterViewController" customModule="WeddingPlanner" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AF8-Os-sgF"/>
                         <viewControllerLayoutGuide type="bottom" id="2gy-4v-FbL"/>
@@ -459,7 +463,11 @@
                                 <rect key="frame" x="0.0" y="25" width="375" height="44"/>
                                 <items>
                                     <navigationItem title="Register" id="YQs-Ue-n9Y">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="bDg-tc-Wqz"/>
+                                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="bDg-tc-Wqz">
+                                            <connections>
+                                                <action selector="OnCancel:" destination="fwp-94-NIe" id="teJ-bk-8xj"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -494,7 +502,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q5z-Lt-IFV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2346.5" y="411.5"/>
+            <point key="canvasLocation" x="2336.5" y="356.5"/>
         </scene>
         <!--Main View Controller-->
         <scene sceneID="Hyj-jX-Yd1">
@@ -564,7 +572,7 @@
                                     <constraint firstItem="Rbe-Gp-Igh" firstAttribute="leading" secondItem="1z1-lS-mof" secondAttribute="leading" constant="16" id="in4-2V-AL2"/>
                                 </constraints>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="E1D-w6-ZeS">
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="E1D-w6-ZeS">
                                 <rect key="frame" x="0.0" y="218" width="376" height="105"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Ob-x7-t47">
