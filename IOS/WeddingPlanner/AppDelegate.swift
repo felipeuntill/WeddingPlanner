@@ -22,39 +22,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         FIRApp.configure()
         SyncManager.Load()
         
-        
-        var rootViewController = self.window!.rootViewController
-        var mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        var centerViewController = mainStoryboard.instantiateViewControllerWithIdentifier("MainController") as! MainViewController
-        var leftViewController = mainStoryboard.instantiateViewControllerWithIdentifier("NavigationController") as! NavigationViewController
-        
-//        let rightViewController = mainStoryboard.instantiateViewControllerWithIdentifier("RightSideViewController") as RightSideViewController
 
+        let mainStoryboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+        let centerViewController = mainStoryboard.instantiateViewControllerWithIdentifier("MainController") as! MainViewController
+        let leftViewController = mainStoryboard.instantiateViewControllerWithIdentifier("NavigationController") as! NavigationViewController
         let leftSideNav = UINavigationController(rootViewController: leftViewController)
         let centerNav = UINavigationController(rootViewController: centerViewController)
-        //let rightNav = UINavigationController(rootViewController: rightViewController)
-
         
         centerContainer = MMDrawerController(centerViewController: centerNav, leftDrawerViewController: leftSideNav)
-       
         centerContainer!.openDrawerGestureModeMask = MMOpenDrawerGestureMode.All
         centerContainer!.closeDrawerGestureModeMask = MMCloseDrawerGestureMode.All
-        
         centerContainer!.maximumLeftDrawerWidth = 340
-        centerContainer!.showsShadow = false
+        centerContainer!.showsShadow = true
         centerContainer!.edgesForExtendedLayout = .None
         centerContainer!.showsStatusBarBackgroundView = false
         centerContainer!.shouldStretchDrawer = false
         
-        
         window!.rootViewController = centerContainer
         window!.makeKeyAndVisible()
-
-
-        
-        
-        
-        
         return true
     }
 

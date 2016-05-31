@@ -18,7 +18,7 @@ class NavigationViewController: UIViewController {
         userImageView.layer.borderWidth = 0
         userImageView.layer.masksToBounds = false
         userImageView.layer.borderColor = UIColor.whiteColor().CGColor
-        userImageView.layer.cornerRadius = 31
+        userImageView.layer.cornerRadius =  40
         userImageView.clipsToBounds = true
     }
     

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		7977A1790ABAE242BD29560F /* Pods_WeddingPlannerTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64875246C4A1ADD68CAA7235 /* Pods_WeddingPlannerTests.framework */; };
-		7C4DE63B1CC835C800FED72D /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C4DE63A1CC835C800FED72D /* SWRevealViewController.m */; };
 		7C7F805F1CC9CA8A001E5656 /* WeddingRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7F805E1CC9CA8A001E5656 /* WeddingRepository.swift */; };
 		7C7F80611CC9CAEF001E5656 /* GenericRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C7F80601CC9CAEF001E5656 /* GenericRepository.swift */; };
 		7CB33B9E1CC83EE600CBCAC1 /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB33B9D1CC83EE600CBCAC1 /* NavigationViewController.swift */; };
@@ -35,7 +34,6 @@
 		7CCF74D41CF8E07F001C10E2 /* UserDomain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF74D31CF8E07F001C10E2 /* UserDomain.swift */; };
 		7CCF74D61CF8E71B001C10E2 /* SyncManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF74D51CF8E71B001C10E2 /* SyncManager.swift */; };
 		7CCF74D81CF8E7BB001C10E2 /* LocalStorageConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF74D71CF8E7BB001C10E2 /* LocalStorageConfiguration.swift */; };
-		7CCF74DC1CF90E2C001C10E2 /* TesteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CCF74DB1CF90E2C001C10E2 /* TesteViewController.swift */; };
 		7CD3C09E1CFA235B006284AC /* MMDrawerBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD3C0961CFA235B006284AC /* MMDrawerBarButtonItem.m */; };
 		7CD3C09F1CFA235B006284AC /* MMDrawerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD3C0981CFA235B006284AC /* MMDrawerController.m */; };
 		7CD3C0A01CFA235B006284AC /* MMDrawerVisualState.m in Sources */ = {isa = PBXBuildFile; fileRef = 7CD3C09B1CFA235B006284AC /* MMDrawerVisualState.m */; };
@@ -66,8 +64,6 @@
 		64875246C4A1ADD68CAA7235 /* Pods_WeddingPlannerTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WeddingPlannerTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		76DA97E6E84001D24ECD5DD9 /* Pods-WeddingPlannerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WeddingPlannerTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WeddingPlannerTests/Pods-WeddingPlannerTests.debug.xcconfig"; sourceTree = "<group>"; };
 		7C4DE6381CC835C700FED72D /* WeddingPlanner-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WeddingPlanner-Bridging-Header.h"; sourceTree = "<group>"; };
-		7C4DE6391CC835C800FED72D /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
-		7C4DE63A1CC835C800FED72D /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		7C7F805E1CC9CA8A001E5656 /* WeddingRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeddingRepository.swift; sourceTree = "<group>"; };
 		7C7F80601CC9CAEF001E5656 /* GenericRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericRepository.swift; sourceTree = "<group>"; };
 		7CB33B9D1CC83EE600CBCAC1 /* NavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
@@ -98,7 +94,6 @@
 		7CCF74D31CF8E07F001C10E2 /* UserDomain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDomain.swift; sourceTree = "<group>"; };
 		7CCF74D51CF8E71B001C10E2 /* SyncManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SyncManager.swift; sourceTree = "<group>"; };
 		7CCF74D71CF8E7BB001C10E2 /* LocalStorageConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalStorageConfiguration.swift; sourceTree = "<group>"; };
-		7CCF74DB1CF90E2C001C10E2 /* TesteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TesteViewController.swift; sourceTree = "<group>"; };
 		7CD3C0951CFA235B006284AC /* MMDrawerBarButtonItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerBarButtonItem.h; sourceTree = "<group>"; };
 		7CD3C0961CFA235B006284AC /* MMDrawerBarButtonItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMDrawerBarButtonItem.m; sourceTree = "<group>"; };
 		7CD3C0971CFA235B006284AC /* MMDrawerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMDrawerController.h; sourceTree = "<group>"; };
@@ -149,7 +144,6 @@
 				7CC8CBAA1CC6F9B100D1699D /* Info.plist */,
 				7CC8CBA21CC6F9B100D1699D /* WeddingPlanner.xcdatamodeld */,
 				7C4DE6381CC835C700FED72D /* WeddingPlanner-Bridging-Header.h */,
-				7CCAE38E1CC88730004A9088 /* SWReveal */,
 			);
 			name = Library;
 			sourceTree = "<group>";
@@ -221,7 +215,6 @@
 				7CCAE3901CC8902D004A9088 /* RegisterViewController.swift */,
 				7CEE51471CC9483D00FC687A /* WeddingViewController.swift */,
 				7CEE51491CC948AF00FC687A /* RequirementListViewController.swift */,
-				7CCF74DB1CF90E2C001C10E2 /* TesteViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -244,15 +237,6 @@
 				7CE7094D1CCAC89E00923495 /* UIColorExtensions.swift */,
 			);
 			name = Extension;
-			sourceTree = "<group>";
-		};
-		7CCAE38E1CC88730004A9088 /* SWReveal */ = {
-			isa = PBXGroup;
-			children = (
-				7C4DE63A1CC835C800FED72D /* SWRevealViewController.m */,
-				7C4DE6391CC835C800FED72D /* SWRevealViewController.h */,
-			);
-			name = SWReveal;
 			sourceTree = "<group>";
 		};
 		7CCAE38F1CC88749004A9088 /* Business */ = {
@@ -552,7 +536,6 @@
 				7CC8CBCE1CC714CB00D1699D /* PayObject.swift in Sources */,
 				7CCAE38C1CC886AB004A9088 /* ViewControllerExtensions.swift in Sources */,
 				7CF38BC81CF0C44900F30525 /* EndingPointConfiguration.swift in Sources */,
-				7CCF74DC1CF90E2C001C10E2 /* TesteViewController.swift in Sources */,
 				7CEE514C1CC9497F00FC687A /* BaseViewController.swift in Sources */,
 				7CCF74D81CF8E7BB001C10E2 /* LocalStorageConfiguration.swift in Sources */,
 				7CCAE38A1CC868A3004A9088 /* MainViewController.swift in Sources */,
@@ -573,7 +556,6 @@
 				7CEE514A1CC948AF00FC687A /* RequirementListViewController.swift in Sources */,
 				7CD3C09E1CFA235B006284AC /* MMDrawerBarButtonItem.m in Sources */,
 				7CE7094E1CCAC89E00923495 /* UIColorExtensions.swift in Sources */,
-				7C4DE63B1CC835C800FED72D /* SWRevealViewController.m in Sources */,
 				7CC8CBC31CC6FC9800D1699D /* LoginViewController.swift in Sources */,
 				7CCF74D11CF8DBBC001C10E2 /* LocalStorageProvider.swift in Sources */,
 				7CC8CBCA1CC713B900D1699D /* Category.swift in Sources */,
